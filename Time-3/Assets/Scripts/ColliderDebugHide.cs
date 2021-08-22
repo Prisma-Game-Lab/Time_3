@@ -3,15 +3,17 @@ using UnityEngine.Tilemaps;
 
 public class ColliderDebugHide : MonoBehaviour
 {
-	TilemapRenderer tilemapRenderer;
+	public bool showColliderDebug = false;
 
-    void Awake()
-    {
-        tilemapRenderer = GetComponent<TilemapRenderer>();
-    }
+	private TilemapRenderer tilemapRenderer;
 
-    void Start()
-    {
-        tilemapRenderer.enabled = false;
-    }
+	void Awake()
+	{
+		tilemapRenderer = GetComponent<TilemapRenderer>();
+	}
+
+	void Start()
+	{
+		tilemapRenderer.enabled = showColliderDebug;
+	}
 }
