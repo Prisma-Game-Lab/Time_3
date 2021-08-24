@@ -5,8 +5,8 @@ using UnityEngine;
 public abstract class Skill : MonoBehaviour
 {
     //Variaveis que indicam quando a habilidade pode ser utilizada. -Arthur
-    public float cooldown;
-    public bool canUse = true;
+    [SerializeField] private float cooldown;
+    [SerializeField] private bool canUse = true;
 
     //Funcao que deve ser chamada em todas as outras skills para utiliza-las.
     //O corpo dela varia por skill, logo deve possuir o modificador override. -Arthur
@@ -21,5 +21,15 @@ public abstract class Skill : MonoBehaviour
         yield return new WaitForSeconds(cd);
 
         canUse = true;
+    }
+
+    public float getCooldown()
+    {
+        return cooldown;
+    }
+
+    public bool getCanUse()
+    {
+        return canUse;
     }
 }
