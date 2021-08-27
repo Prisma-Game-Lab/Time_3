@@ -12,7 +12,7 @@ public class ColliderDebugHide : MonoBehaviour
 		tilemapRenderer = GetComponent<TilemapRenderer>();
 	}
 
-	void Start()
+	void Update()
 	{
 		tilemapRenderer.enabled = showColliderDebug;
 	}
