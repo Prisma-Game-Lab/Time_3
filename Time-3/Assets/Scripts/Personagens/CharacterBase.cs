@@ -9,7 +9,7 @@ public class CharacterBase : ScriptableObject
     [Header("Atributos do jogador")]
     public int baseHp;
     public int baseDefense;
-    public int baseSpeed;
+    public float baseSpeed;
 
     [Tooltip("Dano do ataque basico")]
     public int baseDamage;

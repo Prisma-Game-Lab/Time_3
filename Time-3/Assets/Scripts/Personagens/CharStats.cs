@@ -9,7 +9,7 @@ public class CharStats : MonoBehaviour
 
     [SerializeField] private int maxHp;
     [SerializeField] private int defense;
-    [SerializeField] private int speed;
+    [SerializeField] private float speed;
     [SerializeField] private int damage;
     [SerializeField] private int skillDmg;
 
@@ -17,7 +17,7 @@ public class CharStats : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         //Status definidos a partir do SO. -Arthur
         maxHp = charBase.baseHp;
@@ -45,7 +45,7 @@ public class CharStats : MonoBehaviour
         return defense;
     }
 
-    public int getSpeed()
+    public float getSpeed()
     {
         return speed;
     }
