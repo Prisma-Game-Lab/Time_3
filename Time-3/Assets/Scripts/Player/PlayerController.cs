@@ -7,28 +7,33 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharStats))]
 public class PlayerController : MonoBehaviour
 {
-	[SerializeField] private PlayerInput playerInput;
 	[SerializeField] private float playerSpeed;
 
+	private PlayerInput playerInput;
 	private Vector2 rawMovementVector;
-	private Rigidbody2D rb;	
+	private Rigidbody2D rb;
 
-	private void Start() 
+	private void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
 		playerInput = GetComponent<PlayerInput>();
 		playerSpeed = GetComponent<CharStats>().getSpeed();
 	}
 
-	private void FixedUpdate() 
+	private void FixedUpdate()
 	{
+		// Limita a magnitude do vetor de movimento a 1, para evitar que movimentos na diagonal sejam mais rapidos
 		Vector2 movementVector = Vector2.ClampMagnitude(rawMovementVector, 1);
+		// Escala o vetor de acordo com a velocidade do player e o tempo desde o ultimo frame
 		movementVector *= playerSpeed * Time.fixedDeltaTime;
+		// Aplica a movimentacao
 		rb.MovePosition(rb.position + movementVector);
 	}
 
-	public void onMovement(InputAction.CallbackContext value) 
+	// Evento ativado pelo InputSystem para movimentacao
+	public void onMovement(InputAction.CallbackContext value)
 	{
+		// Le o vetor de movimento bruto passado pelo InputSystem
 		rawMovementVector = value.ReadValue<Vector2>();
 	}
 
