@@ -38,5 +38,6 @@ public class SwitchCharacter : MonoBehaviour
     private void SwitchHero(int index)
     {
         charstats.setCharbase(Heroes[index]);
+        GetComponent<PlayerController>().UpdateSpeed();
     }
 }
