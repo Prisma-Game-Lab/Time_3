@@ -21,10 +21,14 @@ public class PlayerMovementBehaviour : MonoBehaviour
 		playerSpeed = charStats.getSpeed();
 	}
 
+	private void FixedUpdate() 
+	{
+		MovePlayer();
+	}
+
 	private void Update()
 	{
 		TurnPlayer();
-		MovePlayer();
 	}
 
 
@@ -41,7 +45,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
 		Vector2 movementVec = Vector2.ClampMagnitude(rawMovementVec, 1);
 
 		// Escala o vetor de acordo com a velocidade do player e o tempo desde o ultimo frame
-		movementVec *= playerSpeed * Time.deltaTime;
+		movementVec *= playerSpeed * Time.fixedDeltaTime;
 
 		// Aplica a movimentacao
 		rb.MovePosition(rb.position + movementVec);
