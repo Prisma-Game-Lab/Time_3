@@ -5,41 +5,42 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(CharStats))]
+[RequireComponent(typeof(PlayerAttackBehaviour))]
+[RequireComponent(typeof(PlayerMovementBehaviour))]
 public class PlayerController : MonoBehaviour
 {
-	[SerializeField] private float playerSpeed;
+	private CharStats charStats;
 
-	private PlayerInput playerInput;
-	private Vector2 rawMovementVector;
-	private Rigidbody2D rb;
+	private PlayerMovementBehaviour pMovementBehaviour;
+	private PlayerAttackBehaviour pAttackBehaviour;
 
-	private void Start()
+	private void Awake()
 	{
-		rb = GetComponent<Rigidbody2D>();
-		playerInput = GetComponent<PlayerInput>();
-		playerSpeed = GetComponent<CharStats>().getSpeed();
+		charStats = GetComponent<CharStats>();
+		pAttackBehaviour = GetComponent<PlayerAttackBehaviour>();
+		pMovementBehaviour = GetComponent<PlayerMovementBehaviour>();
 	}
 
-	private void FixedUpdate()
-	{
-		// Limita a magnitude do vetor de movimento a 1, para evitar que movimentos na diagonal sejam mais rapidos
-		Vector2 movementVector = Vector2.ClampMagnitude(rawMovementVector, 1);
-		// Escala o vetor de acordo com a velocidade do player e o tempo desde o ultimo frame
-		movementVector *= playerSpeed * Time.fixedDeltaTime;
-		// Aplica a movimentacao
-		rb.MovePosition(rb.position + movementVector);
-		
-	}
-
-	// Evento ativado pelo InputSystem para movimentacao
-	public void onMovement(InputAction.CallbackContext value)
+	/// Evento ativado pelo InputSystem para movimentacao
+	public void onMovement(InputAction.CallbackContext context)
 	{
 		// Le o vetor de movimento bruto passado pelo InputSystem
-		rawMovementVector = value.ReadValue<Vector2>();
+		Vector2 rawMovementVector = context.ReadValue<Vector2>();
+		pMovementBehaviour.UpdateMovementVec(rawMovementVector);
 	}
 
-	public void UpdateSpeed()
+	/// Evento ativado pelo InputSystem para ataques basicos
+	public void onAttack(InputAction.CallbackContext context)
 	{
-		playerSpeed = GetComponent<CharStats>().getSpeed();
+		// Peculiaridades do InputSystem :)
+		if (!context.ReadValueAsButton() || context.performed) return;
+
+		pAttackBehaviour.BasicAttack();
+	}
+
+	public void UpdateStats()
+	{
+		pMovementBehaviour.SetUp();
+		pAttackBehaviour.SetUp();
 	}
 }

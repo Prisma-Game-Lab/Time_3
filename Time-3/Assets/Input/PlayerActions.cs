@@ -49,6 +49,14 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""BasicAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""457f2828-5a26-4244-af22-429a555a9444"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -183,6 +191,17 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""action"": ""Hero 1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a37ebfa6-9aba-461f-a5cd-dfc4b061974c"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": ""Press"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BasicAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -195,6 +214,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         m_PlayerControls_Hero1 = m_PlayerControls.FindAction("Hero 1", throwIfNotFound: true);
         m_PlayerControls_Hero2 = m_PlayerControls.FindAction("Hero 2", throwIfNotFound: true);
         m_PlayerControls_Hero3 = m_PlayerControls.FindAction("Hero 3", throwIfNotFound: true);
+        m_PlayerControls_BasicAttack = m_PlayerControls.FindAction("BasicAttack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -248,6 +268,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerControls_Hero1;
     private readonly InputAction m_PlayerControls_Hero2;
     private readonly InputAction m_PlayerControls_Hero3;
+    private readonly InputAction m_PlayerControls_BasicAttack;
     public struct PlayerControlsActions
     {
         private @PlayerActions m_Wrapper;
@@ -256,6 +277,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         public InputAction @Hero1 => m_Wrapper.m_PlayerControls_Hero1;
         public InputAction @Hero2 => m_Wrapper.m_PlayerControls_Hero2;
         public InputAction @Hero3 => m_Wrapper.m_PlayerControls_Hero3;
+        public InputAction @BasicAttack => m_Wrapper.m_PlayerControls_BasicAttack;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -277,6 +299,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @Hero3.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnHero3;
                 @Hero3.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnHero3;
                 @Hero3.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnHero3;
+                @BasicAttack.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnBasicAttack;
+                @BasicAttack.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnBasicAttack;
+                @BasicAttack.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnBasicAttack;
             }
             m_Wrapper.m_PlayerControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -293,6 +318,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @Hero3.started += instance.OnHero3;
                 @Hero3.performed += instance.OnHero3;
                 @Hero3.canceled += instance.OnHero3;
+                @BasicAttack.started += instance.OnBasicAttack;
+                @BasicAttack.performed += instance.OnBasicAttack;
+                @BasicAttack.canceled += instance.OnBasicAttack;
             }
         }
     }
@@ -303,5 +331,6 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         void OnHero1(InputAction.CallbackContext context);
         void OnHero2(InputAction.CallbackContext context);
         void OnHero3(InputAction.CallbackContext context);
+        void OnBasicAttack(InputAction.CallbackContext context);
     }
 }

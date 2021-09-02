@@ -36,6 +36,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "BasicAttack",
+                    "type": "Button",
+                    "id": "457f2828-5a26-4244-af22-429a555a9444",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -168,6 +176,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Hero 1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a37ebfa6-9aba-461f-a5cd-dfc4b061974c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BasicAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

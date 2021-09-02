@@ -15,5 +15,5 @@ MonoBehaviour:
   baseHp: 10
   baseDefense: 10
   baseSpeed: 10
-  baseDamage: 10
+  baseDamage: 5
   baseSkillDmg: 10

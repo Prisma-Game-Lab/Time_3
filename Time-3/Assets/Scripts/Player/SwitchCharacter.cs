@@ -6,38 +6,41 @@ using UnityEngine.InputSystem;
 
 public class SwitchCharacter : MonoBehaviour
 {
-    [SerializeField] private CharacterBase[] Heroes;
-    private CharStats charstats;
-    private PlayerActions playerinput;
-    
-    private void Awake() {
-        playerinput = new PlayerActions();
-    }
+	[SerializeField] private CharacterBase[] Heroes;
+	private CharStats charstats;
+	private PlayerActions playerinput;
 
-    void Start()
-    {
-        charstats=GetComponent<CharStats>();
-        //Pode ser uma variável global para um personagem default/favorito
-        SwitchHero(0);
-    }
+	private void Awake() {
+		playerinput = new PlayerActions();
+	}
 
-    // Update is called once per frame
+	void Start()
+	{
+		charstats=GetComponent<CharStats>();
+		//Pode ser uma variável global para um personagem default/favorito
+		SwitchHero(0);
+	}
 
-    public void hero1(InputAction.CallbackContext context){
-        if (!context.ReadValueAsButton() || context.performed) return;
-        SwitchHero(0);
-    }
-        public void hero2(InputAction.CallbackContext context){
-        if (!context.ReadValueAsButton() || context.performed) return;
-        SwitchHero(1);
-    }
-        public void hero3(InputAction.CallbackContext context){
-        if (!context.ReadValueAsButton() || context.performed) return;
-        SwitchHero(2);
-    }
-    private void SwitchHero(int index)
-    {
-        charstats.setCharbase(Heroes[index]);
-        GetComponent<PlayerController>().UpdateSpeed();
-    }
+	// Update is called once per frame
+
+	public void hero1(InputAction.CallbackContext context){
+		if (!context.ReadValueAsButton() || context.performed) return;
+		SwitchHero(0);
+	}
+
+	public void hero2(InputAction.CallbackContext context){
+		if (!context.ReadValueAsButton() || context.performed) return;
+		SwitchHero(1);
+	}
+
+	public void hero3(InputAction.CallbackContext context){
+		if (!context.ReadValueAsButton() || context.performed) return;
+		SwitchHero(2);
+	}
+
+	private void SwitchHero(int index)
+	{
+		charstats.setCharbase(Heroes[index]);
+		GetComponent<PlayerController>().UpdateStats();
+	}
 }
