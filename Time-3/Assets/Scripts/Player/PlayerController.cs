@@ -58,22 +58,25 @@ public class PlayerController : MonoBehaviour
 	}
 
 	/// Evento ativado pelo InputSystem para movimentacao
-	public void onMovement(InputAction.CallbackContext value)
+	public void onMovement(InputAction.CallbackContext context)
 	{
 		// Le o vetor de movimento bruto passado pelo InputSystem
-		rawMovementVector = value.ReadValue<Vector2>();
+		rawMovementVector = context.ReadValue<Vector2>();
 	}
 
 	/// Evento ativado pelo InputSystem para ataques basicos
-	public void onAttack(InputAction.CallbackContext value)
+	public void onAttack(InputAction.CallbackContext context)
 	{
-		// TODO: basear em stats dos personagens?
-		float attackSpread = 0.5f;
-		float attackRange = 0.5f;
+		// Peculiaridades do InputSystem :)
+		if (!context.ReadValueAsButton() || context.performed) return;
 
 		// Cancelar ataque se estiver em cooldown, caso ao contrario definir para 1s
 		if (attackCoolDown > 0) return;
 		attackCoolDown = 1.0f;
+
+		// TODO: basear em stats dos personagens?
+		float attackSpread = 0.5f;
+		float attackRange = 0.5f;
 
 		// Calcula o ponto de ataque, em frente do personagem
 		Vector3 attackLocation = transform.position;
