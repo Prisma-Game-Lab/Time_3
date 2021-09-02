@@ -13,11 +13,14 @@ public class PlayerController : MonoBehaviour
 	private Vector2 rawMovementVector;
 	private Rigidbody2D rb;
 
+	private PlayerDirection playerDirection;
+
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
 		playerInput = GetComponent<PlayerInput>();
 		playerSpeed = GetComponent<CharStats>().getSpeed();
+		playerDirection = GetComponent<PlayerDirection>();
 	}
 
 	private void FixedUpdate()
@@ -28,6 +31,8 @@ public class PlayerController : MonoBehaviour
 		movementVector *= playerSpeed * Time.fixedDeltaTime;
 		// Aplica a movimentacao
 		rb.MovePosition(rb.position + movementVector);
+
+		playerDirection.LookAtMouse();
 	}
 
 	// Evento ativado pelo InputSystem para movimentacao
