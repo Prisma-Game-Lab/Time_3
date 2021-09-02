@@ -17,17 +17,18 @@ public class PlayerController : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D>();
 		playerInput = GetComponent<PlayerInput>();
-		playerSpeed = GetComponent<CharStats>().getSpeed();
 	}
 
 	private void FixedUpdate()
 	{
+		playerSpeed = GetComponent<CharStats>().getSpeed();
 		// Limita a magnitude do vetor de movimento a 1, para evitar que movimentos na diagonal sejam mais rapidos
 		Vector2 movementVector = Vector2.ClampMagnitude(rawMovementVector, 1);
 		// Escala o vetor de acordo com a velocidade do player e o tempo desde o ultimo frame
 		movementVector *= playerSpeed * Time.fixedDeltaTime;
 		// Aplica a movimentacao
 		rb.MovePosition(rb.position + movementVector);
+		
 	}
 
 	// Evento ativado pelo InputSystem para movimentacao

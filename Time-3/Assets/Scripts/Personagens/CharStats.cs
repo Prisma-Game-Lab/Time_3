@@ -59,6 +59,10 @@ public class CharStats : MonoBehaviour
     {
         return skillDmg;
     }
+    public CharacterBase GetCharacterBase()
+    {
+        return charBase;
+    }
 
     //Funcoes para manipular os valores das vairaveis
     public void setMaxHp(int hp)
@@ -94,6 +98,18 @@ public class CharStats : MonoBehaviour
     public void setSkillDmg(int sdmg)
     {
         skillDmg += sdmg;
+        return;
+    }
+    public void setCharbase(CharacterBase cd)
+    {
+        charBase=cd;
+        maxHp = charBase.baseHp;
+        defense = charBase.baseDefense;
+        speed = charBase.baseSpeed;
+        damage = charBase.baseDamage;
+        skillDmg = charBase.baseSkillDmg;
+        
+        curr_hp = maxHp;
         return;
     }
 
