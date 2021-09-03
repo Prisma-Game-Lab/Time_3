@@ -14,11 +14,14 @@ public class PlayerController : MonoBehaviour
 	private PlayerMovementBehaviour pMovementBehaviour;
 	private PlayerAttackBehaviour pAttackBehaviour;
 
+	private PlayerSkillBehaviour pSkillBehaviour;
+
 	private void Awake()
 	{
 		charStats = GetComponent<CharStats>();
 		pAttackBehaviour = GetComponent<PlayerAttackBehaviour>();
 		pMovementBehaviour = GetComponent<PlayerMovementBehaviour>();
+		pSkillBehaviour = GetComponent<PlayerSkillBehaviour>();
 	}
 
 	/// Evento ativado pelo InputSystem para movimentacao
