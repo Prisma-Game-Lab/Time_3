@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharStats : MonoBehaviour
 {
     [SerializeField] private CharacterBase charBase; //Referencia ao SO do personagem.
-    [SerializeField] private Skill[] skills; //Array contendo as habilidades dos personagens. -Arthur 
+    [SerializeField] private SkillBase[] skills; //Array contendo as habilidades dos personagens. -Arthur 
 
     [SerializeField] private int maxHp;
     [SerializeField] private int defense;
@@ -25,7 +25,7 @@ public class CharStats : MonoBehaviour
         speed = charBase.baseSpeed;
         damage = charBase.baseDamage;
         skillDmg = charBase.baseSkillDmg;
-
+        skills = charBase.Skills;
         curr_hp = maxHp; //Vida atual deve ser inicializada como a vida maxima. -Arthur 
     }
     
@@ -62,6 +62,16 @@ public class CharStats : MonoBehaviour
     public CharacterBase GetCharacterBase()
     {
         return charBase;
+    }
+
+    public SkillBase GetCombatSkill()
+    {
+        return skills[0];
+    }
+
+    public SkillBase GetExplorationSkill()
+    {
+        return skills[1];
     }
 
     //Funcoes para manipular os valores das vairaveis
