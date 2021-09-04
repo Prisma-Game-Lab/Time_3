@@ -41,6 +41,16 @@ public class PlayerController : MonoBehaviour
 		pAttackBehaviour.BasicAttack();
 	}
 
+	public void onCombatSkillActivation(InputAction.CallbackContext context)
+	{
+		pSkillBehaviour.ActivateSkill(charStats.GetCombatSkill());
+	}
+
+	public void onExplorationSkillActivation(InputAction.CallbackContext context)
+	{
+		pSkillBehaviour.ActivateSkill(charStats.GetExplorationSkill());
+	}
+
 	public void UpdateStats()
 	{
 		pMovementBehaviour.SetUp();

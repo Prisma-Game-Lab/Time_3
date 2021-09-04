@@ -57,6 +57,22 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""CombatSkill"",
+                    ""type"": ""Button"",
+                    ""id"": ""b42bb68b-4add-4cd4-a03d-09c5c8fdbae9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ExplorationSkill"",
+                    ""type"": ""Button"",
+                    ""id"": ""9e2f5d28-654f-4267-87d4-e2fcda2db863"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -202,6 +218,28 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""action"": ""BasicAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""149c83b7-a913-4cb6-ad43-9f076c3782c3"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CombatSkill"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c1f36132-15f4-4e83-bfdf-5809358f17e5"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ExplorationSkill"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -215,6 +253,8 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         m_PlayerControls_Hero2 = m_PlayerControls.FindAction("Hero 2", throwIfNotFound: true);
         m_PlayerControls_Hero3 = m_PlayerControls.FindAction("Hero 3", throwIfNotFound: true);
         m_PlayerControls_BasicAttack = m_PlayerControls.FindAction("BasicAttack", throwIfNotFound: true);
+        m_PlayerControls_CombatSkill = m_PlayerControls.FindAction("CombatSkill", throwIfNotFound: true);
+        m_PlayerControls_ExplorationSkill = m_PlayerControls.FindAction("ExplorationSkill", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -269,6 +309,8 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerControls_Hero2;
     private readonly InputAction m_PlayerControls_Hero3;
     private readonly InputAction m_PlayerControls_BasicAttack;
+    private readonly InputAction m_PlayerControls_CombatSkill;
+    private readonly InputAction m_PlayerControls_ExplorationSkill;
     public struct PlayerControlsActions
     {
         private @PlayerActions m_Wrapper;
@@ -278,6 +320,8 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         public InputAction @Hero2 => m_Wrapper.m_PlayerControls_Hero2;
         public InputAction @Hero3 => m_Wrapper.m_PlayerControls_Hero3;
         public InputAction @BasicAttack => m_Wrapper.m_PlayerControls_BasicAttack;
+        public InputAction @CombatSkill => m_Wrapper.m_PlayerControls_CombatSkill;
+        public InputAction @ExplorationSkill => m_Wrapper.m_PlayerControls_ExplorationSkill;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -302,6 +346,12 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @BasicAttack.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnBasicAttack;
                 @BasicAttack.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnBasicAttack;
                 @BasicAttack.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnBasicAttack;
+                @CombatSkill.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnCombatSkill;
+                @CombatSkill.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnCombatSkill;
+                @CombatSkill.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnCombatSkill;
+                @ExplorationSkill.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnExplorationSkill;
+                @ExplorationSkill.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnExplorationSkill;
+                @ExplorationSkill.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnExplorationSkill;
             }
             m_Wrapper.m_PlayerControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -321,6 +371,12 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @BasicAttack.started += instance.OnBasicAttack;
                 @BasicAttack.performed += instance.OnBasicAttack;
                 @BasicAttack.canceled += instance.OnBasicAttack;
+                @CombatSkill.started += instance.OnCombatSkill;
+                @CombatSkill.performed += instance.OnCombatSkill;
+                @CombatSkill.canceled += instance.OnCombatSkill;
+                @ExplorationSkill.started += instance.OnExplorationSkill;
+                @ExplorationSkill.performed += instance.OnExplorationSkill;
+                @ExplorationSkill.canceled += instance.OnExplorationSkill;
             }
         }
     }
@@ -332,5 +388,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         void OnHero2(InputAction.CallbackContext context);
         void OnHero3(InputAction.CallbackContext context);
         void OnBasicAttack(InputAction.CallbackContext context);
+        void OnCombatSkill(InputAction.CallbackContext context);
+        void OnExplorationSkill(InputAction.CallbackContext context);
     }
 }

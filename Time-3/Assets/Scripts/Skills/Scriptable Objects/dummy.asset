@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: dummy
   m_EditorClassIdentifier: 
   skillName: 
-  skillCD: 0
-  activeTime: 0
+  skillCD: 2
+  activeTime: 2
   state: ready
-  dummy: 0
+  dummy: 10
   increase: 10
