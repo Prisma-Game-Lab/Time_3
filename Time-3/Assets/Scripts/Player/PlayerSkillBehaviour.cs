@@ -18,9 +18,8 @@ public class PlayerSkillBehaviour : MonoBehaviour
         charStats = GetComponent<CharStats>();
     }
 
-    private void Start() 
+    public void SetUp()
     {
-        //Iniciando os vetores
         skills[0] = charStats.GetCombatSkill();
         skills[1] = charStats.GetExplorationSkill();
 
@@ -29,6 +28,12 @@ public class PlayerSkillBehaviour : MonoBehaviour
             cooldowns[i] = skills[i].skillCD;
             activeTimes[i] = skills[i].activeTime;
         }
+    }
+    
+    private void Start() 
+    {
+        //Iniciando os vetores
+        SetUp();
     }
 
     private void Update() 
@@ -72,4 +77,6 @@ public class PlayerSkillBehaviour : MonoBehaviour
             activeTimes[System.Array.IndexOf(skills, skill)] = skill.activeTime;
         }
     }
+
+
 }

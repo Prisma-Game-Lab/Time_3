@@ -45,5 +45,6 @@ public class PlayerController : MonoBehaviour
 	{
 		pMovementBehaviour.SetUp();
 		pAttackBehaviour.SetUp();
+		pSkillBehaviour.SetUp();
 	}
 }
