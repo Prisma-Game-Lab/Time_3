@@ -5,62 +5,102 @@ using UnityEngine;
 public class PlayerSkillBehaviour : MonoBehaviour
 {
     private CharStats charStats;
-    public SkillBase[] skills;
-    private float[] cooldown;
-    private float[] activeTime;
+    public SkillBase Cskill;
+    public SkillBase Eskill;
+    private float Ccooldown;
+    private float Ecooldown;
+
+    private float CactiveTime;
+    private float EactiveTime;
+    
 
     private void Awake() 
     {
         charStats = GetComponent<CharStats>();
-        skills[0] = charStats.GetCombatSkill();
-        skills[1] = charStats.GetExplorationSkill();
-
-        for(int i = 0; i < 2; i++)
-        {
-            cooldown[i] = skills[i].skillCD;
-            activeTime[i] = skills[i].activeTime;
-        }
     }
+
+    private void Start() 
+    {
+        Cskill = charStats.GetCombatSkill();
+        Eskill = charStats.GetExplorationSkill();
+
+        Ecooldown = Eskill.skillCD;
+        EactiveTime = Eskill.activeTime;
+
+        Ccooldown = Cskill.skillCD;
+        CactiveTime = Cskill.activeTime;
+    }
+
     private void Update() 
     {
-        foreach(SkillBase skill in skills)
+        switch(Cskill.state)
         {
-            int index = System.Array.IndexOf(skills, skill);
-            switch(skill.state)
-            {
-                case "active":
-                    if(activeTime[index] > 0)
-                    {
-                        activeTime[index] -= Time.deltaTime;
-                    }
-                    else
-                    {
-                        skill.state = "cooldown";
-                        cooldown[index] = skill.skillCD;
-                    }
-                break;
-                case "cooldown":
-                    if(cooldown[index] > 0)
-                    {
-                        cooldown[index] -= Time.deltaTime;
-                    }
-                    else
-                    {
-                        skill.state = "ready";
-                        activeTime[index] = skill.activeTime;
-                    }
-                break;
-            }
+            case "active":
+                if(CactiveTime > 0)
+                {
+                    CactiveTime -= Time.deltaTime;
+                }
+                else
+                {
+                    Cskill.state = "cooldown";
+                    Ccooldown = Cskill.skillCD;
+                }
+            break;
+            case "cooldown":
+                if(Ccooldown > 0)
+                {
+                    Ccooldown -= Time.deltaTime;
+                }
+                else
+                {
+                    Cskill.state = "ready";
+                }
+            break;
         }
 
+        switch(Eskill.state)
+        {
+            case "active":
+                if(EactiveTime > 0)
+                {
+                    EactiveTime -= Time.deltaTime;
+                }
+                else
+                {
+                    Eskill.state = "cooldown";
+                    Ecooldown = Eskill.skillCD;
+                }
+            break;
+            case "cooldown":
+                if(Ecooldown > 0)
+                {
+                    Ecooldown -= Time.deltaTime;
+                }
+                else
+                {
+                    Eskill.state = "ready";
+                }
+            break;
+        }
     }
 
-    public void ActivateSkill(SkillBase skill)
+    public void ActivateCombatSkill()
     {
-        if(skill.state == "ready")
+        if(Cskill.state == "ready")
         {
-            skill.TriggerSkill(gameObject);
-            skill.state = "active";
+            Cskill.TriggerSkill(gameObject);
+            Cskill.state = "active";
+            CactiveTime = Cskill.activeTime;
+        }
+    }
+
+    public void ActivateExplorationSkill()
+    {
+        if(Eskill.state == "ready")
+        {
+            Eskill.TriggerSkill(gameObject);
+            Eskill.state = "active";
+            EactiveTime = Eskill.activeTime;
         }
     }
 }
