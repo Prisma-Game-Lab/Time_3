@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 753007746737276240}
   - component: {fileID: 753007746737276243}
-  - component: {fileID: -8103551804250158344}
-  - component: {fileID: -8142652782390897531}
   - component: {fileID: -8424445902061140320}
+  - component: {fileID: -8103551804250158344}
+  - component: {fileID: -8039194156086180348}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -85,37 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-8103551804250158344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753007746737276242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf87d1ff9ec084948b760da57d3f8843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charBase: {fileID: 11400000, guid: ce836564d987df36daaad5aa6a472b1a, type: 2}
-  skills: []
-  maxHp: 0
-  defense: 0
-  speed: 0
-  damage: 0
-  skillDmg: 0
---- !u!114 &-8142652782390897531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753007746737276242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cdf1d2b677567536912558898ae3d54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &-8424445902061140320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,3 +111,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-8103551804250158344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753007746737276242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf87d1ff9ec084948b760da57d3f8843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charBase: {fileID: 11400000, guid: ce836564d987df36daaad5aa6a472b1a, type: 2}
+  skills: []
+  maxHp: 0
+  defense: 0
+  speed: 0
+  damage: 0
+  skillDmg: 0
+--- !u!114 &-8039194156086180348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753007746737276242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708e6fab44183c61c9c57b09f8e95bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

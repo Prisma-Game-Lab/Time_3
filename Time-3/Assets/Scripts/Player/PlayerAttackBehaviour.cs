@@ -25,7 +25,7 @@ public class PlayerAttackBehaviour : MonoBehaviour
 
 	private void Start()
 	{
-		basicAttackDamage = charStats.getDamage();
+		SetUp();
 	}
 
 	private void Update()
@@ -53,14 +53,13 @@ public class PlayerAttackBehaviour : MonoBehaviour
 		attackLocation += transform.right * attackRange; // Em 2D, no eixo usado, "frete" eh transform.right
 
 		// Lista de objetos dentro do range de ataque
-		Collider2D[] damage = Physics2D.OverlapCircleAll(attackLocation, attackSpread, damageableLayerMask);
+		Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread, damageableLayerMask);
 
 		// Ataca os objetos atacaveis detectados.
-		// TODO: Fazer implementacao generica de objetos atacaveis
-		foreach (var item in damage) {
-			DummyController dummy = item.GetComponent<DummyController>();
-			if (dummy) {
-				dummy.ApplyDamage(basicAttackDamage);
+		foreach (var entity in damageables) {
+			IDamageable<int> damageable = entity.GetComponent<IDamageable<int>>();
+			if (damageable != null) {
+				damageable.ApplyDamage(basicAttackDamage);
 			}
 		}
 
