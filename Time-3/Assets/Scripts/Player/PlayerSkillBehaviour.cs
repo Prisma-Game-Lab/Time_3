@@ -5,13 +5,12 @@ using UnityEngine;
 public class PlayerSkillBehaviour : MonoBehaviour
 {
     private CharStats charStats;
-    public SkillBase Cskill;
-    public SkillBase Eskill;
-    private float Ccooldown;
-    private float Ecooldown;
 
-    private float CactiveTime;
-    private float EactiveTime;
+    //Os vetores abaixo irao conter informacoes pertinentes para a manipulacao das habilidades -Arthur 
+    public SkillBase[] skills = new SkillBase[2];
+    private float[] cooldowns = new float[2];
+
+    private float[] activeTimes = new float[2];
     
 
     private void Awake() 
@@ -21,86 +20,56 @@ public class PlayerSkillBehaviour : MonoBehaviour
 
     private void Start() 
     {
-        Cskill = charStats.GetCombatSkill();
-        Eskill = charStats.GetExplorationSkill();
+        //Iniciando os vetores
+        skills[0] = charStats.GetCombatSkill();
+        skills[1] = charStats.GetExplorationSkill();
 
-        Ecooldown = Eskill.skillCD;
-        EactiveTime = Eskill.activeTime;
-
-        Ccooldown = Cskill.skillCD;
-        CactiveTime = Cskill.activeTime;
+        for(int i = 0; i < 2; i++)
+        {
+            cooldowns[i] = skills[i].skillCD;
+            activeTimes[i] = skills[i].activeTime;
+        }
     }
 
     private void Update() 
     {
-        switch(Cskill.state)
+        foreach(SkillBase skill in skills)
         {
-            case "active":
-                if(CactiveTime > 0)
-                {
-                    CactiveTime -= Time.deltaTime;
-                }
-                else
-                {
-                    Cskill.state = "cooldown";
-                    Ccooldown = Cskill.skillCD;
-                }
-            break;
-            case "cooldown":
-                if(Ccooldown > 0)
-                {
-                    Ccooldown -= Time.deltaTime;
-                }
-                else
-                {
-                    Cskill.state = "ready";
-                }
-            break;
-        }
-
-        switch(Eskill.state)
-        {
-            case "active":
-                if(EactiveTime > 0)
-                {
-                    EactiveTime -= Time.deltaTime;
-                }
-                else
-                {
-                    Eskill.state = "cooldown";
-                    Ecooldown = Eskill.skillCD;
-                }
-            break;
-            case "cooldown":
-                if(Ecooldown > 0)
-                {
-                    Ecooldown -= Time.deltaTime;
-                }
-                else
-                {
-                    Eskill.state = "ready";
-                }
-            break;
+            int index = System.Array.IndexOf(skills, skill);
+            switch(skill.state)
+            {
+                case "active":
+                    if(activeTimes[index] > 0)
+                    {
+                        activeTimes[index] -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        skill.state = "cooldown";
+                        cooldowns[index] = skill.skillCD;
+                    }
+                break;
+                case "cooldown":
+                    if(cooldowns[index] > 0)
+                    {
+                        cooldowns[index] -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        skill.state = "ready";
+                    }
+                break;
+            }
         }
     }
 
-    public void ActivateCombatSkill()
+    public void ActivateSkill(SkillBase skill)
     {
-        if(Cskill.state == "ready")
+        if(skill.state == "ready")
         {
-            Cskill.TriggerSkill(gameObject);
-            Cskill.state = "active";
-            CactiveTime = Cskill.activeTime;
-        }
-    }
-
-    public void ActivateExplorationSkill()
-    {
-        if(Eskill.state == "ready")
-        {
-            Eskill.TriggerSkill(gameObject);
-            Eskill.state = "active";
-            EactiveTime = Eskill.activeTime;
+            skill.TriggerSkill(gameObject);
+            skill.state = "active";
+            activeTimes[System.Array.IndexOf(skills, skill)] = skill.activeTime;
         }
     }
 }

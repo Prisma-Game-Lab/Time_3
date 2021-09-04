@@ -307,4 +307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa11c06185a81db40a157715c6917e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skills: []
+  skills:
+  - {fileID: 0}
+  - {fileID: 0}
