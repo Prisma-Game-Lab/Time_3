@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HostileMovementBehaviour : MonoBehaviour
 {
-	[SerializeField] private float rotSmooth = 5.0f;
+	[SerializeField] private float rotationSpeed = 5.0f;
 
 	private CharStats charStats;
 
@@ -19,11 +19,23 @@ public class HostileMovementBehaviour : MonoBehaviour
 		targetDir = transform.rotation;
 	}
 
+	public void setRotSpeed(float rotationSpeed)
+	{
+		if (speed >= 0) {
+			this.rotationSpeed = rotationSpeed;
+		}
+	}
+
+	public float getRotSpeed()
+	{
+		return rotationSpeed;
+	}
+
 	public void UpdateMovement()
 	{
 		speed = charStats.getSpeed();
 		transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-		transform.rotation = Quaternion.Lerp(transform.rotation, targetDir, rotSmooth * Time.deltaTime);
+		transform.rotation = Quaternion.Lerp(transform.rotation, targetDir, rotationSpeed * Time.deltaTime);
 	}
 
 	public void MoveTo(Vector3 dest) => targetPos = dest;

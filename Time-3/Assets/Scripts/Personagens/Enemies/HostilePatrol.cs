@@ -19,11 +19,12 @@ public class HostilePatrol : MonoBehaviour
 
 	private void Start()
 	{
-		SetUpPatrol();
+		StartPatrol();
 	}
 
-	public void SetUpPatrol()
+	public void StartPatrol()
 	{
+		movBehaviour.setRotSpeed(5.0f);
 		targetPos = waypoints[targetWayPoint].position;
 		remainWatchTime = watchTime;
 		lookTime = -1;

@@ -7,25 +7,47 @@ public class HostileAI : MonoBehaviour
 
 	private HostileVision vision;
 	private HostilePatrol patrolBehaviour;
+	private HostilePersuit persuitBehaviour;
 
-	private enum State {PATROL, PERSUIT, SEARCH, FIGHT};
+	private enum State {PATROL, PERSUIT, SEARCH};
 
 	private State currState = State.PATROL;
+
+	private State CurrState
+	{
+		get {return currState; }
+		set {
+			switch (value) {
+				case State.PATROL:
+					patrolBehaviour.StartPatrol();
+					break;
+				case State.PERSUIT:
+					persuitBehaviour.StartPersuit();
+					break;
+				case State.SEARCH:
+					break;
+			}
+
+			currState = value;
+		}
+	}
+
 	private float searchTime;
 
 	private void Awake()
 	{
 		vision = GetComponent<HostileVision>();
 		patrolBehaviour = GetComponent<HostilePatrol>();
+		persuitBehaviour = GetComponent<HostilePersuit>();
 		searchTime = maxSearchTime;
 	}
 
 	private void Update()
 	{
-		switch (currState) {
+		switch (CurrState) {
 			case State.PATROL:
 				if (vision.isPlayerVisible()) {
-					currState = State.PERSUIT;
+					CurrState = State.PERSUIT;
 				} else {
 					patrolBehaviour.Patrol();
 				}
@@ -33,30 +55,25 @@ public class HostileAI : MonoBehaviour
 
 			case State.PERSUIT:
 				if (vision.isPlayerVisible()) {
-					// TODO: Persuit movement
-					// TODO: if in range, FIGHT
+					persuitBehaviour.Persuit();
+					// TODO: if player defeated, PATROL
 				} else {
-					currState = State.SEARCH;
+					CurrState = State.SEARCH;
 				}
 				break;
 
 			case State.SEARCH:
 				// TODO: Search movement
 				if (vision.isPlayerVisible()) {
-					currState = State.PERSUIT;
+					CurrState = State.PERSUIT;
 				} else {
 					if (searchTime <= 0) {
-						currState = State.PATROL;
+						CurrState = State.PATROL;
 						searchTime = maxSearchTime;
 					} else {
 						searchTime -= Time.deltaTime;
 					}
 				}
-				break;
-
-			case State.FIGHT:
-				// TODO: Fight
-				// TODO: if player defeated, PATROL
 				break;
 		}
 	}
