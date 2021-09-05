@@ -2,24 +2,32 @@ using UnityEngine;
 
 public class HostileAI : MonoBehaviour
 {
+	// TODO: basear em status?
+	[SerializeField] private float maxSearchTime = 10.0f;
+
+	private HostileVision vision;
+	private HostilePatrol patrolBehaviour;
+
 	private enum State {PATROL, PERSUIT, SEARCH, FIGHT};
 
 	private State currState = State.PATROL;
-
-	private HostileVision vision;
+	private float searchTime;
 
 	private void Awake()
 	{
 		vision = GetComponent<HostileVision>();
+		patrolBehaviour = GetComponent<HostilePatrol>();
+		searchTime = maxSearchTime;
 	}
 
 	private void Update()
 	{
 		switch (currState) {
 			case State.PATROL:
-				// TODO: Patrol movement
 				if (vision.isPlayerVisible()) {
 					currState = State.PERSUIT;
+				} else {
+					patrolBehaviour.Patrol();
 				}
 				break;
 
@@ -37,7 +45,12 @@ public class HostileAI : MonoBehaviour
 				if (vision.isPlayerVisible()) {
 					currState = State.PERSUIT;
 				} else {
-					// TODO: if time ellapsed, PATROL
+					if (searchTime <= 0) {
+						currState = State.PATROL;
+						searchTime = maxSearchTime;
+					} else {
+						searchTime -= Time.deltaTime;
+					}
 				}
 				break;
 
