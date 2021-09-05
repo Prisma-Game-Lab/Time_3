@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseHp: 20
   baseDefense: 10
-  baseSpeed: 0
-  baseDamage: 0
+  baseSpeed: 5
+  baseDamage: 5
   baseSkillDmg: 0
+  Skills: []
