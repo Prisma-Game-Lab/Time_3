@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -7907995844563715146}
   - component: {fileID: 4896025847141132941}
   - component: {fileID: 8319570175893601283}
+  - component: {fileID: -3056583251029926445}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -173,6 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387ae4926f05b55b1b25f308f5b557de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSearchTime: 10
 --- !u!114 &4896025847141132941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad29e87426d85b3b9cbe4a1e6962abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  watchTime: 5
   waypoints: []
 --- !u!114 &8319570175893601283
 MonoBehaviour:
@@ -198,3 +202,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e305f6c4a711141fb975e960fdccb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3056583251029926445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753007746737276242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944ffd2df2993325483ec28a2f167c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
