@@ -54,6 +54,8 @@ public class HostilePatrol : MonoBehaviour
 			movBehaviour.MoveTo(targetPos);
 			movBehaviour.Face(targetPos);
 		}
+
+		movBehaviour.UpdateMovement();
 	}
 
 }

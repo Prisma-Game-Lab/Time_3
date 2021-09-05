@@ -19,7 +19,7 @@ public class HostileMovementBehaviour : MonoBehaviour
 		targetDir = transform.rotation;
 	}
 
-	private void Update()
+	public void UpdateMovement()
 	{
 		speed = charStats.getSpeed();
 		transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
