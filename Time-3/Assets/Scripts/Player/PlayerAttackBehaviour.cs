@@ -4,7 +4,6 @@ public class PlayerAttackBehaviour : MonoBehaviour
 {
 	private CharStats charStats;
 
-	private LayerMask damageableLayerMask;
 	private float basicAttackCooldown = 0.0f;
 
 	[SerializeField] private int basicAttackDamage = 1;
@@ -20,7 +19,6 @@ public class PlayerAttackBehaviour : MonoBehaviour
 	private void Awake()
 	{
 		charStats = GetComponent<CharStats>();
-		damageableLayerMask = LayerMask.GetMask("Damageable");
 	}
 
 	private void Start()
@@ -53,7 +51,7 @@ public class PlayerAttackBehaviour : MonoBehaviour
 		attackLocation += transform.right * attackRange; // Em 2D, no eixo usado, "frete" eh transform.right
 
 		// Lista de objetos dentro do range de ataque
-		Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread, damageableLayerMask);
+		Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread);
 
 		// Ataca os objetos atacaveis detectados.
 		foreach (var entity in damageables) {
