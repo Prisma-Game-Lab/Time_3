@@ -11,6 +11,8 @@ public class PlayerAttackBehaviour : MonoBehaviour
 	// TODO: se basear nos stats do personagem?
 	[SerializeField] private float basicAttackCooldownValue = 1.0f;
 
+	private LayerMask attackLayerMask;
+
 	public void SetUp()
 	{
 		basicAttackDamage = charStats.getDamage();
@@ -19,6 +21,7 @@ public class PlayerAttackBehaviour : MonoBehaviour
 	private void Awake()
 	{
 		charStats = GetComponent<CharStats>();
+		attackLayerMask = ~(1 << gameObject.layer);
 	}
 
 	private void Start()
@@ -51,7 +54,7 @@ public class PlayerAttackBehaviour : MonoBehaviour
 		attackLocation += transform.right * attackRange; // Em 2D, no eixo usado, "frete" eh transform.right
 
 		// Lista de objetos dentro do range de ataque
-		Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread);
+		Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread, attackLayerMask);
 
 		// Ataca os objetos atacaveis detectados.
 		foreach (var entity in damageables) {

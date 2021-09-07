@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharStats))]
 [RequireComponent(typeof(PlayerAttackBehaviour))]
 [RequireComponent(typeof(PlayerMovementBehaviour))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamageable<int>
 {
 	private CharStats charStats;
 
@@ -22,6 +22,32 @@ public class PlayerController : MonoBehaviour
 		pAttackBehaviour = GetComponent<PlayerAttackBehaviour>();
 		pMovementBehaviour = GetComponent<PlayerMovementBehaviour>();
 		pSkillBehaviour = GetComponent<PlayerSkillBehaviour>();
+	}
+
+	public void Die()
+	{
+		// TODO: Animacao de morte
+		// TODO: Respawn/Restart
+	}
+
+	public void Heal()
+	{
+		charStats.setCurHp(charStats.getMaxHp() - charStats.getCurHp());
+	}
+
+	public void ApplyHealing(int healing)
+	{
+		charStats.setCurHp(healing);
+	}
+
+	public bool ApplyDamage(int damage)
+	{
+		charStats.setCurHp(-damage);
+		if (charStats.getCurHp() <= 0) {
+			return true;
+		}
+
+		return false;
 	}
 
 	/// Evento ativado pelo InputSystem para movimentacao
