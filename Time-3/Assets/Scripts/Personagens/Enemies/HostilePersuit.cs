@@ -3,6 +3,7 @@ using UnityEngine;
 public class HostilePersuit : MonoBehaviour
 {
 	private HostileMovementBehaviour movBehaviour;
+	private BasicAttackBehaviour hAttackBehaviour;
 
 	// TODO: Basear em stats de ataque/personagem
 	[SerializeField] private float attackRange = 1.5f;
@@ -10,7 +11,12 @@ public class HostilePersuit : MonoBehaviour
 	// TODO: Passar alvo de forma menos fixa
 	[SerializeField] private Transform target;
 
-	private void Awake() => movBehaviour = GetComponent<HostileMovementBehaviour>();
+	private void Awake()
+	{
+		movBehaviour = GetComponent<HostileMovementBehaviour>();
+		hAttackBehaviour = GetComponent<BasicAttackBehaviour>();
+	}
+
 	private void Start() => target = GameObject.FindWithTag("Player").transform;
 
 	public void StartPersuit()
@@ -21,8 +27,8 @@ public class HostilePersuit : MonoBehaviour
 	public void Persuit()
 	{
 		if (targetInRange()) {
-			// TODO: if in range, FIGHT
 			movBehaviour.MoveTo(transform.position);
+			hAttackBehaviour.BasicAttack();
 		} else {
 			movBehaviour.MoveTo(target.position);
 		}

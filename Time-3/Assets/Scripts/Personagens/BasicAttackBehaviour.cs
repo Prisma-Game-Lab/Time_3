@@ -1,10 +1,8 @@
 using UnityEngine;
 
-public class PlayerAttackBehaviour : MonoBehaviour
+public class BasicAttackBehaviour : MonoBehaviour
 {
 	private CharStats charStats;
-
-	private float basicAttackCooldown = 0.0f;
 
 	[SerializeField] private int basicAttackDamage = 1;
 
@@ -12,6 +10,7 @@ public class PlayerAttackBehaviour : MonoBehaviour
 	[SerializeField] private float basicAttackCooldownValue = 1.0f;
 
 	private LayerMask attackLayerMask;
+	private float basicAttackCooldown = 0.0f;
 
 	public void SetUp()
 	{
@@ -32,7 +31,7 @@ public class PlayerAttackBehaviour : MonoBehaviour
 	private void Update()
 	{
 		// Basic Attack cooldown
-		// TODO: generalizar cooldown?
+		// TODO: generalizar cooldown? Corotina?
 		basicAttackCooldown -= Time.deltaTime;
 		if (basicAttackCooldown < 0)
 			basicAttackCooldown = 0;

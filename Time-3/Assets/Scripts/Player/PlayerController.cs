@@ -5,21 +5,21 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(CharStats))]
-[RequireComponent(typeof(PlayerAttackBehaviour))]
 [RequireComponent(typeof(PlayerMovementBehaviour))]
+[RequireComponent(typeof(BasicAttackBehaviour))]
 public class PlayerController : MonoBehaviour, IDamageable<int>
 {
 	private CharStats charStats;
 
 	private PlayerMovementBehaviour pMovementBehaviour;
-	private PlayerAttackBehaviour pAttackBehaviour;
+	private BasicAttackBehaviour pAttackBehaviour;
 
 	private PlayerSkillBehaviour pSkillBehaviour;
 
 	private void Awake()
 	{
 		charStats = GetComponent<CharStats>();
-		pAttackBehaviour = GetComponent<PlayerAttackBehaviour>();
+		pAttackBehaviour = GetComponent<BasicAttackBehaviour>();
 		pMovementBehaviour = GetComponent<PlayerMovementBehaviour>();
 		pSkillBehaviour = GetComponent<PlayerSkillBehaviour>();
 	}
@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	{
 		// TODO: Animacao de morte
 		// TODO: Respawn/Restart
+		Debug.Log("Player morreu!");
+		charStats.setCurHp(charStats.getMaxHp());
 	}
 
 	public void Heal()
@@ -44,6 +46,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	{
 		charStats.setCurHp(-damage);
 		if (charStats.getCurHp() <= 0) {
+			Die();
 			return true;
 		}
 

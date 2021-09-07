@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 1127788260091999043}
   - component: {fileID: 1127788260091999042}
   - component: {fileID: 1127788260091999045}
-  - component: {fileID: 1127788260091999164}
   - component: {fileID: 1127788260091999165}
   - component: {fileID: 837072746}
   - component: {fileID: 7140165390546446362}
+  - component: {fileID: 3499131546170121351}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -311,20 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc3bd5a1ebbfa9a4a17ce50c3748608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1127788260091999164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127788260091999044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd3e0baa6ededfb769d23b7fa77fadf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  basicAttackDamage: 1
-  basicAttackCooldownValue: 1
 --- !u!114 &1127788260091999165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,3 +355,17 @@ MonoBehaviour:
   skills:
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &3499131546170121351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127788260091999044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e015888812a0660d994703f294dbeb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicAttackDamage: 1
+  basicAttackCooldownValue: 1
