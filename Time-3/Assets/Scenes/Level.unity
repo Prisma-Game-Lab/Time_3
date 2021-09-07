@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -236,39 +236,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottomRooms:
-  - {fileID: 6881576647354633014, guid: 134b7bec18711c44e8d0c5bdae792348, type: 3}
-  - {fileID: 2216191464468919861, guid: 645db766ffb824241a8cdfb703e1020c, type: 3}
-  - {fileID: 6272005290540616258, guid: 4d9f15b90f8791649abbfd782ef37d20, type: 3}
-  - {fileID: 2906253326312848945, guid: ad99f9ee2f3bbaf4da4b905cfc7cd395, type: 3}
-  - {fileID: 4620560481794250908, guid: 328f7731522e8d847870e38bf79b9628, type: 3}
-  - {fileID: 3703601915224251723, guid: 4235098e785aabe4ebc6ea06f31b9c49, type: 3}
-  - {fileID: 2990358713013084469, guid: 8de73b0ca34441242b0c31d90abc6b21, type: 3}
+  - {fileID: 2389133232942639319, guid: 134b7bec18711c44e8d0c5bdae792348, type: 3}
+  - {fileID: 4596972734374808145, guid: 645db766ffb824241a8cdfb703e1020c, type: 3}
+  - {fileID: 8127972269276182838, guid: 4d9f15b90f8791649abbfd782ef37d20, type: 3}
+  - {fileID: 9078530738461201390, guid: ad99f9ee2f3bbaf4da4b905cfc7cd395, type: 3}
+  - {fileID: 3576097994258222491, guid: 328f7731522e8d847870e38bf79b9628, type: 3}
+  - {fileID: 5072392816689914827, guid: 8de73b0ca34441242b0c31d90abc6b21, type: 3}
+  - {fileID: 2004006099835172775, guid: c0e2a2901364cda4c91ae92c34e27e21, type: 3}
   topRooms:
-  - {fileID: 4408476180022518361, guid: c3b703a505ecc1a44b65cad15b85f911, type: 3}
-  - {fileID: 4620560481794250908, guid: 328f7731522e8d847870e38bf79b9628, type: 3}
-  - {fileID: 3703601915224251723, guid: 4235098e785aabe4ebc6ea06f31b9c49, type: 3}
-  - {fileID: 7587392967455067194, guid: 900be7167c2441745b37e57e3fac01b1, type: 3}
-  - {fileID: 2990358713013084469, guid: 8de73b0ca34441242b0c31d90abc6b21, type: 3}
-  - {fileID: 3400804773979503811, guid: 3aab97adbc317d645b31d870a47bb086, type: 3}
-  - {fileID: 7653622417732580976, guid: 3d8bd1e04a379024b9833fdfcd0e8a54, type: 3}
+  - {fileID: 3953956173868545123, guid: c3b703a505ecc1a44b65cad15b85f911, type: 3}
+  - {fileID: 3576097994258222491, guid: 328f7731522e8d847870e38bf79b9628, type: 3}
+  - {fileID: 4049643578773370995, guid: 900be7167c2441745b37e57e3fac01b1, type: 3}
+  - {fileID: 5072392816689914827, guid: 8de73b0ca34441242b0c31d90abc6b21, type: 3}
+  - {fileID: 8324820708390918111, guid: 3aab97adbc317d645b31d870a47bb086, type: 3}
+  - {fileID: 6289098582192808907, guid: 3d8bd1e04a379024b9833fdfcd0e8a54, type: 3}
+  - {fileID: 2004006099835172775, guid: c0e2a2901364cda4c91ae92c34e27e21, type: 3}
   leftRooms:
-  - {fileID: 3120683716800314263, guid: 28e6686c9fc0ec545b9feb1e7e1a08b3, type: 3}
-  - {fileID: 6272005290540616258, guid: 4d9f15b90f8791649abbfd782ef37d20, type: 3}
-  - {fileID: 2906253326312848945, guid: ad99f9ee2f3bbaf4da4b905cfc7cd395, type: 3}
-  - {fileID: 5383519429117328587, guid: 10bc6fb8fd6b3b34e9ad892757e0113a, type: 3}
-  - {fileID: 7587392967455067194, guid: 900be7167c2441745b37e57e3fac01b1, type: 3}
-  - {fileID: 3400804773979503811, guid: 3aab97adbc317d645b31d870a47bb086, type: 3}
-  - {fileID: 2990358713013084469, guid: 8de73b0ca34441242b0c31d90abc6b21, type: 3}
+  - {fileID: 8078211119307519920, guid: 28e6686c9fc0ec545b9feb1e7e1a08b3, type: 3}
+  - {fileID: 8127972269276182838, guid: 4d9f15b90f8791649abbfd782ef37d20, type: 3}
+  - {fileID: 9078530738461201390, guid: ad99f9ee2f3bbaf4da4b905cfc7cd395, type: 3}
+  - {fileID: 6662727295248653394, guid: 10bc6fb8fd6b3b34e9ad892757e0113a, type: 3}
+  - {fileID: 4049643578773370995, guid: 900be7167c2441745b37e57e3fac01b1, type: 3}
+  - {fileID: 5072392816689914827, guid: 8de73b0ca34441242b0c31d90abc6b21, type: 3}
+  - {fileID: 8324820708390918111, guid: 3aab97adbc317d645b31d870a47bb086, type: 3}
   rightRooms:
-  - {fileID: 2216191464468919861, guid: 645db766ffb824241a8cdfb703e1020c, type: 3}
-  - {fileID: 2906253326312848945, guid: ad99f9ee2f3bbaf4da4b905cfc7cd395, type: 3}
-  - {fileID: 5383519429117328587, guid: 10bc6fb8fd6b3b34e9ad892757e0113a, type: 3}
-  - {fileID: 2055764621345001534, guid: 9be971d9f20757843ae8d5ab3790ac75, type: 3}
-  - {fileID: 3703601915224251723, guid: 4235098e785aabe4ebc6ea06f31b9c49, type: 3}
-  - {fileID: 7653622417732580976, guid: 3d8bd1e04a379024b9833fdfcd0e8a54, type: 3}
-  - {fileID: 3400804773979503811, guid: 3aab97adbc317d645b31d870a47bb086, type: 3}
+  - {fileID: 4596972734374808145, guid: 645db766ffb824241a8cdfb703e1020c, type: 3}
+  - {fileID: 9078530738461201390, guid: ad99f9ee2f3bbaf4da4b905cfc7cd395, type: 3}
+  - {fileID: 6662727295248653394, guid: 10bc6fb8fd6b3b34e9ad892757e0113a, type: 3}
+  - {fileID: 5754027628727470817, guid: 9be971d9f20757843ae8d5ab3790ac75, type: 3}
+  - {fileID: 6289098582192808907, guid: 3d8bd1e04a379024b9833fdfcd0e8a54, type: 3}
+  - {fileID: 2004006099835172775, guid: c0e2a2901364cda4c91ae92c34e27e21, type: 3}
+  - {fileID: 8324820708390918111, guid: 3aab97adbc317d645b31d870a47bb086, type: 3}
   maxRooms: 30
-  minRooms: 2
+  minRooms: 20
   totalRooms: 0
   rand: 0
 --- !u!4 &1663190917
