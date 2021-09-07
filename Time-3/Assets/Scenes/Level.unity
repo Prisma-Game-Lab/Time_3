@@ -267,7 +267,7 @@ MonoBehaviour:
   - {fileID: 3703601915224251723, guid: 4235098e785aabe4ebc6ea06f31b9c49, type: 3}
   - {fileID: 7653622417732580976, guid: 3d8bd1e04a379024b9833fdfcd0e8a54, type: 3}
   - {fileID: 3400804773979503811, guid: 3aab97adbc317d645b31d870a47bb086, type: 3}
-  maxRooms: 10
+  maxRooms: 30
   minRooms: 2
   totalRooms: 0
   rand: 0
