@@ -48,6 +48,11 @@ public class RoomSpawner : MonoBehaviour
             spawned = true;
             templates.totalRooms++;
         } 
+        else if(!spawned)
+        {
+            gameObject.transform.parent.parent.GetChild(2).GetChild(openingDirection - 1).GetChild(0).gameObject.SetActive(true);
+            spawned = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
