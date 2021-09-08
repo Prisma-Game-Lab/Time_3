@@ -14,7 +14,7 @@ public class BasicAttackBehaviour : MonoBehaviour
 
 	public void SetUp()
 	{
-		basicAttackDamage = charStats.getDamage();
+		basicAttackDamage = charStats.GetDamage();
 	}
 
 	private void Awake()

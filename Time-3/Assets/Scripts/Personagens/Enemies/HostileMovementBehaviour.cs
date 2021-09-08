@@ -14,7 +14,7 @@ public class HostileMovementBehaviour : MonoBehaviour
 
 	private void Start()
 	{
-		speed = charStats.getSpeed();
+		speed = charStats.GetSpeed();
 		targetPos = transform.position;
 		targetDir = transform.rotation;
 	}
@@ -33,7 +33,7 @@ public class HostileMovementBehaviour : MonoBehaviour
 
 	public void UpdateMovement()
 	{
-		speed = charStats.getSpeed();
+		speed = charStats.GetSpeed();
 		transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 		transform.rotation = Quaternion.Lerp(transform.rotation, targetDir, rotationSpeed * Time.deltaTime);
 	}

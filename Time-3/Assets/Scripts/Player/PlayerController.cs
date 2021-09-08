@@ -29,23 +29,23 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 		// TODO: Animacao de morte
 		// TODO: Respawn/Restart
 		Debug.Log("Player morreu!");
-		charStats.setCurHp(charStats.getMaxHp());
+		Heal();
 	}
 
 	public void Heal()
 	{
-		charStats.setCurHp(charStats.getMaxHp() - charStats.getCurHp());
+		charStats.SetCurrHp(charStats.GetMaxHp());
 	}
 
 	public void ApplyHealing(int healing)
 	{
-		charStats.setCurHp(healing);
+		charStats.IncCurrHp(healing);
 	}
 
 	public bool ApplyDamage(int damage)
 	{
-		charStats.setCurHp(-damage);
-		if (charStats.getCurHp() <= 0) {
+		charStats.IncCurrHp(-damage);
+		if (charStats.GetCurrHp() <= 0) {
 			Die();
 			return true;
 		}

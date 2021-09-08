@@ -12,7 +12,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
 	public void SetUp()
 	{
-		playerSpeed = charStats.getSpeed();
+		playerSpeed = charStats.GetSpeed();
 	}
 
 	private void Awake()
@@ -23,7 +23,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
 	public void Start()
 	{
-		playerSpeed = charStats.getSpeed();
+		playerSpeed = charStats.GetSpeed();
 	}
 
 	private void FixedUpdate()
