@@ -12,20 +12,20 @@ public class HostileController : MonoBehaviour, IDamageable<int>
 
 	public void Heal()
 	{
-		charStats.setCurHp(charStats.getMaxHp() - charStats.getMaxHp());
+		charStats.SetCurrHp(charStats.GetMaxHp());
 	}
 
 	public void ApplyHealing(int healing)
 	{
-		charStats.setCurHp(healing);
+		charStats.IncCurrHp(healing);
 	}
 
 	public bool ApplyDamage(int damage)
 	{
 		// TODO: Animacao de dano?
 
-		charStats.setCurHp(-damage);
-		if (charStats.getCurHp() < 1) {
+		charStats.IncCurrHp(-damage);
+		if (charStats.GetCurrHp() <= 0) {
 			Die();
 			return true;
 		}

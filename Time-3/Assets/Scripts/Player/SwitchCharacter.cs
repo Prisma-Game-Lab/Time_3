@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class SwitchCharacter : MonoBehaviour
 {
 	[SerializeField] private CharacterBase[] Heroes;
-	private CharStats charstats;
+	private CharStats charStats;
 	private PlayerActions playerinput;
 
 	private void Awake() {
@@ -16,7 +16,7 @@ public class SwitchCharacter : MonoBehaviour
 
 	void Start()
 	{
-		charstats=GetComponent<CharStats>();
+		charStats = GetComponent<CharStats>();
 		//Pode ser uma variável global para um personagem default/favorito
 		SwitchHero(0);
 	}
@@ -40,7 +40,7 @@ public class SwitchCharacter : MonoBehaviour
 
 	private void SwitchHero(int index)
 	{
-		charstats.setCharbase(Heroes[index]);
+		charStats.SetCharbase(Heroes[index]);
 		GetComponent<PlayerController>().UpdateStats();
 	}
 }

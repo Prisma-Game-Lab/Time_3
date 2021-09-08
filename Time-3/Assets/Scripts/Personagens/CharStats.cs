@@ -1,126 +1,128 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CharStats : MonoBehaviour
 {
-    [SerializeField] private CharacterBase charBase; //Referencia ao SO do personagem.
-    [SerializeField] private SkillBase[] skills; //Array contendo as habilidades dos personagens. -Arthur 
+	[SerializeField] private CharacterBase charBase; //Referencia ao SO do personagem.
+	[SerializeField] private SkillBase[] skills; //Array contendo as habilidades dos personagens. -Arthur
 
-    [SerializeField] private int maxHp;
-    [SerializeField] private int defense;
-    [SerializeField] private float speed;
-    [SerializeField] private int damage;
-    [SerializeField] private int skillDmg;
+	[SerializeField] private int maxHp;
+	[SerializeField] private int defense;
+	[SerializeField] private float speed;
+	[SerializeField] private int damage;
+	[SerializeField] private int skillDmg;
 
-    private int curr_hp;
+	private int currHp;
 
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        //Status definidos a partir do SO. -Arthur
-        maxHp = charBase.baseHp;
-        defense = charBase.baseDefense;
-        speed = charBase.baseSpeed;
-        damage = charBase.baseDamage;
-        skillDmg = charBase.baseSkillDmg;
-        skills = charBase.Skills;
-        curr_hp = maxHp; //Vida atual deve ser inicializada como a vida maxima. -Arthur 
-    }
-    
-    //Funcoes para obter os valores das variaveis
-    public int getMaxHp()
-    {
-        return maxHp;
-    }
+	// Start is called before the first frame update
+	private void Awake()
+	{
+		//Status definidos a partir do SO. -Arthur
+		maxHp = charBase.baseHp;
+		defense = charBase.baseDefense;
+		speed = charBase.baseSpeed;
+		damage = charBase.baseDamage;
+		skillDmg = charBase.baseSkillDmg;
+		skills = charBase.Skills;
+		currHp = maxHp; //Vida atual deve ser inicializada como a vida maxima. -Arthur
+	}
 
-    public int getCurHp()
-    {
-        return curr_hp;
-    }
+	//Funcoes para obter os valores das variaveis
+	public int GetMaxHp() => maxHp;
+	public int GetCurrHp() => currHp;
+	public int GetDefense() => defense;
+	public float GetSpeed() => speed;
+	public int GetDamage() => damage;
+	public int GetSkillDmg() => skillDmg;
+	public CharacterBase GetCharacterBase() => charBase;
+	public SkillBase GetCombatSkill() => skills[0];
+	public SkillBase GetExplorationSkill() => skills[1];
 
-    public int getDefense()
-    {
-        return defense;
-    }
 
-    public float getSpeed()
-    {
-        return speed;
-    }
+	//Funcoes para redefinir os valores das variaveis
+	public void SetCurrHp(int currHp)
+	{
+		if (currHp < 0)
+			this.currHp = 0;
+		else {
+			if (currHp > maxHp)
+				this.currHp = maxHp;
+			else
+				this.currHp = currHp;
+		}
+	}
 
-    public int getDamage()
-    {
-        return damage;
-    }
+	public void SetMaxHp(int maxHp) => this.maxHp = maxHp < 0 ? 0 : maxHp;
+	public void SetDefense(int defense) => this.defense = defense < 0 ? 0 : defense;
+	public void SetSpeed(int speed) => this.speed = speed < 0 ? 0 : speed;
+	public void SetDamage(int damage) => this.damage = damage < 0 ? 0 : damage;
+	public void SetSkillDmg(int skillDmg) => this.skillDmg = skillDmg < 0 ? 0 : skillDmg;
 
-    public int getSkillDmg()
-    {
-        return skillDmg;
-    }
-    public CharacterBase GetCharacterBase()
-    {
-        return charBase;
-    }
 
-    public SkillBase GetCombatSkill()
-    {
-        return skills[0];
-    }
+	//Funcoes para manipular os valores das variaveis
+	public void IncMaxHp(int maxHp)
+	{
+		this.maxHp += maxHp;
+		if (this.maxHp < 0)
+			this.maxHp = 0;
 
-    public SkillBase GetExplorationSkill()
-    {
-        return skills[1];
-    }
+		if (currHp > this.maxHp)
+			currHp = this.maxHp;
+	}
 
-    //Funcoes para manipular os valores das vairaveis
-    public void setMaxHp(int hp)
-    {
-        maxHp += hp;
-        return;
-    }
+	public void IncCurrHp(int currHp)
+	{
+		this.currHp += currHp;
 
-    public void setCurHp(int hp)
-    {
-        curr_hp += hp;
-        return;
-    }
+		if (this.currHp < 0)
+			this.currHp = 0;
+		else if (this.currHp > maxHp)
+			this.currHp = maxHp;
+	}
 
-    public void setDefense(int def)
-    {
-        defense += def;
-        return;
-    }
+	public void IncDefense(int defense)
+	{
+		this.defense += defense;
 
-    public void setSpeed(int spd)
-    {
-        speed += spd;
-        return;
-    }
+		if (this.defense < 0)
+			this.defense = 0;
+	}
 
-    public void setDamage(int dmg)
-    {
-        damage += dmg;
-        return;
-    }
+	public void IncSpeed(int speed)
+	{
+		this.speed += speed;
 
-    public void setSkillDmg(int sdmg)
-    {
-        skillDmg += sdmg;
-        return;
-    }
-    public void setCharbase(CharacterBase cd)
-    {
-        charBase=cd;
-        maxHp = charBase.baseHp;
-        defense = charBase.baseDefense;
-        speed = charBase.baseSpeed;
-        damage = charBase.baseDamage;
-        skillDmg = charBase.baseSkillDmg;
-        
-        curr_hp = maxHp;
-        return;
-    }
+		if (this.speed < 0)
+			this.speed = 0;
+	}
+
+	public void IncDamage(int damage)
+	{
+		this.damage += damage;
+
+		if (this.damage < 0)
+			this.damage = 0;
+	}
+
+	public void IncSkillDmg(int skillDmg)
+	{
+		this.skillDmg += skillDmg;
+
+		if (this.skillDmg < 0)
+			this.skillDmg = 0;
+	}
+
+
+	public void SetCharbase(CharacterBase cd)
+	{
+		charBase = cd;
+		maxHp = charBase.baseHp;
+		defense = charBase.baseDefense;
+		speed = charBase.baseSpeed;
+		damage = charBase.baseDamage;
+		skillDmg = charBase.baseSkillDmg;
+
+		currHp = maxHp;
+	}
 
 }

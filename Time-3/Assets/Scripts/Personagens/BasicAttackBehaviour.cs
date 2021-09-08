@@ -1,24 +1,26 @@
 using UnityEngine;
 
-public class PlayerAttackBehaviour : MonoBehaviour
+public class BasicAttackBehaviour : MonoBehaviour
 {
 	private CharStats charStats;
-
-	private float basicAttackCooldown = 0.0f;
 
 	[SerializeField] private int basicAttackDamage = 1;
 
 	// TODO: se basear nos stats do personagem?
 	[SerializeField] private float basicAttackCooldownValue = 1.0f;
 
+	private LayerMask attackLayerMask;
+	private float basicAttackCooldown = 0.0f;
+
 	public void SetUp()
 	{
-		basicAttackDamage = charStats.getDamage();
+		basicAttackDamage = charStats.GetDamage();
 	}
 
 	private void Awake()
 	{
 		charStats = GetComponent<CharStats>();
+		attackLayerMask = ~(1 << gameObject.layer);
 	}
 
 	private void Start()
@@ -29,7 +31,7 @@ public class PlayerAttackBehaviour : MonoBehaviour
 	private void Update()
 	{
 		// Basic Attack cooldown
-		// TODO: generalizar cooldown?
+		// TODO: generalizar cooldown? Corotina?
 		basicAttackCooldown -= Time.deltaTime;
 		if (basicAttackCooldown < 0)
 			basicAttackCooldown = 0;
@@ -51,7 +53,7 @@ public class PlayerAttackBehaviour : MonoBehaviour
 		attackLocation += transform.right * attackRange; // Em 2D, no eixo usado, "frete" eh transform.right
 
 		// Lista de objetos dentro do range de ataque
-		Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread);
+		Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread, attackLayerMask);
 
 		// Ataca os objetos atacaveis detectados.
 		foreach (var entity in damageables) {

@@ -5,23 +5,52 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(CharStats))]
-[RequireComponent(typeof(PlayerAttackBehaviour))]
 [RequireComponent(typeof(PlayerMovementBehaviour))]
-public class PlayerController : MonoBehaviour
+[RequireComponent(typeof(BasicAttackBehaviour))]
+public class PlayerController : MonoBehaviour, IDamageable<int>
 {
 	private CharStats charStats;
 
 	private PlayerMovementBehaviour pMovementBehaviour;
-	private PlayerAttackBehaviour pAttackBehaviour;
+	private BasicAttackBehaviour pAttackBehaviour;
 
 	private PlayerSkillBehaviour pSkillBehaviour;
 
 	private void Awake()
 	{
 		charStats = GetComponent<CharStats>();
-		pAttackBehaviour = GetComponent<PlayerAttackBehaviour>();
+		pAttackBehaviour = GetComponent<BasicAttackBehaviour>();
 		pMovementBehaviour = GetComponent<PlayerMovementBehaviour>();
 		pSkillBehaviour = GetComponent<PlayerSkillBehaviour>();
+	}
+
+	public void Die()
+	{
+		// TODO: Animacao de morte
+		// TODO: Respawn/Restart
+		Debug.Log("Player morreu!");
+		Heal();
+	}
+
+	public void Heal()
+	{
+		charStats.SetCurrHp(charStats.GetMaxHp());
+	}
+
+	public void ApplyHealing(int healing)
+	{
+		charStats.IncCurrHp(healing);
+	}
+
+	public bool ApplyDamage(int damage)
+	{
+		charStats.IncCurrHp(-damage);
+		if (charStats.GetCurrHp() <= 0) {
+			Die();
+			return true;
+		}
+
+		return false;
 	}
 
 	/// Evento ativado pelo InputSystem para movimentacao
