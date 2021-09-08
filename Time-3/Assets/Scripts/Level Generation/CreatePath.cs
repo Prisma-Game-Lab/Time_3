@@ -8,7 +8,6 @@ public class CreatePath : MonoBehaviour
     {
         if(other.CompareTag("Path") && transform.GetChild(0).gameObject.activeSelf == false)
         {
-            Debug.Log("entrou aqui");
             int rand = Random.Range(0, 2);
             if(rand == 0)
             {

@@ -6,9 +6,11 @@ public class RoomSpawner : MonoBehaviour
 {
     public int openingDirection; // 1 = down, 2 = up, 3 = left, 4 = right -Arthur 
     public bool spawned = false;
+    public bool isOverlaping = false;
 
     private RoomTemplates templates;
     private int rand;
+    private int overlapIndex = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -53,13 +55,55 @@ public class RoomSpawner : MonoBehaviour
             gameObject.transform.parent.parent.GetChild(2).GetChild(openingDirection - 1).GetChild(0).gameObject.SetActive(true);
             spawned = true;
         }
+        else if(isOverlaping)
+        {
+            GameObject closedRoom = Instantiate(templates.closedRoom, transform.position, templates.closedRoom.transform.rotation);
+            if(openingDirection == 1)
+            {
+                closedRoom.transform.GetChild(1).GetChild(1).GetChild(0).gameObject.SetActive(false);
+            }
+            else if(openingDirection == 2)
+            {
+                closedRoom.transform.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(false);
+            }
+            else if(openingDirection == 3)
+            {
+                closedRoom.transform.GetChild(1).GetChild(3).GetChild(0).gameObject.SetActive(false);
+            }
+            else if(openingDirection == 4)
+            {
+                closedRoom.transform.GetChild(1).GetChild(2).GetChild(0).gameObject.SetActive(false);
+            }
+
+            if(overlapIndex == 1)
+            {
+                closedRoom.transform.GetChild(1).GetChild(1).GetChild(0).gameObject.SetActive(false);
+            }
+            else if(overlapIndex == 2)
+            {
+                closedRoom.transform.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(false);
+            }
+            else if(overlapIndex == 3)
+            {
+                closedRoom.transform.GetChild(1).GetChild(3).GetChild(0).gameObject.SetActive(false);
+            }
+            else if(overlapIndex == 4)
+            {
+                closedRoom.transform.GetChild(1).GetChild(2).GetChild(0).gameObject.SetActive(false);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.CompareTag("Spawnpoint"))
+        if(other.CompareTag("Spawnpoint") && other.GetComponent<Destroyer>() == null)
         {
-            Destroy(gameObject);
+            if(other.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            {
+                isOverlaping = true;
+                overlapIndex = other.GetComponent<RoomSpawner>().openingDirection;
+            }
+            spawned = true;
         }
     }
 }
