@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class CharStats : MonoBehaviour
 {
-	[SerializeField] private CharacterBase charBase; //Referencia ao SO do personagem.
-	[SerializeField] private SkillBase[] skills; //Array contendo as habilidades dos personagens. -Arthur
+	[SerializeField] protected CharacterBase charBase; //Referencia ao SO do personagem.
 
+	[SerializeField] private SkillBase[] skills; //Array contendo as habilidades dos personagens. -Arthur
 	[SerializeField] private int maxHp;
 	[SerializeField] private int defense;
 	[SerializeField] private float speed;
@@ -15,7 +15,7 @@ public class CharStats : MonoBehaviour
 
 
 	// Start is called before the first frame update
-	private void Awake()
+	protected virtual void Awake()
 	{
 		//Status definidos a partir do SO. -Arthur
 		maxHp = charBase.baseHp;
