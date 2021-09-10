@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 753007746737276240}
   - component: {fileID: 753007746737276243}
   - component: {fileID: -8424445902061140320}
-  - component: {fileID: -8103551804250158344}
+  - component: {fileID: 4336057141321990735}
   - component: {fileID: -8039194156086180348}
   - component: {fileID: -6461965835467028260}
   - component: {fileID: -7907995844563715146}
@@ -118,7 +118,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-8103551804250158344
+--- !u!114 &4336057141321990735
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 753007746737276242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf87d1ff9ec084948b760da57d3f8843, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d05648e7778a595ca849d39f67a6788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charBase: {fileID: 11400000, guid: 096517ea414f50643a3e3a2ab5deb589, type: 2}
@@ -137,6 +137,7 @@ MonoBehaviour:
   speed: 0
   damage: 0
   skillDmg: 0
+  dropValue: 0
 --- !u!114 &-8039194156086180348
 MonoBehaviour:
   m_ObjectHideFlags: 0
