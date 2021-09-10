@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerInventoryBehaviour : MonoBehaviour
 {
-	private float credits = 0.0f;
+	[SerializeField] private float credits = 0.0f;
 
 	public float GetCredits() => credits;
 
