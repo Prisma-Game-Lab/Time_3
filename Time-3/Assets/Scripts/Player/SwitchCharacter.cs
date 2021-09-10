@@ -10,13 +10,17 @@ public class SwitchCharacter : MonoBehaviour
 	private CharStats charStats;
 	private PlayerActions playerinput;
 
+	private SpriteRenderer renderer;
+
 	private void Awake() {
 		playerinput = new PlayerActions();
+		renderer = GetComponent<SpriteRenderer>();
 	}
 
 	void Start()
 	{
 		charStats = GetComponent<CharStats>();
+		renderer.sprite = charStats.GetCharacterBase().sprite;
 		//Pode ser uma variável global para um personagem default/favorito
 		SwitchHero(0);
 	}
@@ -41,6 +45,7 @@ public class SwitchCharacter : MonoBehaviour
 	private void SwitchHero(int index)
 	{
 		charStats.SetCharbase(Heroes[index]);
+		renderer.sprite = charStats.GetCharacterBase().sprite;
 		GetComponent<PlayerController>().UpdateStats();
 	}
 }
