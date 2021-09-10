@@ -18,4 +18,6 @@ public class CharacterBase : ScriptableObject
     public int baseSkillDmg;
 
     public SkillBase[] Skills;
+    public Sprite sprite;
+
 }
