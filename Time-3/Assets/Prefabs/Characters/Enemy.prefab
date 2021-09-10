@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf87d1ff9ec084948b760da57d3f8843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charBase: {fileID: 11400000, guid: ce836564d987df36daaad5aa6a472b1a, type: 2}
+  charBase: {fileID: 11400000, guid: 096517ea414f50643a3e3a2ab5deb589, type: 2}
   skills: []
   maxHp: 0
   defense: 0
