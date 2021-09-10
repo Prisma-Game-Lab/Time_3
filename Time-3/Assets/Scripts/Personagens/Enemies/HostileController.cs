@@ -1,31 +1,33 @@
 using UnityEngine;
 
-[RequireComponent(typeof(CharStats))]
+[RequireComponent(typeof(HostileStats))]
 public class HostileController : MonoBehaviour, IDamageable<int>
 {
-	private CharStats charStats;
+	private HostileStats hostileStats;
+	private GameObject player;
 
 	private void Awake()
 	{
-		charStats = GetComponent<CharStats>();
+		hostileStats = GetComponent<HostileStats>();
+		player = GameObject.FindWithTag("Player");
 	}
 
 	public void Heal()
 	{
-		charStats.SetCurrHp(charStats.GetMaxHp());
+		hostileStats.SetCurrHp(hostileStats.GetMaxHp());
 	}
 
 	public void ApplyHealing(int healing)
 	{
-		charStats.IncCurrHp(healing);
+		hostileStats.IncCurrHp(healing);
 	}
 
 	public bool ApplyDamage(int damage)
 	{
 		// TODO: Animacao de dano?
 
-		charStats.IncCurrHp(-damage);
-		if (charStats.GetCurrHp() <= 0) {
+		hostileStats.IncCurrHp(-damage);
+		if (hostileStats.GetCurrHp() <= 0) {
 			Die();
 			return true;
 		}
@@ -35,8 +37,9 @@ public class HostileController : MonoBehaviour, IDamageable<int>
 
 	public void Die()
 	{
-		// TODO: Drop drops (balas)
 		// TODO: animacao de morte?
+
+		player.GetComponent<PlayerInventoryBehaviour>().IncCredits(hostileStats.GetDropValue());
 
 		Destroy(this.gameObject);
 	}

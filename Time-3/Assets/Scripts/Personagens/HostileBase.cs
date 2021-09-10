@@ -4,5 +4,5 @@ using UnityEngine;
 public class HostileBase : CharacterBase
 {
 	[Header("Atributos do Inimigo")]
-	public int dropValue;
+	public float dropValue;
 }
