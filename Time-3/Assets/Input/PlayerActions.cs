@@ -73,6 +73,14 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""bb9dc7b8-ecfd-4070-b7ca-cd33eadcb582"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -221,8 +229,30 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""ef57cbf9-da07-4965-a513-a17ea74c9cbd"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BasicAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""149c83b7-a913-4cb6-ad43-9f076c3782c3"",
                     ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CombatSkill"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""014d7e1f-da22-459f-bda6-834fbf330aa5"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -240,6 +270,39 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""action"": ""ExplorationSkill"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ed6e101c-b0ac-4623-8a1b-49cb900a5359"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ExplorationSkill"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f936d2db-9014-4f1a-874c-a0d4f8d5e11b"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""34c4783e-2ed2-4989-b3e7-69017a842e31"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -255,6 +318,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         m_PlayerControls_BasicAttack = m_PlayerControls.FindAction("BasicAttack", throwIfNotFound: true);
         m_PlayerControls_CombatSkill = m_PlayerControls.FindAction("CombatSkill", throwIfNotFound: true);
         m_PlayerControls_ExplorationSkill = m_PlayerControls.FindAction("ExplorationSkill", throwIfNotFound: true);
+        m_PlayerControls_Interact = m_PlayerControls.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -311,6 +375,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerControls_BasicAttack;
     private readonly InputAction m_PlayerControls_CombatSkill;
     private readonly InputAction m_PlayerControls_ExplorationSkill;
+    private readonly InputAction m_PlayerControls_Interact;
     public struct PlayerControlsActions
     {
         private @PlayerActions m_Wrapper;
@@ -322,6 +387,7 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         public InputAction @BasicAttack => m_Wrapper.m_PlayerControls_BasicAttack;
         public InputAction @CombatSkill => m_Wrapper.m_PlayerControls_CombatSkill;
         public InputAction @ExplorationSkill => m_Wrapper.m_PlayerControls_ExplorationSkill;
+        public InputAction @Interact => m_Wrapper.m_PlayerControls_Interact;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -352,6 +418,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @ExplorationSkill.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnExplorationSkill;
                 @ExplorationSkill.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnExplorationSkill;
                 @ExplorationSkill.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnExplorationSkill;
+                @Interact.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_PlayerControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -377,6 +446,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @ExplorationSkill.started += instance.OnExplorationSkill;
                 @ExplorationSkill.performed += instance.OnExplorationSkill;
                 @ExplorationSkill.canceled += instance.OnExplorationSkill;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -390,5 +462,6 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         void OnBasicAttack(InputAction.CallbackContext context);
         void OnCombatSkill(InputAction.CallbackContext context);
         void OnExplorationSkill(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }

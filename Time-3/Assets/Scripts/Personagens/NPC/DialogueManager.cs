@@ -9,11 +9,14 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Animator animator;
     private Queue<string> sentences;
+    public GameObject player;
     void Start() {
         sentences = new Queue<string>();
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        Debug.Log("aaa");
+        player.GetComponent<PlayerMovementBehaviour>().enabled = false;
         animator.SetBool("IsOpen",true);
         
         nameText.text = dialogue.name;
@@ -45,6 +48,8 @@ public class DialogueManager : MonoBehaviour
 
     }
     void EndDialogue(){
+        player.GetComponent<PlayerMovementBehaviour>().enabled = true;
         animator.SetBool("IsOpen",false);
+        player.GetComponent<PlayerInteraction>().DisableDialogue();
     }
 }
