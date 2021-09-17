@@ -8,6 +8,7 @@ public class HostileAI : MonoBehaviour
 	private HostileVision vision;
 	private HostilePatrol patrolBehaviour;
 	private HostilePersuit persuitBehaviour;
+	private HostileSearch searchBehaviour;
 
 	private enum State {PATROL, PERSUIT, SEARCH};
 
@@ -39,6 +40,7 @@ public class HostileAI : MonoBehaviour
 		vision = GetComponent<HostileVision>();
 		patrolBehaviour = GetComponent<HostilePatrol>();
 		persuitBehaviour = GetComponent<HostilePersuit>();
+		searchBehaviour = GetComponent<HostileSearch>();
 		searchTime = maxSearchTime;
 	}
 
@@ -63,10 +65,10 @@ public class HostileAI : MonoBehaviour
 				break;
 
 			case State.SEARCH:
-				// TODO: Search movement
 				if (vision.isPlayerVisible()) {
 					CurrState = State.PERSUIT;
 				} else {
+					searchBehaviour.Search();
 					if (searchTime <= 0) {
 						CurrState = State.PATROL;
 						searchTime = maxSearchTime;

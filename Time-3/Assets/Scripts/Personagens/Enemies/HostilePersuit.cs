@@ -33,7 +33,6 @@ public class HostilePersuit : MonoBehaviour
 			movBehaviour.MoveTo(target.position);
 		}
 		movBehaviour.Face(target.position);
-		movBehaviour.UpdateMovement();
 	}
 
 	private bool targetInRange()

@@ -1,15 +1,23 @@
 using UnityEngine;
 
 [RequireComponent(typeof(HostileStats))]
+[RequireComponent(typeof(HostileMovementBehaviour))]
 public class HostileController : MonoBehaviour, IDamageable<int>
 {
 	private HostileStats hostileStats;
 	private GameObject player;
+	private HostileMovementBehaviour movementBehaviour;
 
 	private void Awake()
 	{
 		hostileStats = GetComponent<HostileStats>();
 		player = GameObject.FindWithTag("Player");
+		movementBehaviour = GetComponent<HostileMovementBehaviour>();
+	}
+
+	private void FixedUpdate()
+	{
+		movementBehaviour.UpdateMovement();
 	}
 
 	public void Heal()
