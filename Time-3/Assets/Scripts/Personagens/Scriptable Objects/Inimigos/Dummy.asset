@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861edbd1b0ad52e96a26e16470f82d92, type: 3}
   m_Name: Dummy
   m_EditorClassIdentifier: 
-  baseHp: 0
+  baseHp: 10
   baseDefense: 0
-  baseSpeed: 0
-  baseDamage: 0
+  baseSpeed: 5
+  baseDamage: 5
   baseSkillDmg: 0
   Skills: []
+  sprite: {fileID: 0}
   dropValue: 0
