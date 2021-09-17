@@ -10,10 +10,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour, IDamageable<int>
 {
 	private CharStats charStats;
-
 	private PlayerMovementBehaviour pMovementBehaviour;
 	private BasicAttackBehaviour pAttackBehaviour;
-
 	private PlayerSkillBehaviour pSkillBehaviour;
 
 	private void Awake()

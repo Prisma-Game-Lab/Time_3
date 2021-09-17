@@ -8,6 +8,7 @@ TagManager:
   - Rooms
   - Path
   - Room
+  - NPC
   layers:
   - Default
   - TransparentFX
