@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    public SpriteRenderer sprite;
     public Animator animator;
     private Queue<string> sentences;
     public GameObject player;
@@ -15,7 +16,6 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("aaa");
         player.GetComponent<PlayerMovementBehaviour>().enabled = false;
         animator.SetBool("IsOpen",true);
         
