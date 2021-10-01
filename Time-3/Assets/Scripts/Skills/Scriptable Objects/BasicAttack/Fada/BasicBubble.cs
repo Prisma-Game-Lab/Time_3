@@ -12,6 +12,7 @@ public class BasicBubble : SkillBase
 
     public override void TriggerSkill()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         Instantiate(bubblePrefab, player.transform.position + player.transform.right, player.transform.rotation * Quaternion.Euler(0,0,-20));
         Instantiate(bubblePrefab, player.transform.position + player.transform.right, player.transform.rotation * Quaternion.Euler(0,0,0));
         Instantiate(bubblePrefab, player.transform.position + player.transform.right, player.transform.rotation * Quaternion.Euler(0,0,20));
