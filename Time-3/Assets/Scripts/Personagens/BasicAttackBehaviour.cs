@@ -4,8 +4,6 @@ public class BasicAttackBehaviour : MonoBehaviour
 {
 	private CharStats charStats;
 
-	public Vector3 attackLocation;
-
 	[SerializeField] private int basicAttackDamage = 1;
 
 	// TODO: se basear nos stats do personagem?
@@ -44,28 +42,34 @@ public class BasicAttackBehaviour : MonoBehaviour
 		// TODO: Animacao de ataque basico
 
 		// TODO: basear em stats dos personagens?
-		/*const float attackSpread = 0.5f;
-		const float attackRange = 0.5f;*/
+		const float attackSpread = 0.5f;
+		const float attackRange = 0.5f;
 
 		if (basicAttackCooldown > 0) return;
 		basicAttackCooldown = basicAttackCooldownValue;
 
 		// Calcula o ponto de ataque, em frente do personagem
-		attackLocation = transform.position;
-		attackLocation += transform.right; // Em 2D, no eixo usado, "frete" eh transform.right
+		Vector3 attackLocation = transform.position;
+		attackLocation += transform.right * attackRange; // Em 2D, no eixo usado, "frete" eh transform.right
 
-		charStats.GetBasicAttack().TriggerSkill();
+		//Idealmente esse if deve sair com todos os personagens seguindo o mesmo comportamento -Arthur
+		if(charStats.GetBasicAttack() != null)
+		{
+			charStats.GetBasicAttack().TriggerSkill();
+		}
+		else
+		{
+			// Lista de objetos dentro do range de ataque
+			Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread, attackLayerMask);
 
-		// Lista de objetos dentro do range de ataque
-		/*Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread, attackLayerMask);
-
-		// Ataca os objetos atacaveis detectados.
-		foreach (var entity in damageables) {
-			IDamageable<int> damageable = entity.GetComponent<IDamageable<int>>();
-			if (damageable != null) {
-				damageable.ApplyDamage(basicAttackDamage);
+			// Ataca os objetos atacaveis detectados.
+			foreach (var entity in damageables) {
+				IDamageable<int> damageable = entity.GetComponent<IDamageable<int>>();
+				if (damageable != null) {
+					damageable.ApplyDamage(basicAttackDamage);
+				}
 			}
-		}*/
+		}
 
 	}
 }
