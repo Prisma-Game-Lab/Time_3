@@ -27,6 +27,7 @@ public class PlayerSkillBehaviour : MonoBehaviour
         {
             cooldowns[i] = skills[i].skillCD;
             activeTimes[i] = skills[i].activeTime;
+            skills[i].state = "ready";
         }
     }
     
