@@ -23,7 +23,6 @@ public class BubbleBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        Debug.Log("entrou");
         IDamageable<int> damageable = other.gameObject.GetComponent<IDamageable<int>>();
 		if (damageable != null) 
         {
