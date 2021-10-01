@@ -24,11 +24,11 @@ public class BubbleBehaviour : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         IDamageable<int> damageable = other.gameObject.GetComponent<IDamageable<int>>();
-		if (damageable != null) 
+		if (damageable != null && other.tag == "Enemy") 
         {
 			damageable.ApplyDamage(fada.baseDamage);
 		}
-        if(other.tag != "Ignore")
+        if(other.tag != "Ignore" && other.tag != "Player")
         {
             Destroy(gameObject);   
         }
