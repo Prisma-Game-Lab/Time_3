@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4977419151602472733}
   - component: {fileID: 3833915578141994046}
   - component: {fileID: 5696558440926843565}
+  - component: {fileID: 3356608058320259091}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -246,7 +247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e015888812a0660d994703f294dbeb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackLocation: {x: 0, y: 0, z: 0}
   basicAttackDamage: 1
   basicAttackCooldownValue: 1
 --- !u!114 &5696558440926843565
@@ -262,3 +262,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+--- !u!50 &3356608058320259091
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753007746737276242}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
