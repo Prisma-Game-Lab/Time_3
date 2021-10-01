@@ -5,6 +5,7 @@ public class CharStats : MonoBehaviour
 	[SerializeField] protected CharacterBase charBase; //Referencia ao SO do personagem.
 
 	[SerializeField] private SkillBase[] skills; //Array contendo as habilidades dos personagens. -Arthur
+	[SerializeField] private SkillBase basicAttack;
 	[SerializeField] private int maxHp;
 	[SerializeField] private int defense;
 	[SerializeField] private float speed;
@@ -19,6 +20,7 @@ public class CharStats : MonoBehaviour
 	protected virtual void Awake()
 	{
 		//Status definidos a partir do SO. -Arthur
+		basicAttack = charBase.basicAttack;
 		maxHp = charBase.baseHp;
 		defense = charBase.baseDefense;
 		speed = charBase.baseSpeed;
@@ -39,6 +41,8 @@ public class CharStats : MonoBehaviour
 	public CharacterBase GetCharacterBase() => charBase;
 	public SkillBase GetCombatSkill() => skills[0];
 	public SkillBase GetExplorationSkill() => skills[1];
+
+	public SkillBase GetBasicAttack() => basicAttack;
 
 
 	//Funcoes para redefinir os valores das variaveis
@@ -124,6 +128,8 @@ public class CharStats : MonoBehaviour
 		damage = charBase.baseDamage;
 		skillDmg = charBase.baseSkillDmg;
 		current_sprite = charBase.sprite;
+		skills = charBase.Skills;
+		basicAttack = charBase.basicAttack;
 
 		currHp = maxHp;
 	}

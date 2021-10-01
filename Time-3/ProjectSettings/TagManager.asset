@@ -9,6 +9,7 @@ TagManager:
   - Path
   - Room
   - NPC
+  - Ignore
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class Dummy : SkillBase
     public int dummy = 0;
     public int increase = 10;
 
-    public override void TriggerSkill(GameObject obj)
+    public override void TriggerSkill()
     {
        if(dummy == 0)
        {

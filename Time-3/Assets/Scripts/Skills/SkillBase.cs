@@ -9,5 +9,5 @@ public abstract class SkillBase : ScriptableObject
     public float activeTime;
 
     public string state = "ready"; 
-    public abstract void TriggerSkill(GameObject obj); 
+    public abstract void TriggerSkill(); 
 }

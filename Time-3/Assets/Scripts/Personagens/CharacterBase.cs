@@ -17,6 +17,8 @@ public class CharacterBase : ScriptableObject
     [Tooltip("Dano da habilidade de combate")]
     public int baseSkillDmg;
 
+    public SkillBase basicAttack;
+    
     public SkillBase[] Skills;
     public Sprite sprite;
 

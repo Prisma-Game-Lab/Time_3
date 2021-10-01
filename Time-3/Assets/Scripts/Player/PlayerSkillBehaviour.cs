@@ -72,7 +72,7 @@ public class PlayerSkillBehaviour : MonoBehaviour
     {
         if(skill.state == "ready")
         {
-            skill.TriggerSkill(gameObject);
+            skill.TriggerSkill();
             skill.state = "active";
             activeTimes[System.Array.IndexOf(skills, skill)] = skill.activeTime;
         }

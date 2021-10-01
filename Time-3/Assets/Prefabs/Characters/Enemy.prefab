@@ -133,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charBase: {fileID: 11400000, guid: 096517ea414f50643a3e3a2ab5deb589, type: 2}
   skills: []
+  basicAttack: {fileID: 0}
   maxHp: 0
   defense: 0
   speed: 0
@@ -245,6 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e015888812a0660d994703f294dbeb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackLocation: {x: 0, y: 0, z: 0}
   basicAttackDamage: 1
   basicAttackCooldownValue: 1
 --- !u!114 &5696558440926843565
