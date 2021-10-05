@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1084199210531199933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: e87dcea25e23af82ba0f9e6914c97c85, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: d97984840c4e09f8987383045614cccb, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -70,6 +71,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a8932e7e-6887-4d30-aafd-1c3e79295f94
+    m_ActionName: PlayerControls/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6068378346321342762}
@@ -84,7 +89,119 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 02731221-ebf5-42e9-8794-e30c8d756ff8
+    m_ActionId: 750c0a03-6bc2-4df6-ad4b-4e3982f40bce
+    m_ActionName: PlayerControls/Hero 1[/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6068378346321342762}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: onTogglePause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 30e395a6-587d-48a0-8651-e8adfa172bd2
+    m_ActionName: PlayerControls/Hero 2[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6068378346321342762}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: onTogglePause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 546deadc-9a90-42c6-a668-d6884fad9a81
+    m_ActionName: PlayerControls/Hero 3[/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6068378346321342762}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: onTogglePause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 457f2828-5a26-4244-af22-429a555a9444
+    m_ActionName: PlayerControls/BasicAttack[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6068378346321342762}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: onTogglePause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b42bb68b-4add-4cd4-a03d-09c5c8fdbae9
+    m_ActionName: PlayerControls/CombatSkill[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6068378346321342762}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: onTogglePause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9e2f5d28-654f-4267-87d4-e2fcda2db863
+    m_ActionName: PlayerControls/ExplorationSkill[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6068378346321342762}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: onTogglePause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bb9dc7b8-ecfd-4070-b7ca-cd33eadcb582
+    m_ActionName: PlayerControls/Interact[/Keyboard/z]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6068378346321342762}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: onTogglePause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 59fa7bc4-616e-49b5-b9b0-a25942ffad3d
     m_ActionName: GameControls/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
