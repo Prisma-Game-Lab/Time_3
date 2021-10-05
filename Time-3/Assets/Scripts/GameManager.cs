@@ -4,22 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-	public static GameManager Instance {get; private set;}
-
 	[SerializeField] GameObject pauseMenu;
 	[SerializeField] GameObject player;
 
 	private bool paused;
-
-	private void Awake()
-	{
-		if (Instance != null && Instance != null)
-			Destroy(this);
-		else {
-			Instance = this;
-			DontDestroyOnLoad(this);
-		}
-	}
 
 	public bool IsGamePaused() => Time.timeScale == 0;
 
