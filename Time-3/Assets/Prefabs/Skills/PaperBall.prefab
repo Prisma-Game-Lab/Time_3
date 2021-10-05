@@ -135,4 +135,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: e2d8a267c7012884a9098485f9a9cf11, type: 2}
-  despawn_time: 0.3
+  despawn_time: 0.6

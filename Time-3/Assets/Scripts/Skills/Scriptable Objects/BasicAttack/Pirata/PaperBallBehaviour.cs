@@ -10,7 +10,7 @@ public class PaperBallBehaviour : MonoBehaviour
 
 	private void Init(float speed) {
 		this.speed = speed;
-		GetComponent<Rigidbody2D>().AddForce(transform.right * speed);
+		GetComponent<Rigidbody2D>().AddForce(transform.right * speed, ForceMode2D.Force);
 		StartCoroutine(Despawn());
 	}
 
