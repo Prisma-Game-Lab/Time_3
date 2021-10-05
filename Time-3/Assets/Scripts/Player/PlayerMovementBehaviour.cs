@@ -29,10 +29,6 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	private void FixedUpdate()
 	{
 		MovePlayer();
-	}
-
-	private void Update()
-	{
 		TurnPlayer();
 	}
 
