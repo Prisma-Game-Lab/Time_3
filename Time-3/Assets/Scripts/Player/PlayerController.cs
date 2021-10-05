@@ -62,10 +62,10 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	/// Evento ativado pelo InputSystem para ataques basicos
 	public void onAttack(InputAction.CallbackContext context)
 	{
-		// Peculiaridades do InputSystem :)
-		if (!context.ReadValueAsButton() || context.performed) return;
-
-		pAttackBehaviour.BasicAttack();
+		if (context.started) // Press
+			pAttackBehaviour.BasicAttack(true);
+		else if (context.canceled) // Release
+			pAttackBehaviour.BasicAttack(false);
 	}
 
 	public void onCombatSkillActivation(InputAction.CallbackContext context)

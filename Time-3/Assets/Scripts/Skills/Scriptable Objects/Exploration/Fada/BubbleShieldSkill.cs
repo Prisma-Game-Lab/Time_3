@@ -15,4 +15,9 @@ public class BubbleShieldSkill : SkillBase
         player = GameObject.FindGameObjectWithTag("Player");
         Instantiate(shieldPrefab, player.transform.position + player.transform.right, player.transform.rotation);
     }
+
+    public override void StopSkill()
+	{
+
+	}
 }

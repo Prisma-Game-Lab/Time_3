@@ -8,6 +8,7 @@ public abstract class SkillBase : ScriptableObject
     public float skillCD;
     public float activeTime;
 
-    public string state = "ready"; 
-    public abstract void TriggerSkill(); 
+    public string state = "ready";
+    public abstract void TriggerSkill();
+    public abstract void StopSkill();
 }

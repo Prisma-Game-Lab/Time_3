@@ -37,6 +37,16 @@ public class BasicAttackBehaviour : MonoBehaviour
 			basicAttackCooldown = 0;
 	}
 
+	public void BasicAttack(bool start)
+	{
+		if (charStats.GetBasicAttack() == null) return;
+
+		if (start)
+			charStats.GetBasicAttack().TriggerSkill();
+		else
+			charStats.GetBasicAttack().StopSkill();
+	}
+
 	public void BasicAttack()
 	{
 		// TODO: Animacao de ataque basico
@@ -53,21 +63,14 @@ public class BasicAttackBehaviour : MonoBehaviour
 		attackLocation += transform.right * attackRange; // Em 2D, no eixo usado, "frete" eh transform.right
 
 		//Idealmente esse if deve sair com todos os personagens seguindo o mesmo comportamento -Arthur
-		if(charStats.GetBasicAttack() != null)
-		{
-			charStats.GetBasicAttack().TriggerSkill();
-		}
-		else
-		{
-			// Lista de objetos dentro do range de ataque
-			Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread, attackLayerMask);
+		// Lista de objetos dentro do range de ataque
+		Collider2D[] damageables = Physics2D.OverlapCircleAll(attackLocation, attackSpread, attackLayerMask);
 
-			// Ataca os objetos atacaveis detectados.
-			foreach (var entity in damageables) {
-				IDamageable<int> damageable = entity.GetComponent<IDamageable<int>>();
-				if (damageable != null) {
-					damageable.ApplyDamage(basicAttackDamage);
-				}
+		// Ataca os objetos atacaveis detectados.
+		foreach (var entity in damageables) {
+			IDamageable<int> damageable = entity.GetComponent<IDamageable<int>>();
+			if (damageable != null) {
+				damageable.ApplyDamage(basicAttackDamage);
 			}
 		}
 

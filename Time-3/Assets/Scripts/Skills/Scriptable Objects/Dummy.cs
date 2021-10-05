@@ -21,4 +21,9 @@ public class Dummy : SkillBase
            Debug.Log(dummy);
        }
     }
+
+    public override void StopSkill()
+	{
+
+	}
 }
