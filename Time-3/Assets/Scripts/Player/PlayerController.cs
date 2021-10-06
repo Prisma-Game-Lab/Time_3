@@ -76,12 +76,14 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 
 	public void onCombatSkillActivation(InputAction.CallbackContext context)
 	{
-		pSkillBehaviour.ActivateSkill(charStats.GetCombatSkill());
+		if (context.started)
+			pSkillBehaviour.ActivateSkill(charStats.GetCombatSkill());
 	}
 
 	public void onExplorationSkillActivation(InputAction.CallbackContext context)
 	{
-		pSkillBehaviour.ActivateSkill(charStats.GetExplorationSkill());
+		if (context.started)
+			pSkillBehaviour.ActivateSkill(charStats.GetExplorationSkill());
 	}
 
 	public void UpdateStats()
