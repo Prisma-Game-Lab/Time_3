@@ -19,6 +19,6 @@ MonoBehaviour:
   baseSkillDmg: 0
   basicAttack: {fileID: 11400000, guid: 5a3a45eb06823a8969a3e1e8cf14b4a7, type: 2}
   Skills:
-  - {fileID: 11400000, guid: df4ac1c8065d92a4b83b226a58f17d8e, type: 2}
+  - {fileID: 11400000, guid: 5dfb0f94f49199842923a530217b01c8, type: 2}
   - {fileID: 11400000, guid: 8a72d3b50bca0e948a6dad457f40f23d, type: 2}
   sprite: {fileID: -7501778473976659587, guid: a2686447d349dce45b40f00599e3ed02, type: 3}
