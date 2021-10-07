@@ -18,8 +18,6 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	private BasicAttackBehaviour pAttackBehaviour;
 	private PlayerSkillBehaviour pSkillBehaviour;
 
-	private bool movement_lock = false;
-
 	private void Awake()
 	{
 		charStats = GetComponent<CharStats>();
@@ -60,7 +58,6 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	/// Evento ativado pelo InputSystem para movimentacao
 	public void onMovement(InputAction.CallbackContext context)
 	{
-		if (movement_lock) return;
 		// Le o vetor de movimento bruto passado pelo InputSystem
 		Vector2 rawMovementVector = context.ReadValue<Vector2>();
 		pMovementBehaviour.UpdateMovementVec(rawMovementVector);
@@ -70,11 +67,9 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	public void onAttack(InputAction.CallbackContext context)
 	{
 		if (context.started) { // Press
-			movement_lock = true;
 			pAttackBehaviour.BasicAttack(true);
 		} else if (context.canceled) { // Release
 			pAttackBehaviour.BasicAttack(false);
-			movement_lock = false;
 		}
 	}
 
