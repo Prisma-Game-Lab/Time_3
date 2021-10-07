@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovementBehaviour : MonoBehaviour
 {
+	[SerializeField] private SpriteRenderer renderer;
+
 	private CharStats charStats;
 	private Rigidbody2D rb;
 
@@ -17,7 +19,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
 	private void Awake()
 	{
-		rb = GetComponent<Rigidbody2D>();
+		rb = GetComponentInParent<Rigidbody2D>();
 		charStats = GetComponent<CharStats>();
 	}
 
@@ -77,5 +79,18 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
 		// Aplica rotacao
 		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+		if (renderer != null) {
+			if ((angle += 90) < 0) {
+				angle += 360;
+			}
+
+			if (angle >= 180) {
+				renderer.flipX = false;
+			} else {
+				renderer.flipX = true;
+			}
+		}
+
 	}
 }

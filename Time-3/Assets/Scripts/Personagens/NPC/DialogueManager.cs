@@ -16,11 +16,11 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
-        player.GetComponent<PlayerMovementBehaviour>().enabled = false;
+        player.GetComponentInChildren<PlayerMovementBehaviour>().enabled = false;
         animator.SetBool("IsOpen",true);
-        
+
         nameText.text = dialogue.name;
-        
+
         sentences.Clear();
 
         foreach (string sentenc in dialogue.sentences)
@@ -48,8 +48,8 @@ public class DialogueManager : MonoBehaviour
 
     }
     void EndDialogue(){
-        player.GetComponent<PlayerMovementBehaviour>().enabled = true;
+        player.GetComponentInChildren<PlayerMovementBehaviour>().enabled = true;
         animator.SetBool("IsOpen",false);
-        player.GetComponent<PlayerInteraction>().DisableDialogue();
+        player.GetComponentInChildren<PlayerInteraction>().DisableDialogue();
     }
 }

@@ -47,7 +47,7 @@ public class HostileController : MonoBehaviour, IDamageable<int>
 	{
 		// TODO: animacao de morte?
 
-		player.GetComponent<PlayerInventoryBehaviour>().IncCredits(hostileStats.GetDropValue());
+		player.GetComponentInChildren<PlayerInventoryBehaviour>().IncCredits(hostileStats.GetDropValue());
 
 		Destroy(this.gameObject);
 	}

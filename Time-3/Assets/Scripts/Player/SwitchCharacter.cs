@@ -7,14 +7,13 @@ using UnityEngine.InputSystem;
 public class SwitchCharacter : MonoBehaviour
 {
 	[SerializeField] private CharacterBase[] Heroes;
+	[SerializeField] private SpriteRenderer renderer;
 	private CharStats charStats;
 	private PlayerActions playerinput;
 
-	private SpriteRenderer renderer;
 
 	private void Awake() {
 		playerinput = new PlayerActions();
-		renderer = GetComponent<SpriteRenderer>();
 	}
 
 	void Start()
