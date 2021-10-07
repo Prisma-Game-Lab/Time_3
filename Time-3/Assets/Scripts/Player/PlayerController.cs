@@ -2,11 +2,15 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 //Usar RequireComponent para adicionar componentes automaticamente ao jogador -Arthur
-[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(CharStats))]
+[RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(PlayerMovementBehaviour))]
+[RequireComponent(typeof(SwitchCharacter))]
+[RequireComponent(typeof(PlayerSkillBehaviour))]
 [RequireComponent(typeof(BasicAttackBehaviour))]
+[RequireComponent(typeof(PlayerInventoryBehaviour))]
+[RequireComponent(typeof(PlayerInteraction))]
 public class PlayerController : MonoBehaviour, IDamageable<int>
 {
 	private CharStats charStats;
