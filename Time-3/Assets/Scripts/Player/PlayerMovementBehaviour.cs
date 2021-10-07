@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovementBehaviour : MonoBehaviour
 {
-	[SerializeField] private SpriteRenderer renderer;
+	[SerializeField] private SpriteRenderer spriteRenderer;
 
 	private CharStats charStats;
 	private Rigidbody2D rb;
@@ -80,15 +80,15 @@ public class PlayerMovementBehaviour : MonoBehaviour
 		// Aplica rotacao
 		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-		if (renderer != null) {
+		if (spriteRenderer != null) {
 			if ((angle += 90) < 0) {
 				angle += 360;
 			}
 
 			if (angle >= 180) {
-				renderer.flipX = false;
+				spriteRenderer.flipX = false;
 			} else {
-				renderer.flipX = true;
+				spriteRenderer.flipX = true;
 			}
 		}
 
