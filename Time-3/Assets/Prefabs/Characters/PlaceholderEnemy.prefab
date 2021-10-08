@@ -69,6 +69,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4302718248262249222}
     m_Modifications:
+    - target: {fileID: -6461965835467028260, guid: 578b219a4d3e54321b181c542531c5f2, type: 3}
+      propertyPath: ignoreMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 753007746737276240, guid: 578b219a4d3e54321b181c542531c5f2, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -953,7 +953,7 @@ GameObject:
   - component: {fileID: -8492933420207692127}
   - component: {fileID: 2590182959754883513}
   - component: {fileID: 262796330817669137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TR
   m_TagString: Ignore
   m_Icon: {fileID: 0}

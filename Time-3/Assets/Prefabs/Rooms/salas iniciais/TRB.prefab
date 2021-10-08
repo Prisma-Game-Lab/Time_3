@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: -4777116499136273886}
   - component: {fileID: 4944140371106869482}
   - component: {fileID: 3725046684189661022}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TRB
   m_TagString: Ignore
   m_Icon: {fileID: 0}

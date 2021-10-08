@@ -1613,7 +1613,7 @@ GameObject:
   - component: {fileID: 3624786149223307977}
   - component: {fileID: 4179370677440716015}
   - component: {fileID: 679588539926530358}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LR
   m_TagString: Ignore
   m_Icon: {fileID: 0}

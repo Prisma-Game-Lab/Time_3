@@ -1021,7 +1021,7 @@ GameObject:
   - component: {fileID: 440490533866411742}
   - component: {fileID: 6660793461727170995}
   - component: {fileID: -4305593877082368404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EntryRoom
   m_TagString: Ignore
   m_Icon: {fileID: 0}

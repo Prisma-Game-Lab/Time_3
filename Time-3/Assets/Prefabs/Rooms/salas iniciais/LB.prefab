@@ -1522,7 +1522,7 @@ GameObject:
   - component: {fileID: 1168744906980780681}
   - component: {fileID: 9219508886058696672}
   - component: {fileID: -4327178267233002734}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LB
   m_TagString: Ignore
   m_Icon: {fileID: 0}

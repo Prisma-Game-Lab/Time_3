@@ -1667,7 +1667,7 @@ GameObject:
   - component: {fileID: -40671804416082820}
   - component: {fileID: -5927991771149981792}
   - component: {fileID: -6977103896483002936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ClosedRoom
   m_TagString: Ignore
   m_Icon: {fileID: 0}
