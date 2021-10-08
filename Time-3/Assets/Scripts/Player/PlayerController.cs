@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 //Usar RequireComponent para adicionar componentes automaticamente ao jogador -Arthur
 [RequireComponent(typeof(PlayerInput))]
@@ -32,7 +33,8 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 		// TODO: Animacao de morte
 		// TODO: Respawn/Restart
 		Debug.Log("Player morreu!");
-		Heal();
+		Scene scene = SceneManager.GetActiveScene();
+		SceneManager.LoadScene(scene.name);
 	}
 
 	public void Heal()
@@ -78,7 +80,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	private IEnumerator Slowdown(){
 		//Velocidade do player quando usa o atque básico
 		pMovementBehaviour.SetSpeed(0.5f);
-		//Delay com essa velocidade 
+		//Delay com essa velocidade
 		yield return new WaitForSeconds(0.4f);
 	}
 	public void onCombatSkillActivation(InputAction.CallbackContext context)
