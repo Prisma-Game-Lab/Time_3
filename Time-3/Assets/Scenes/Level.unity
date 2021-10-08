@@ -288,10 +288,13 @@ MonoBehaviour:
   - {fileID: 2004006099835172775, guid: c0e2a2901364cda4c91ae92c34e27e21, type: 3}
   - {fileID: 8324820708390918111, guid: 3aab97adbc317d645b31d870a47bb086, type: 3}
   closedRoom: {fileID: 7889027470257265771, guid: 36357284f0940674d8fa8322afb05c24, type: 3}
+  rooms: []
   maxRooms: 30
   minRooms: 20
   totalRooms: 0
   rand: 0
+  waitTime: 5
+  exit: {fileID: 2535220738001516185, guid: aaee43e5a6bd81c4f933a1b92fb40af5, type: 3}
 --- !u!4 &1663190917
 Transform:
   m_ObjectHideFlags: 0
