@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
 		Time.timeScale = 0.0f;
 
 		if (player != null)
-			player.GetComponent<PlayerInput>().enabled = false;
-			//player.SetActive(false);
+			player.GetComponentInChildren<PlayerInput>().enabled = false;
 
 		if (pauseMenu != null)
 			pauseMenu.SetActive(true);
@@ -26,8 +25,7 @@ public class GameManager : MonoBehaviour
 		Time.timeScale = 1.0f;
 
 		if (player != null)
-			player.GetComponent<PlayerInput>().enabled = true;
-			//player.SetActive(true);
+			player.GetComponentInChildren<PlayerInput>().enabled = true;
 
 		if (pauseMenu != null)
 			pauseMenu.SetActive(false);
