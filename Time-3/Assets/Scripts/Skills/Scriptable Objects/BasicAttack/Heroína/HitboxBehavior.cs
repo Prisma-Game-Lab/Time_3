@@ -6,12 +6,11 @@ public class HitboxBehavior : MonoBehaviour
 {
     [SerializeField] private HeroBasicAttackBehaviour attackBase;
     [SerializeField] private CharacterBase hero;
-    public GameObject player;
+    private GameObject player;
+    [SerializeField] private CharStats charStats; 
     void Start() {
+        player = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(Despawn());
-    }
-    private void Update() {
-        //transform.position = 
     }
     private IEnumerator Despawn(){
         yield return new WaitForSeconds(attackBase.activeTime);
