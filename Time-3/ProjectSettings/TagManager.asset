@@ -10,6 +10,7 @@ TagManager:
   - Room
   - NPC
   - Ignore
+  - Enemy
   layers:
   - Default
   - TransparentFX
