@@ -8,6 +8,7 @@ public class HostileVision : MonoBehaviour
 	// TODO: base on stats
 	[SerializeField] private float fov = 90.0f;
 	[SerializeField] private float viewDistance = 3.0f;
+	[SerializeField] private LayerMask ignoreMask;
 
 	private LayerMask raycastLayers;
 
@@ -19,27 +20,29 @@ public class HostileVision : MonoBehaviour
 		}
 
 		// Ignore own mask
-		raycastLayers = ~(1 << gameObject.layer);
+		raycastLayers = ~(ignoreMask | (1 << gameObject.layer));
 
 	}
 
 	public bool isPlayerVisible()
 	{
-		Vector3 pPosition = player.transform.position;
+		Vector3 pPosition = player.GetComponentInParent<Transform>().position;
 
 		// Player within distance?
-		float distance = Vector3.Distance(pPosition, transform.position);
+		float distance = Vector2.Distance(pPosition, transform.position);
 		if (distance < viewDistance) {
 
 			// Player within fov?
-			float angle = Vector3.Angle(pPosition - transform.position, transform.right);
+			float angle = Vector2.Angle(pPosition - transform.position, transform.right);
 			if (angle < fov/2) {
+				Debug.Log("fov");
 
 				// Player visible?
 				RaycastHit2D hit = Physics2D.Raycast(
 						transform.position,
 						(pPosition - transform.position).normalized,
 						distance, raycastLayers);
+				Debug.DrawRay(transform.position, (pPosition - transform.position).normalized * distance, Color.red, 1);
 
 				if (hit.collider.tag == "Player") {
 					return true;
