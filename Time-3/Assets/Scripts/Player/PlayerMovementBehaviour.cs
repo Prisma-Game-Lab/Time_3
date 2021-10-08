@@ -27,6 +27,10 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	{
 		playerSpeed = charStats.GetSpeed();
 	}
+	//para retornar ao valor do charBase depois do ataque
+	public void ResetSpeed(){
+		playerSpeed = charStats.GetSpeed();
+	}
 
 	private void FixedUpdate()
 	{
@@ -92,5 +96,11 @@ public class PlayerMovementBehaviour : MonoBehaviour
 			}
 		}
 
+	}
+	public float GetSpeed(){
+		return playerSpeed;
+	}
+	public void SetSpeed(float n){
+		playerSpeed = n;
 	}
 }
