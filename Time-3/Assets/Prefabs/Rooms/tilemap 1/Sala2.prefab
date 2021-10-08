@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7322222546918739539, guid: 7535780c214bc4287bf2713bed54a998, type: 3}
+      propertyPath: m_SortingOrder
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7322222547233138235, guid: 7535780c214bc4287bf2713bed54a998, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 7322222547380340503, guid: 7535780c214bc4287bf2713bed54a998, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 48
@@ -769,7 +777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7322222548224387967, guid: 7535780c214bc4287bf2713bed54a998, type: 3}
       propertyPath: m_Name
-      value: Grid Variant
+      value: Sala2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7535780c214bc4287bf2713bed54a998, type: 3}
