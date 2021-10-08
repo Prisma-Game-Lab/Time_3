@@ -1520,9 +1520,11 @@ GameObject:
   - component: {fileID: 762044711858641379}
   - component: {fileID: 8828623764558944637}
   - component: {fileID: 1168744906980780681}
+  - component: {fileID: 9219508886058696672}
+  - component: {fileID: -4327178267233002734}
   m_Layer: 0
   m_Name: LB
-  m_TagString: Room
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1582,6 +1584,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 8}
   m_EdgeRadius: 0
+--- !u!114 &9219508886058696672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127972269276182838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434f835e49765fe4e95ae26acc5f38f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomObjects:
+  - {fileID: 172582905398473040, guid: 9ae68a88e977af14f963f91a23560b19, type: 3}
+  totalObjects: 2
+  spawnedObjects: []
+--- !u!114 &-4327178267233002734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127972269276182838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da59aadff0c2d0448fcee39777f47b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8211460713907664428
 GameObject:
   m_ObjectHideFlags: 0
