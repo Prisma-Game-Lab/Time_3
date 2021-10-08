@@ -17,6 +17,7 @@ MonoBehaviour:
   baseSpeed: 5
   baseDamage: 20
   baseSkillDmg: 0
+  basicAttack: {fileID: 11400000, guid: f6975e50602c86246b4cad9012ed9fcb, type: 2}
   Skills:
   - {fileID: 11400000, guid: df4ac1c8065d92a4b83b226a58f17d8e, type: 2}
   - {fileID: 11400000, guid: 8a72d3b50bca0e948a6dad457f40f23d, type: 2}

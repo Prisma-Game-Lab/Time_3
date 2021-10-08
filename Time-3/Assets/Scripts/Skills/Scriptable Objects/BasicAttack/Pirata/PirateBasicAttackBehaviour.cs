@@ -25,8 +25,7 @@ public class PirateBasicAttackBehaviour : SkillBase
 		float speed = ratio * (max_speed - min_speed) + min_speed;
 
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
-		GameObject paperBall = Instantiate(paperBallPrefab, player.transform.position,
-											player.transform.rotation) as GameObject;
+		GameObject paperBall = Instantiate(paperBallPrefab, player.transform.position,player.transform.rotation) as GameObject;
 		paperBall.SendMessage("Init", speed);
 
 		start = -1.0f;
