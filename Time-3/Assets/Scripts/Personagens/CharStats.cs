@@ -7,7 +7,7 @@ public class CharStats : MonoBehaviour
 	[SerializeField] private SkillBase[] skills; //Array contendo as habilidades dos personagens. -Arthur
 	[SerializeField] private SkillBase basicAttack;
 	[SerializeField] private int maxHp;
-	[SerializeField] private int defense;
+	[SerializeField] private float defense;
 	[SerializeField] private float speed;
 	[SerializeField] private int damage;
 	[SerializeField] private int skillDmg;
@@ -34,7 +34,7 @@ public class CharStats : MonoBehaviour
 	//Funcoes para obter os valores das variaveis
 	public int GetMaxHp() => maxHp;
 	public int GetCurrHp() => currHp;
-	public int GetDefense() => defense;
+	public float GetDefense() => defense;
 	public float GetSpeed() => speed;
 	public int GetDamage() => damage;
 	public int GetSkillDmg() => skillDmg;
@@ -58,8 +58,21 @@ public class CharStats : MonoBehaviour
 		}
 	}
 
-	public void SetMaxHp(int maxHp) => this.maxHp = maxHp < 0 ? 0 : maxHp;
-	public void SetDefense(int defense) => this.defense = defense < 0 ? 0 : defense;
+	public void SetMaxHp(int maxHp)
+	{
+		if (maxHp < 0)
+			return;
+		this.maxHp = maxHp;
+	}
+
+	public void SetDefense(float defense) => this.defense = defense < 0.0f || defense > 1.0f ? 0.0f : defense;
+	public void SetDefense(float defense)
+	{
+		if (defense < 0.0f || defense > 0.0f)
+			return;
+		this.defense = defense;
+	}
+
 	public void SetSpeed(int speed) => this.speed = speed < 0 ? 0 : speed;
 	public void SetDamage(int damage) => this.damage = damage < 0 ? 0 : damage;
 	public void SetSkillDmg(int skillDmg) => this.skillDmg = skillDmg < 0 ? 0 : skillDmg;
@@ -86,12 +99,14 @@ public class CharStats : MonoBehaviour
 			this.currHp = maxHp;
 	}
 
-	public void IncDefense(int defense)
+	public void IncDefense(float defense)
 	{
 		this.defense += defense;
 
-		if (this.defense < 0)
-			this.defense = 0;
+		if (this.defense < 0.0f)
+			this.defense = 0.0f;
+		else if (this.defense > 1.0f)
+			this.defense = 0.0f;
 	}
 
 	public void IncSpeed(int speed)
