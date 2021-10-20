@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	{
 		if (context.started) { // Press
 			pAttackBehaviour.BasicAttack(true);
-			StartCoroutine(Slowdown());
+			
 		} else if (context.canceled) { // Release
 			pAttackBehaviour.BasicAttack(false);
 			pMovementBehaviour.ResetSpeed();
@@ -85,7 +85,8 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	}
 	public void onCombatSkillActivation(InputAction.CallbackContext context)
 	{
-		if (context.started)
+		if (context.started){}
+			StartCoroutine(Slowdown());
 			pSkillBehaviour.ActivateSkill(charStats.GetCombatSkill());
 	}
 
@@ -100,5 +101,9 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 		pMovementBehaviour.SetUp();
 		pAttackBehaviour.SetUp();
 		pSkillBehaviour.SetUp();
+	}
+	public void auxSlowdown(){
+		Debug.Log("slowdown");
+		StartCoroutine(Slowdown());
 	}
 }
