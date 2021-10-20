@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	private PlayerMovementBehaviour pMovementBehaviour;
 	private BasicAttackBehaviour pAttackBehaviour;
 	private PlayerSkillBehaviour pSkillBehaviour;
+	[SerializeField] private GameObject head;
 
 	private void Awake()
 	{
