@@ -22,19 +22,31 @@ public class CharStats : MonoBehaviour
 	// Start is called before the first frame update
 	protected virtual void Awake()
 	{
+		UpdateStats();
+	}
+
+	public void SetCharbase(CharacterBase cd)
+	{
+		charBase = cd;
+		UpdateStats();
+	}
+
+	private void UpdateStats()
+	{
 		//Status definidos a partir do SO. -Arthur
 		basicAttack = charBase.basicAttack;
-		maxHp = charBase.baseHp;
-		defense = charBase.baseDefense;
-		speed = charBase.baseSpeed;
-		damage = charBase.baseDamage;
-		skillDmg = charBase.baseSkillDmg;
 		skills = charBase.Skills;
 		current_sprite = charBase.sprite;
 		current_head = charBase.head;
 		currHp = maxHp; //Vida atual deve ser inicializada como a vida maxima. -Arthur
 		headoffset = charBase.headOffset;
 		AnimatorController = charBase.animatorController;
+		SetMaxHp(charBase.baseHp);
+		SetDefense(charBase.baseDefense);
+		SetSpeed(charBase.baseSpeed);
+		SetDamage(charBase.baseDamage);
+		SetSkillDmg(charBase.baseSkillDmg);
+		SetCurrHp(maxHp); //Vida atual deve ser inicializada como a vida maxima. -Arthur
 	}
 
 	//Funcoes para obter os valores das variaveis
@@ -73,7 +85,6 @@ public class CharStats : MonoBehaviour
 		this.maxHp = maxHp;
 	}
 
-	public void SetDefense(float defense) => this.defense = defense < 0.0f || defense > 1.0f ? 0.0f : defense;
 	public void SetDefense(float defense)
 	{
 		if (defense < 0.0f || defense > 0.0f)
@@ -81,18 +92,35 @@ public class CharStats : MonoBehaviour
 		this.defense = defense;
 	}
 
-	public void SetSpeed(int speed) => this.speed = speed < 0 ? 0 : speed;
-	public void SetDamage(int damage) => this.damage = damage < 0 ? 0 : damage;
-	public void SetSkillDmg(int skillDmg) => this.skillDmg = skillDmg < 0 ? 0 : skillDmg;
+	public void SetSpeed(float speed)
+	{
+		if (speed < 0.0f)
+			return;
+		this.speed = speed;
+	}
+
+	public void SetDamage(int damage)
+	{
+		if (damage < 0)
+			return;
+		this.damage = damage;
+	}
+
+	public void SetSkillDmg(int skillDmg)
+	{
+		if (skillDmg < 0)
+			return;
+		this.skillDmg = skillDmg;
+	}
 
 
 	//Funcoes para manipular os valores das variaveis
 	public void IncMaxHp(int maxHp)
 	{
 		this.maxHp += maxHp;
+
 		if (this.maxHp < 0)
 			this.maxHp = 0;
-
 		if (currHp > this.maxHp)
 			currHp = this.maxHp;
 	}
