@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 
 	public bool ApplyDamage(int damage)
 	{
+		damage = (int)(damage * (1.0f - charStats.GetDefense()));
 		charStats.IncCurrHp(-damage);
 		if (charStats.GetCurrHp() <= 0) {
 			Die();
