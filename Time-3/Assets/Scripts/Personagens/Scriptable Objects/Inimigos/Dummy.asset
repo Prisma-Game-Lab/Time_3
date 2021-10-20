@@ -15,8 +15,9 @@ MonoBehaviour:
   baseHp: 10
   baseDefense: 0
   baseSpeed: 5
-  baseDamage: 5
+  baseDamage: 20
   baseSkillDmg: 0
+  basicAttack: {fileID: 0}
   Skills: []
   sprite: {fileID: 0}
   dropValue: 0

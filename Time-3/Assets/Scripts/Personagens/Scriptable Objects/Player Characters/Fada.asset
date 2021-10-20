@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fada
   m_EditorClassIdentifier: 
   baseHp: 10
-  baseDefense: 0.1
+  baseDefense: 0.2
   baseSpeed: 10
   baseDamage: 5
   baseSkillDmg: 10
