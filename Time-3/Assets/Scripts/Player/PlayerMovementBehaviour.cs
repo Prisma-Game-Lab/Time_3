@@ -90,9 +90,9 @@ public class PlayerMovementBehaviour : MonoBehaviour
 			}
 
 			if (angle >= 180) {
-				spriteRenderer.flipX = false;
-			} else {
 				spriteRenderer.flipX = true;
+			} else {
+				spriteRenderer.flipX = false;
 			}
 		}
 

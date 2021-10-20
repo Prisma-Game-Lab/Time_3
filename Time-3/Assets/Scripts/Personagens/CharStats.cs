@@ -12,6 +12,7 @@ public class CharStats : MonoBehaviour
 	[SerializeField] private int damage;
 	[SerializeField] private int skillDmg;
 	[SerializeField] private Sprite current_sprite;
+	[SerializeField] private Sprite current_head;
 
 	private int currHp;
 
@@ -28,6 +29,7 @@ public class CharStats : MonoBehaviour
 		skillDmg = charBase.baseSkillDmg;
 		skills = charBase.Skills;
 		current_sprite = charBase.sprite;
+		current_head = charBase.head;
 		currHp = maxHp; //Vida atual deve ser inicializada como a vida maxima. -Arthur
 	}
 

@@ -20,6 +20,8 @@ public class CharacterBase : ScriptableObject
     public SkillBase basicAttack;
     
     public SkillBase[] Skills;
+    [Tooltip("Sprites")]
+    public Sprite head;
     public Sprite sprite;
 
 }
