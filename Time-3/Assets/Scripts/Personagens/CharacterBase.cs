@@ -22,6 +22,7 @@ public class CharacterBase : ScriptableObject
     public SkillBase[] Skills;
     [Tooltip("Sprites")]
     public Sprite head;
+    public Vector3 headOffset;
     public Sprite sprite;
 
 }

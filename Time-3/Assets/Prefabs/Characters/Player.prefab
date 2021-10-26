@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc3bd5a1ebbfa9a4a17ce50c3748608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
 --- !u!114 &3783203689551197696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +236,7 @@ MonoBehaviour:
   damage: 0
   skillDmg: 0
   current_sprite: {fileID: 0}
+  current_head: {fileID: 0}
 --- !u!114 &2171496748562826363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 844057380357474326}
+  headSprite: {fileID: 0}
   playerSpeed: 0
 --- !u!114 &141154703078186640
 MonoBehaviour:

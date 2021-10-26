@@ -13,6 +13,7 @@ public class CharStats : MonoBehaviour
 	[SerializeField] private int skillDmg;
 	[SerializeField] private Sprite current_sprite;
 	[SerializeField] private Sprite current_head;
+	[SerializeField] private Vector3 headoffset;
 
 	private int currHp;
 
@@ -31,6 +32,7 @@ public class CharStats : MonoBehaviour
 		current_sprite = charBase.sprite;
 		current_head = charBase.head;
 		currHp = maxHp; //Vida atual deve ser inicializada como a vida maxima. -Arthur
+		headoffset = charBase.headOffset;
 	}
 
 	//Funcoes para obter os valores das variaveis
@@ -45,6 +47,7 @@ public class CharStats : MonoBehaviour
 	public SkillBase GetExplorationSkill() => skills[1];
 
 	public SkillBase GetBasicAttack() => basicAttack;
+	public Vector3 GetHeadOffset() => headoffset;
 
 
 	//Funcoes para redefinir os valores das variaveis

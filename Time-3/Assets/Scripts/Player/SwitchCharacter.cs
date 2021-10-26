@@ -9,6 +9,7 @@ public class SwitchCharacter : MonoBehaviour
 	[SerializeField] private CharacterBase[] Heroes;
 	[SerializeField] private SpriteRenderer spriteRenderer;
 	[SerializeField] private SpriteRenderer Head;
+	[SerializeField] private HeadOffset headOffset;
 	private CharStats charStats;
 	private PlayerActions playerinput;
 
@@ -49,5 +50,6 @@ public class SwitchCharacter : MonoBehaviour
 		spriteRenderer.sprite = charStats.GetCharacterBase().sprite;
 		Head.sprite =charStats.GetCharacterBase().head;
 		GetComponent<PlayerController>().UpdateStats();
+		headOffset.offsetUpdate(charStats.GetHeadOffset());
 	}
 }

@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovementBehaviour : MonoBehaviour
 {
 	[SerializeField] private SpriteRenderer spriteRenderer;
+	[SerializeField] private SpriteRenderer headSprite;
 
 	private CharStats charStats;
 	private Rigidbody2D rb;
@@ -91,8 +92,10 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
 			if (angle >= 180) {
 				spriteRenderer.flipX = true;
+				headSprite.flipX = true;
 			} else {
 				spriteRenderer.flipX = false;
+				headSprite.flipX = false;
 			}
 		}
 
