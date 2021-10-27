@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 76fb1b6e933582d42b96e4aa3ad3d909
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -14098054965339049
+    second: fada1_0
+  - first:
+      213: -2825420920732120127
+    second: fada1_1
+  - first:
+      213: -8188463333174763096
+    second: fada1_3
+  - first:
+      213: 7986003182433716444
+    second: fada1_4
+  - first:
+      213: -8197957113452135260
+    second: fada1_5
+  - first:
+      213: 2618298723342770378
+    second: fada1_6
+  - first:
+      213: -820850708861860317
+    second: fada1_7
+  - first:
+      213: -3233150770525276451
+    second: fada1_8
+  - first:
+      213: 3922255168138894853
+    second: fada1_9
+  - first:
+      213: -8789337438431875533
+    second: fada1_10
+  - first:
+      213: -3871121591155608493
+    second: fada1_11
+  - first:
+      213: 7203814373941766947
+    second: fada1_12
+  - first:
+      213: 5039826744567137735
+    second: fada1_13
+  - first:
+      213: 4781726671816923624
+    second: fada1_14
+  - first:
+      213: 8856833273584024908
+    second: fada1_15
+  - first:
+      213: -3100099098264869359
+    second: fada1_16
+  - first:
+      213: 8088106102267350806
+    second: fada1_17
+  - first:
+      213: -3919659417855442345
+    second: fada1_18
+  - first:
+      213: 4796350484787491950
+    second: fada1_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fada1_0
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1884
+        width: 527
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c54c9c4e9edcff0800000000000000
+      internalID: -14098054965339049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_1
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1899
+        width: 527
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb0ece64a61ac8d0800000000000000
+      internalID: -2825420920732120127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_3
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1899
+        width: 527
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1aec99bfbbc5e80800000000000000
+      internalID: -8188463333174763096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_4
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 1871
+        width: 601
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8c910359bf3de60800000000000000
+      internalID: 7986003182433716444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_5
+      rect:
+        serializedVersion: 2
+        x: 3338
+        y: 1912
+        width: 552
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac7cc0a0710b3e80800000000000000
+      internalID: -8197957113452135260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_6
+      rect:
+        serializedVersion: 2
+        x: 4234
+        y: 1907
+        width: 552
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac064b801d0165420800000000000000
+      internalID: 2618298723342770378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_7
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 955
+        width: 507
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32649ac11a0cb94f0800000000000000
+      internalID: -820850708861860317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_8
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 942
+        width: 504
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd67f81118a8123d0800000000000000
+      internalID: -3233150770525276451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_9
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 957
+        width: 504
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50edb5f5b46ae6630800000000000000
+      internalID: 3922255168138894853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_10
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 944
+        width: 504
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ee93bea20060680800000000000000
+      internalID: -8789337438431875533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_11
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 939
+        width: 506
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35433d44c63074ac0800000000000000
+      internalID: -3871121591155608493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_12
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 977
+        width: 506
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32be6a2710719f360800000000000000
+      internalID: 7203814373941766947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_13
+      rect:
+        serializedVersion: 2
+        x: 3916
+        y: 988
+        width: 504
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c50077d8bf01f540800000000000000
+      internalID: 5039826744567137735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_14
+      rect:
+        serializedVersion: 2
+        x: 4575
+        y: 972
+        width: 504
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e998a6c21b1c5240800000000000000
+      internalID: 4781726671816923624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_15
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 143
+        width: 506
+        height: 679
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4df5d2dfeac9ea70800000000000000
+      internalID: 8856833273584024908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_16
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 127
+        width: 507
+        height: 756
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116e96f8b4c3af4d0800000000000000
+      internalID: -3100099098264869359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_17
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 79
+        width: 517
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f805bb5a9be3070800000000000000
+      internalID: 8088106102267350806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_18
+      rect:
+        serializedVersion: 2
+        x: 3572
+        y: 120
+        width: 619
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7524636d6829a99c0800000000000000
+      internalID: -3919659417855442345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada1_19
+      rect:
+        serializedVersion: 2
+        x: 4287
+        y: 158
+        width: 614
+        height: 662
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64f7009a5f009240800000000000000
+      internalID: 4796350484787491950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
