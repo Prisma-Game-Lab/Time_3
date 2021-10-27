@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc3bd5a1ebbfa9a4a17ce50c3748608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  head: {fileID: 0}
+  head: {fileID: 6386057777740260301}
 --- !u!114 &3783203689551197696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +237,7 @@ MonoBehaviour:
   skillDmg: 0
   current_sprite: {fileID: 0}
   current_head: {fileID: 0}
+  headoffset: {x: 0, y: 0, z: 0}
 --- !u!114 &2171496748562826363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 844057380357474326}
-  headSprite: {fileID: 0}
+  headSprite: {fileID: 7722597579125039478}
   playerSpeed: 0
 --- !u!114 &141154703078186640
 MonoBehaviour:
@@ -270,6 +271,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7393c79914fb4f74b91dcafcb2f6bc34, type: 2}
   spriteRenderer: {fileID: 844057380357474326}
   Head: {fileID: 7722597579125039478}
+  headOffset: {fileID: 0}
 --- !u!114 &6077235299780036771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2465009696725562337}
   - component: {fileID: 7722597579125039478}
+  - component: {fileID: 7224950977661268480}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -515,7 +518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6386057777740260301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.666, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1127788260091999166}
@@ -560,15 +563,28 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.416, y: 2.252}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7224950977661268480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386057777740260301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a99f5af826a79145bc51ae60d324d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectPai: {fileID: 1127788260091999044}

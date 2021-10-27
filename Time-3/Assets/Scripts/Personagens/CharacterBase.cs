@@ -20,7 +20,7 @@ public class CharacterBase : ScriptableObject
     public SkillBase basicAttack;
     
     public SkillBase[] Skills;
-    [Tooltip("Sprites")]
+    [Header("Sprites")]
     public Sprite head;
     public Vector3 headOffset;
     public Sprite sprite;

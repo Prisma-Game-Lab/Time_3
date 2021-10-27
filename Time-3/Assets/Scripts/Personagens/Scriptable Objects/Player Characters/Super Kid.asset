@@ -22,4 +22,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: df4ac1c8065d92a4b83b226a58f17d8e, type: 2}
   - {fileID: 11400000, guid: 8a72d3b50bca0e948a6dad457f40f23d, type: 2}
   head: {fileID: 7771289898632946653, guid: 32408ec4b6833fa40ad906bbbc10fbb5, type: 3}
+  headOffset: {x: 0.09, y: 0.6, z: 0}
   sprite: {fileID: 6492836249648388353, guid: 32408ec4b6833fa40ad906bbbc10fbb5, type: 3}
