@@ -4,18 +4,20 @@ using UnityEngine.InputSystem;
 public class PlayerMovementBehaviour : MonoBehaviour
 {
 	[SerializeField] private SpriteRenderer spriteRenderer;
-	[SerializeField] private SpriteRenderer headSprite;
+	[SerializeField] private GameObject head;
+	[SerializeField] private float playerSpeed;
 
 	private CharStats charStats;
 	private Rigidbody2D rb;
+	private SpriteRenderer headSprite;
 
-	[SerializeField] private float playerSpeed;
 
 	private Vector2 rawMovementVec;
 
 	public void SetUp()
 	{
 		playerSpeed = charStats.GetSpeed();
+		headSprite = head.GetComponent<SpriteRenderer>();
 	}
 
 	private void Awake()
@@ -96,6 +98,30 @@ public class PlayerMovementBehaviour : MonoBehaviour
 			} else {
 				spriteRenderer.flipX = false;
 				headSprite.flipX = false;
+			}
+
+			if (head != null) {
+				Vector3 axis;
+				float rotAngle;
+
+				if (angle >= 180) {
+					axis = Vector3.forward;
+					rotAngle = angle + 90.0f;
+
+					if (rotAngle < 330.0f)
+						rotAngle = 330.0f;
+					else if (rotAngle > 390.0f)
+						rotAngle = 390.0f;
+				} else {
+					axis = Vector3.forward;
+					rotAngle = angle - 90.0f;
+					if (rotAngle < -30.0f)
+						rotAngle = -30.0f;
+					else if (rotAngle > 30.0f)
+						rotAngle = 30.0f;
+				}
+
+				head.GetComponent<Transform>().rotation = Quaternion.AngleAxis(rotAngle, axis);
 			}
 		}
 
