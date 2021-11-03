@@ -135,7 +135,7 @@ public class CharStats : MonoBehaviour
 		current_sprite = charBase.sprite;
 		skills = charBase.Skills;
 		basicAttack = charBase.basicAttack;
-
+		headoffset = charBase.headOffset;
 		currHp = maxHp;
 	}
 
