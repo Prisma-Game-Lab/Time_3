@@ -15,6 +15,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(PlayerInteraction))]
 public class PlayerController : MonoBehaviour, IDamageable<int>
 {
+	private HUDManager hudManager;
 	private CharStats charStats;
 	private PlayerMovementBehaviour pMovementBehaviour;
 	private BasicAttackBehaviour pAttackBehaviour;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 		pAttackBehaviour = GetComponent<BasicAttackBehaviour>();
 		pMovementBehaviour = GetComponent<PlayerMovementBehaviour>();
 		pSkillBehaviour = GetComponent<PlayerSkillBehaviour>();
+		hudManager = GameObject.FindWithTag("HUD").GetComponent<HUDManager>();
 	}
 
 	public void Die()
@@ -41,11 +43,15 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	public void Heal()
 	{
 		charStats.SetCurrHp(charStats.GetMaxHp());
+		if (hudManager != null)
+			hudManager.setHealthNormalised(1.0f);
 	}
 
 	public void ApplyHealing(int healing)
 	{
 		charStats.IncCurrHp(healing);
+		if (hudManager != null)
+			hudManager.setHealth(charStats.GetCurrHp(), charStats.GetMaxHp());
 	}
 
 	public bool ApplyDamage(int damage)
@@ -57,6 +63,8 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 			return true;
 		}
 
+		if (hudManager != null)
+			hudManager.setHealth(charStats.GetCurrHp(), charStats.GetMaxHp());
 		return false;
 	}
 
