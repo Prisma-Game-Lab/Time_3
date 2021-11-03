@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,15 +5,17 @@ public class SwitchCharacter : MonoBehaviour
 {
 	[SerializeField] private CharacterBase[] Heroes;
 	[SerializeField] private SpriteRenderer spriteRenderer;
+
 	private CharStats charStats;
 	private PlayerActions playerinput;
-
+	private HUDManager hudManager;
 
 	private void Awake() {
 		playerinput = new PlayerActions();
+		hudManager = GameObject.FindGameObjectWithTag("HUD").GetComponent<HUDManager>();
 	}
 
-	void Start()
+	private void Start()
 	{
 		charStats = GetComponent<CharStats>();
 		spriteRenderer.sprite = charStats.GetCharacterBase().sprite;
@@ -46,5 +45,7 @@ public class SwitchCharacter : MonoBehaviour
 		charStats.SetCharbase(Heroes[index]);
 		spriteRenderer.sprite = charStats.GetCharacterBase().sprite;
 		GetComponent<PlayerController>().UpdateStats();
+		if (hudManager != null)
+			hudManager.enableCircle(index);
 	}
 }

@@ -4,10 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-	[SerializeField] GameObject pauseMenu;
-	[SerializeField] GameObject player;
+	[SerializeField] private GameObject pauseMenu;
+	[SerializeField] private GameObject player;
 
+	private GameObject hud;
 	private bool paused;
+
+	private void Awake() {
+		hud = GameObject.FindWithTag("HUD");
+	}
 
 	public bool IsGamePaused() => Time.timeScale == 0;
 
@@ -19,6 +24,9 @@ public class GameManager : MonoBehaviour
 
 		if (pauseMenu != null)
 			pauseMenu.SetActive(true);
+
+		if (hud != null)
+			hud.SetActive(false);
 	}
 
 	public void Unpause() {
@@ -29,6 +37,9 @@ public class GameManager : MonoBehaviour
 
 		if (pauseMenu != null)
 			pauseMenu.SetActive(false);
+
+		if (hud != null)
+			hud.SetActive(true);
 	}
 
 	public void TogglePause() {
