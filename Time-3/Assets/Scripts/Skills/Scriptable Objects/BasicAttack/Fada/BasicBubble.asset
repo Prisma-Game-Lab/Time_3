@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BasicBubble
   m_EditorClassIdentifier: 
   skillName: Bubble Attack
-  skillCD: 0
+  skillCD: 50
   activeTime: 0
   state: ready
   bubblePrefab: {fileID: 7252743445968307268, guid: 31f132e63a1f95548bd084cbe4140b2f, type: 3}
-  range: 100
-  speed: 250
+  range: 70
+  speed: 100
