@@ -31,7 +31,17 @@ public class CharStats : MonoBehaviour
 		UpdateStats();
 	}
 
-	private void UpdateStats()
+	public void ChangeCharbase(CharacterBase cd)
+	{
+		charBase = cd;
+		UpdateStats(false);
+	}
+
+	private void UpdateStats() {
+		UpdateStats(true);
+	}
+
+	private void UpdateStats(bool heal)
 	{
 		//Status definidos a partir do SO. -Arthur
 		basicAttack = charBase.basicAttack;
@@ -46,7 +56,9 @@ public class CharStats : MonoBehaviour
 		SetSpeed(charBase.baseSpeed);
 		SetDamage(charBase.baseDamage);
 		SetSkillDmg(charBase.baseSkillDmg);
-		SetCurrHp(maxHp); //Vida atual deve ser inicializada como a vida maxima. -Arthur
+
+		if (heal)
+			SetCurrHp(maxHp); //Vida atual deve ser inicializada como a vida maxima. -Arthur
 	}
 
 	//Funcoes para obter os valores das variaveis

@@ -45,7 +45,7 @@ public class SwitchCharacter : MonoBehaviour
 
 	private void SwitchHero(int index)
 	{
-		charStats.SetCharbase(Heroes[index]);
+		charStats.ChangeCharbase(Heroes[index]);
 		spriteRenderer.sprite = charStats.GetCharacterBase().sprite;
 		Head.sprite =charStats.GetCharacterBase().head;
 		GetComponent<PlayerController>().UpdateStats();
