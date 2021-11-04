@@ -251,8 +251,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 844057380357474326}
-  headSprite: {fileID: 7722597579125039478}
+  head: {fileID: 6386057777740260301}
+  MaxplayerSpeed: 0
   playerSpeed: 0
+  animator: {fileID: 721604782390461155}
 --- !u!114 &141154703078186640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +273,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7393c79914fb4f74b91dcafcb2f6bc34, type: 2}
   spriteRenderer: {fileID: 844057380357474326}
   Head: {fileID: 7722597579125039478}
-  headOffset: {fileID: 0}
+  headOffset: {fileID: 7224950977661268480}
 --- !u!114 &6077235299780036771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +422,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2766574239507934924}
   - component: {fileID: 844057380357474326}
+  - component: {fileID: 721604782390461155}
+  - component: {fileID: 4816019855803422709}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -492,6 +496,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &721604782390461155
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346555592538311349}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 72c3ee7501fdf5d4a892712c244ec7dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4816019855803422709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346555592538311349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af70a4c340d42948aebc490f69c3803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 6386057777740260301}
+  active: 0
 --- !u!1 &6386057777740260301
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +606,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.416, y: 2.252}
+  m_Size: {x: 2.632, y: 1.768633}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

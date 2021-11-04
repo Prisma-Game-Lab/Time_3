@@ -5,18 +5,20 @@ public class PlayerMovementBehaviour : MonoBehaviour
 {
 	[SerializeField] private SpriteRenderer spriteRenderer;
 	[SerializeField] private GameObject head;
+	[SerializeField] private float MaxplayerSpeed;
 	[SerializeField] private float playerSpeed;
+
+	public Animator animator;
 
 	private CharStats charStats;
 	private Rigidbody2D rb;
 	private SpriteRenderer headSprite;
-
-
 	private Vector2 rawMovementVec;
+	private Vector2 movementVec;
 
 	public void SetUp()
 	{
-		playerSpeed = charStats.GetSpeed();
+		MaxplayerSpeed = charStats.GetSpeed();
 		headSprite = head.GetComponent<SpriteRenderer>();
 	}
 
@@ -28,19 +30,26 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
 	public void Start()
 	{
-		playerSpeed = charStats.GetSpeed();
+		MaxplayerSpeed = charStats.GetSpeed();
 	}
 	//para retornar ao valor do charBase depois do ataque
 	public void ResetSpeed(){
-		playerSpeed = charStats.GetSpeed();
+		MaxplayerSpeed = charStats.GetSpeed();
 	}
 
 	private void FixedUpdate()
 	{
 		MovePlayer();
-		TurnPlayer();
+		if(playerSpeed<0.01){
+			TurnPlayer();
+		}
 	}
-
+	private void Update() {
+		playerSpeed = movementVec.magnitude;
+		animator.SetFloat("Horizontal", movementVec.x);
+		Debug.Log(movementVec.x);
+		animator.SetFloat("Speed",playerSpeed);
+	}
 
 	// Metodos relacionados a movimentacao
 
@@ -52,10 +61,10 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	private void MovePlayer()
 	{
 		// Limita a magnitude do vetor de movimento a 1, para evitar que movimentos na diagonal sejam mais rapidos
-		Vector2 movementVec = Vector2.ClampMagnitude(rawMovementVec, 1);
+		movementVec = Vector2.ClampMagnitude(rawMovementVec, 1);
 
 		// Escala o vetor de acordo com a velocidade do player e o tempo desde o ultimo frame
-		movementVec *= playerSpeed * Time.fixedDeltaTime;
+		movementVec *= MaxplayerSpeed * Time.fixedDeltaTime;
 
 		// Aplica a movimentacao
 		rb.MovePosition(rb.position + movementVec);
@@ -127,9 +136,9 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
 	}
 	public float GetSpeed(){
-		return playerSpeed;
+		return MaxplayerSpeed;
 	}
 	public void SetSpeed(float n){
-		playerSpeed = n;
+		MaxplayerSpeed = n;
 	}
 }
