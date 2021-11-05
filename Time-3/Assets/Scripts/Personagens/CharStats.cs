@@ -181,21 +181,4 @@ public class CharStats : MonoBehaviour
 			this.skillDmg = 0;
 	}
 
-
-	public void SetCharbase(CharacterBase cd)
-	{
-		charBase = cd;
-		maxHp = charBase.baseHp;
-		defense = charBase.baseDefense;
-		speed = charBase.baseSpeed;
-		damage = charBase.baseDamage;
-		skillDmg = charBase.baseSkillDmg;
-		current_sprite = charBase.sprite;
-		skills = charBase.Skills;
-		basicAttack = charBase.basicAttack;
-		headoffset = charBase.headOffset;
-		currHp = maxHp;
-		AnimatorController = charBase.animatorController;
-	}
-
 }
