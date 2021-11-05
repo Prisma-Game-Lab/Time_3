@@ -7,10 +7,10 @@ public class PlayerSkillBehaviour : MonoBehaviour
     private CharStats charStats;
 
     //Os vetores abaixo irao conter informacoes pertinentes para a manipulacao das habilidades -Arthur 
-    public SkillBase[] skills = new SkillBase[2];
-    private float[] cooldowns = new float[2];
+    public SkillBase[] skills = new SkillBase[3];
+    private float[] cooldowns = new float[3];
 
-    private float[] activeTimes = new float[2];
+    private float[] activeTimes = new float[3];
     
 
     private void Awake() 
@@ -22,8 +22,9 @@ public class PlayerSkillBehaviour : MonoBehaviour
     {
         skills[0] = charStats.GetCombatSkill();
         skills[1] = charStats.GetExplorationSkill();
+        skills[2] = charStats.GetBasicAttack();
 
-        for(int i = 0; i < 2; i++)
+        for(int i = 0; i < 3; i++)
         {
             cooldowns[i] = skills[i].skillCD;
             activeTimes[i] = skills[i].activeTime;

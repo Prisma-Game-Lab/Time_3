@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	public void onAttack(InputAction.CallbackContext context)
 	{
 		if (context.started) { // Press
-			pAttackBehaviour.BasicAttack(true);
+			pSkillBehaviour.ActivateSkill(charStats.GetBasicAttack());
 			
 		} else if (context.canceled) { // Release
 			pAttackBehaviour.BasicAttack(false);
