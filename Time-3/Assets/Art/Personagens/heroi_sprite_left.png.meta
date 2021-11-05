@@ -1,25 +1,49 @@
 fileFormatVersion: 2
-guid: 0d20afe69c5415c42ad2044abf7d9813
+guid: bb965fee54b4c9745b52f1ccb3d0202d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2312998053088067245
-    second: pirata_cabeca
+      213: 7771289898632946653
+    second: heroi_head
   - first:
-      213: 8298673148928402785
-    second: pirata_corpo
+      213: 6492836249648388353
+    second: heroi_sprite_1
   - first:
-      213: -1409165117207424633
-    second: pirata_cabeca
+      213: -1089149633409748875
+    second: heroi_sprite_2
   - first:
-      213: -5807250167004985282
-    second: pirata_corpo
+      213: -5866671324453317548
+    second: heroi_head
   - first:
-      213: -9127933062220502590
-    second: pirata_sprite_0
+      213: -8912632712535842688
+    second: heroi_sprite_1
   - first:
-      213: 5422075510353157229
-    second: pirata_sprite_1
+      213: 6253230929218413469
+    second: heroi_sprite_2
+  - first:
+      213: 516655633334042250
+    second: heroi_sprite_3
+  - first:
+      213: -5569092838948851954
+    second: heroi_corpo_1
+  - first:
+      213: -4123898610657638153
+    second: heroi_corpo_0
+  - first:
+      213: -1661383192546142473
+    second: heroi_head
+  - first:
+      213: -8964324796624934323
+    second: heroi_sprite_left_3
+  - first:
+      213: -146454686408022663
+    second: heroi_sprite_left_2
+  - first:
+      213: -1784638572289653918
+    second: heroi_sprite_left_1
+  - first:
+      213: 7317039634207289586
+    second: heroi_sprite_left_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,55 +157,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pirata_cabeca
+      name: heroi_corpo_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 858
-        width: 354
-        height: 563
-      alignment: 9
-      pivot: {x: 0.48449, y: 0.048386678}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: daefb78797b691020800000000000000
-      internalID: 2312998053088067245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pirata_corpo
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 1061
-        width: 446
-        height: 356
-      alignment: 9
-      pivot: {x: 0.5385775, y: 0.889394}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16523fcb24fca2370800000000000000
-      internalID: 8298673148928402785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pirata_sprite_0
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 80
-        width: 464
-        height: 771
+        x: 1266
+        y: 709
+        width: 677
+        height: 438
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 781dafebac3a17ce0800000000000000
-      internalID: -1409165117207424633
+      spriteID: e0f284db19b96b2b0800000000000000
+      internalID: -5569092838948851954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirata_sprite_1
+      name: heroi_corpo_0
       rect:
         serializedVersion: 2
-        x: 513
-        y: 53
-        width: 446
-        height: 810
+        x: 1942
+        y: 709
+        width: 665
+        height: 438
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3807d1cdb0886fa0800000000000000
-      internalID: -5807250167004985282
+      spriteID: 7f8460e1018f4c6c0800000000000000
+      internalID: -4123898610657638153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirata_sprite_2
+      name: heroi_head
       rect:
         serializedVersion: 2
-        x: 964
-        y: 86
-        width: 477
-        height: 772
+        x: 2605
+        y: 826
+        width: 503
+        height: 322
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c9adc4ed31135180800000000000000
-      internalID: -9127933062220502590
+      spriteID: 7f69b7ce9c491f8e0800000000000000
+      internalID: -1661383192546142473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirata_sprite_3
+      name: heroi_sprite_left_3
       rect:
         serializedVersion: 2
-        x: 1439
-        y: 61
-        width: 452
-        height: 795
+        x: 53
+        y: 56
+        width: 754
+        height: 656
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,8 +234,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6cd1f303f41f3b40800000000000000
-      internalID: 5422075510353157229
+      spriteID: d4ae1fda712589380800000000000000
+      internalID: -8964324796624934323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heroi_sprite_left_2
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 56
+        width: 769
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97565f81d30b7fdf0800000000000000
+      internalID: -146454686408022663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heroi_sprite_left_1
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 56
+        width: 759
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26307368ca0bb37e0800000000000000
+      internalID: -1784638572289653918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heroi_sprite_left_0
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 62
+        width: 774
+        height: 650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0316ca7c85b8560800000000000000
+      internalID: 7317039634207289586
       vertices: []
       indices: 
       edges: []

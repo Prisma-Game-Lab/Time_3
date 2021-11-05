@@ -12,6 +12,9 @@ public class CharStats : MonoBehaviour
 	[SerializeField] private int damage;
 	[SerializeField] private int skillDmg;
 	[SerializeField] private Sprite current_sprite;
+	[SerializeField] private Sprite current_head;
+	[SerializeField] private Vector3 headoffset;
+	[SerializeField] private RuntimeAnimatorController AnimatorController;
 
 	private int currHp;
 
@@ -44,6 +47,10 @@ public class CharStats : MonoBehaviour
 		basicAttack = charBase.basicAttack;
 		skills = charBase.Skills;
 		current_sprite = charBase.sprite;
+		current_head = charBase.head;
+		currHp = maxHp; //Vida atual deve ser inicializada como a vida maxima. -Arthur
+		headoffset = charBase.headOffset;
+		AnimatorController = charBase.animatorController;
 		SetMaxHp(charBase.baseHp);
 		SetDefense(charBase.baseDefense);
 		SetSpeed(charBase.baseSpeed);
@@ -66,6 +73,8 @@ public class CharStats : MonoBehaviour
 	public SkillBase GetExplorationSkill() => skills[1];
 
 	public SkillBase GetBasicAttack() => basicAttack;
+	public Vector3 GetHeadOffset() => headoffset;
+	public RuntimeAnimatorController GetRuntimeAnimatorController() => AnimatorController;
 
 
 	//Funcoes para redefinir os valores das variaveis

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: 
   skillCD: 0
-  activeTime: 0.3
+  activeTime: 0.1
   state: ready
   Hitbox: {fileID: 5786953792820358316, guid: 82aabf10c41830a4c9f3fc2b6922e9be, type: 3}
   angulo: -55

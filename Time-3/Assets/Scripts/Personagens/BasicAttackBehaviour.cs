@@ -3,6 +3,7 @@ using UnityEngine;
 public class BasicAttackBehaviour : MonoBehaviour
 {
 	private CharStats charStats;
+	[SerializeField] PlayerController playerController;
 
 	[SerializeField] private int basicAttackDamage = 1;
 
@@ -19,6 +20,7 @@ public class BasicAttackBehaviour : MonoBehaviour
 
 	private void Awake()
 	{
+		playerController = GetComponent<PlayerController>();
 		charStats = GetComponent<CharStats>();
 		attackLayerMask = ~(1 << gameObject.layer);
 	}

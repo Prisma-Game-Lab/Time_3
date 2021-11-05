@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 0d20afe69c5415c42ad2044abf7d9813
+guid: 6ed2cf558666b764883330b6599201e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2312998053088067245
-    second: pirata_cabeca
+      213: -6264671085256449484
+    second: fada_corpo
   - first:
-      213: 8298673148928402785
-    second: pirata_corpo
+      213: -1489433409280801532
+    second: fada_cabeca
   - first:
-      213: -1409165117207424633
-    second: pirata_cabeca
+      213: 1843198130426958760
+    second: fada_corpo_2
   - first:
-      213: -5807250167004985282
-    second: pirata_corpo
+      213: 8161536625385924116
+    second: fada_corpo_1
   - first:
-      213: -9127933062220502590
-    second: pirata_sprite_0
-  - first:
-      213: 5422075510353157229
-    second: pirata_sprite_1
+      213: -462237641659867708
+    second: fada_corpo_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -86,7 +83,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +95,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +107,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,7 +119,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,55 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pirata_cabeca
+      name: fada_corpo
       rect:
         serializedVersion: 2
-        x: 49
-        y: 858
-        width: 354
-        height: 563
-      alignment: 9
-      pivot: {x: 0.48449, y: 0.048386678}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: daefb78797b691020800000000000000
-      internalID: 2312998053088067245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pirata_corpo
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 1061
-        width: 446
-        height: 356
-      alignment: 9
-      pivot: {x: 0.5385775, y: 0.889394}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16523fcb24fca2370800000000000000
-      internalID: 8298673148928402785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pirata_sprite_0
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 80
-        width: 464
-        height: 771
+        x: 748
+        y: 815
+        width: 593
+        height: 365
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 781dafebac3a17ce0800000000000000
-      internalID: -1409165117207424633
+      spriteID: 432e0a0f6da6f09a0800000000000000
+      internalID: -6264671085256449484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirata_sprite_1
+      name: fada_cabeca
       rect:
         serializedVersion: 2
-        x: 513
-        y: 53
-        width: 446
-        height: 810
+        x: 1341
+        y: 727
+        width: 511
+        height: 453
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3807d1cdb0886fa0800000000000000
-      internalID: -5807250167004985282
+      spriteID: 4050833a438745be0800000000000000
+      internalID: -1489433409280801532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirata_sprite_2
+      name: fada_corpo_2
       rect:
         serializedVersion: 2
-        x: 964
-        y: 86
-        width: 477
-        height: 772
+        x: 53
+        y: 52
+        width: 602
+        height: 675
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c9adc4ed31135180800000000000000
-      internalID: -9127933062220502590
+      spriteID: 8a353c61fea549910800000000000000
+      internalID: 1843198130426958760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirata_sprite_3
+      name: fada_corpo_1
       rect:
         serializedVersion: 2
-        x: 1439
-        y: 61
-        width: 452
-        height: 795
+        x: 655
+        y: 54
+        width: 602
+        height: 675
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,8 +207,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6cd1f303f41f3b40800000000000000
-      internalID: 5422075510353157229
+      spriteID: 416e771b15a934170800000000000000
+      internalID: 8161536625385924116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fada_corpo_0
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 52
+        width: 595
+        height: 675
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd9c0f505dc599f0800000000000000
+      internalID: -462237641659867708
       vertices: []
       indices: 
       edges: []

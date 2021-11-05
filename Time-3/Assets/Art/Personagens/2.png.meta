@@ -1,67 +1,55 @@
 fileFormatVersion: 2
-guid: ba2ca445b2d926a4fb9e0caf80fa6591
+guid: 7311e3d152bd65b46b7de8b390937619
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -14098054965339049
-    second: fada1_0
+      213: -2847823790183061483
+    second: 2_12
   - first:
-      213: -2825420920732120127
-    second: fada1_1
+      213: -4312959346109786154
+    second: 2_13
   - first:
-      213: 5307791069303624591
-    second: fada1_2
+      213: 1569468284126946330
+    second: 2_14
   - first:
-      213: -8188463333174763096
-    second: fada1_3
+      213: -3602863821127969767
+    second: 2_15
   - first:
-      213: 7986003182433716444
-    second: fada_default
+      213: -282365312502611083
+    second: 2_16
   - first:
-      213: -8197957113452135260
-    second: fada1_5
+      213: 4544183903939005263
+    second: 2_17
   - first:
-      213: 2618298723342770378
-    second: fada1_6
+      213: 2920196126069117805
+    second: 2_18
   - first:
-      213: -820850708861860317
-    second: fada1_7
+      213: 3332387826080962713
+    second: 2_19
   - first:
-      213: -3233150770525276451
-    second: fada1_8
+      213: -1618872855824997472
+    second: 2_21
   - first:
-      213: 3922255168138894853
-    second: fada1_9
+      213: 4971156485235890979
+    second: 2_22
   - first:
-      213: -8789337438431875533
-    second: fada1_10
+      213: 4194489117452840178
+    second: 2_23
   - first:
-      213: -3871121591155608493
-    second: fada1_11
+      213: -1708100248341318257
+    second: 2_24
   - first:
-      213: 7203814373941766947
-    second: fada1_12
+      213: -7128752230099256568
+    second: 2_25
   - first:
-      213: 5039826744567137735
-    second: fada1_13
+      213: 2935957518813513624
+    second: 2_26
   - first:
-      213: 4781726671816923624
-    second: fada1_14
+      213: -5669920929373664132
+    second: 2_28
   - first:
-      213: 8856833273584024908
-    second: fada1_15
-  - first:
-      213: -3100099098264869359
-    second: fada1_16
-  - first:
-      213: 8088106102267350806
-    second: fada1_17
-  - first:
-      213: -3919659417855442345
-    second: fada1_18
-  - first:
-      213: 4796350484787491950
-    second: fada1_19
+      213: -3627814142748189293
+    second: 2_30
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +94,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,428 +135,341 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fada1_0
+      name: 2_12
       rect:
         serializedVersion: 2
-        x: 115
-        y: 1884
-        width: 527
-        height: 667
+        x: 37
+        y: 1084
+        width: 233
+        height: 305
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75c54c9c4e9edcff0800000000000000
-      internalID: -14098054965339049
+      spriteID: 5186b3be95f7a78d0800000000000000
+      internalID: -2847823790183061483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_1
+      name: 2_13
       rect:
         serializedVersion: 2
-        x: 855
-        y: 1899
-        width: 527
-        height: 629
+        x: 304
+        y: 1081
+        width: 232
+        height: 317
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cb0ece64a61ac8d0800000000000000
-      internalID: -2825420920732120127
+      spriteID: 6d7dc64635a4524c0800000000000000
+      internalID: -4312959346109786154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_3
+      name: 2_14
       rect:
         serializedVersion: 2
-        x: 1609
-        y: 1899
-        width: 527
-        height: 667
+        x: 557
+        y: 1087
+        width: 235
+        height: 308
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a1aec99bfbbc5e80800000000000000
-      internalID: -8188463333174763096
+      spriteID: a14e0a9c61fd7c510800000000000000
+      internalID: 1569468284126946330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada_default
+      name: 2_15
       rect:
         serializedVersion: 2
-        x: 2406
-        y: 1871
-        width: 601
-        height: 705
+        x: 816
+        y: 1094
+        width: 233
+        height: 311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd8c910359bf3de60800000000000000
-      internalID: 7986003182433716444
+      spriteID: 9149f87817e000ec0800000000000000
+      internalID: -3602863821127969767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_5
+      name: 2_16
       rect:
         serializedVersion: 2
-        x: 3338
-        y: 1912
-        width: 552
-        height: 542
+        x: 37
+        y: 736
+        width: 139
+        height: 309
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ac7cc0a0710b3e80800000000000000
-      internalID: -8197957113452135260
+      spriteID: 573c36b8e36d41cf0800000000000000
+      internalID: -282365312502611083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_6
+      name: 2_17
       rect:
         serializedVersion: 2
-        x: 4234
-        y: 1907
-        width: 552
-        height: 654
+        x: 232
+        y: 735
+        width: 139
+        height: 310
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac064b801d0165420800000000000000
-      internalID: 2618298723342770378
+      spriteID: f4b055c3f2f201f30800000000000000
+      internalID: 4544183903939005263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_7
+      name: 2_18
       rect:
         serializedVersion: 2
-        x: 94
-        y: 955
-        width: 507
-        height: 728
+        x: 423
+        y: 730
+        width: 204
+        height: 288
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32649ac11a0cb94f0800000000000000
-      internalID: -820850708861860317
+      spriteID: d6352d0a7ee968820800000000000000
+      internalID: 2920196126069117805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_8
+      name: 2_19
       rect:
         serializedVersion: 2
-        x: 713
-        y: 942
-        width: 504
-        height: 814
+        x: 682
+        y: 721
+        width: 203
+        height: 307
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd67f81118a8123d0800000000000000
-      internalID: -3233150770525276451
+      spriteID: 998546372150f3e20800000000000000
+      internalID: 3332387826080962713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_9
+      name: 2_21
       rect:
         serializedVersion: 2
-        x: 1329
-        y: 957
-        width: 504
-        height: 810
+        x: 39
+        y: 392
+        width: 207
+        height: 296
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50edb5f5b46ae6630800000000000000
-      internalID: 3922255168138894853
+      spriteID: 0a3670cf6bb9889e0800000000000000
+      internalID: -1618872855824997472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_10
+      name: 2_22
       rect:
         serializedVersion: 2
-        x: 1948
-        y: 944
-        width: 504
-        height: 810
+        x: 266
+        y: 389
+        width: 214
+        height: 297
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33ee93bea20060680800000000000000
-      internalID: -8789337438431875533
+      spriteID: 32b5d592c781df440800000000000000
+      internalID: 4971156485235890979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_11
+      name: 2_23
       rect:
         serializedVersion: 2
-        x: 2610
-        y: 939
-        width: 506
-        height: 810
+        x: 525
+        y: 393
+        width: 155
+        height: 296
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35433d44c63074ac0800000000000000
-      internalID: -3871121591155608493
+      spriteID: 2fca40401a1d53a30800000000000000
+      internalID: 4194489117452840178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_12
+      name: 2_24
       rect:
         serializedVersion: 2
-        x: 3259
-        y: 977
-        width: 506
-        height: 810
+        x: 63
+        y: 35
+        width: 139
+        height: 309
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32be6a2710719f360800000000000000
-      internalID: 7203814373941766947
+      spriteID: f85fbd0cfdb9b48e0800000000000000
+      internalID: -1708100248341318257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_13
+      name: 2_25
       rect:
         serializedVersion: 2
-        x: 3916
-        y: 988
-        width: 504
-        height: 809
+        x: 239
+        y: 35
+        width: 139
+        height: 329
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c50077d8bf01f540800000000000000
-      internalID: 5039826744567137735
+      spriteID: 80bf821dd95911d90800000000000000
+      internalID: -7128752230099256568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_14
+      name: 2_26
       rect:
         serializedVersion: 2
-        x: 4575
-        y: 972
-        width: 504
-        height: 810
+        x: 423
+        y: 45
+        width: 188
+        height: 286
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e998a6c21b1c5240800000000000000
-      internalID: 4781726671816923624
+      spriteID: 8974488decd9eb820800000000000000
+      internalID: 2935957518813513624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_15
+      name: 2_28
       rect:
         serializedVersion: 2
-        x: 199
-        y: 143
-        width: 506
-        height: 679
+        x: 646
+        y: 47
+        width: 192
+        height: 267
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4df5d2dfeac9ea70800000000000000
-      internalID: 8856833273584024908
+      spriteID: c7c412c84f46051b0800000000000000
+      internalID: -5669920929373664132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fada1_16
+      name: 2_30
       rect:
         serializedVersion: 2
-        x: 827
-        y: 127
-        width: 507
-        height: 756
+        x: 864
+        y: 50
+        width: 138
+        height: 295
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 116e96f8b4c3af4d0800000000000000
-      internalID: -3100099098264869359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fada1_17
-      rect:
-        serializedVersion: 2
-        x: 1525
-        y: 79
-        width: 517
-        height: 708
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61f805bb5a9be3070800000000000000
-      internalID: 8088106102267350806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fada1_18
-      rect:
-        serializedVersion: 2
-        x: 3572
-        y: 120
-        width: 619
-        height: 700
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7524636d6829a99c0800000000000000
-      internalID: -3919659417855442345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fada1_19
-      rect:
-        serializedVersion: 2
-        x: 4287
-        y: 158
-        width: 614
-        height: 662
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e64f7009a5f009240800000000000000
-      internalID: 4796350484787491950
+      spriteID: 39d1b56124a67adc0800000000000000
+      internalID: -3627814142748189293
       vertices: []
       indices: 
       edges: []
