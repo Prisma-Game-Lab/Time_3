@@ -14,8 +14,8 @@ public class PopulateRoom : MonoBehaviour
     {
         for(int i = 0; i < totalObjects; i++)
         {
-            float xPosition = Random.Range(-8,8);
-            float yPosition = Random.Range(-3,3);
+            float xPosition = Random.Range(-5,5);
+            float yPosition = Random.Range(-2,2);
             int objectIndex = Random.Range(0, roomObjects.Count);
 
             GameObject spawnedObject = Instantiate(roomObjects[objectIndex], new Vector3(xPosition,yPosition,0.0f) + gameObject.transform.position, Quaternion.identity);
