@@ -24,4 +24,4 @@ MonoBehaviour:
   head: {fileID: 2312998053088067245, guid: 0d20afe69c5415c42ad2044abf7d9813, type: 3}
   headOffset: {x: 0.05, y: -0.04, z: 0}
   sprite: {fileID: 8298673148928402785, guid: 0d20afe69c5415c42ad2044abf7d9813, type: 3}
-  animatorController: {fileID: 0}
+  animatorController: {fileID: 9100000, guid: 3ae9eec9c961a9a4cb604d201b65a8f9, type: 2}

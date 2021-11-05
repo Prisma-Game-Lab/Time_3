@@ -12,7 +12,7 @@ public class SwitchCharacter : MonoBehaviour
 	[SerializeField] private HeadOffset headOffset;
 	private CharStats charStats;
 	private PlayerActions playerinput;
-
+	[SerializeField] private Animator animator;
 
 	private void Awake() {
 		playerinput = new PlayerActions();
@@ -51,5 +51,6 @@ public class SwitchCharacter : MonoBehaviour
 		Head.sprite =charStats.GetCharacterBase().head;
 		GetComponent<PlayerController>().UpdateStats();
 		headOffset.offsetUpdate(charStats.GetHeadOffset());
+		animator.runtimeAnimatorController = charStats.GetRuntimeAnimatorController();
 	}
 }

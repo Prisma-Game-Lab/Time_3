@@ -47,7 +47,6 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	private void Update() {
 		playerSpeed = movementVec.magnitude;
 		animator.SetFloat("Horizontal", movementVec.x);
-		Debug.Log(movementVec.x);
 		animator.SetFloat("Speed",playerSpeed);
 	}
 
