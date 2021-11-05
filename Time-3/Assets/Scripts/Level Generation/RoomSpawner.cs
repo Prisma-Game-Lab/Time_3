@@ -53,7 +53,7 @@ public class RoomSpawner : MonoBehaviour
         } 
         else if(!spawned)
         {
-            gameObject.transform.parent.parent.GetChild(2).GetChild(openingDirection - 1).GetChild(0).gameObject.SetActive(true);
+            gameObject.transform.parent.parent.GetChild(2).GetChild(3).GetChild(openingDirection - 1).gameObject.SetActive(true);
             spawned = true;
         }
         else if(isOverlaping)
