@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BasicBubble
   m_EditorClassIdentifier: 
   skillName: Bubble Attack
-  skillCD: 50
+  skillCD: 0.5
   activeTime: 0
   state: ready
   bubblePrefab: {fileID: 7252743445968307268, guid: 31f132e63a1f95548bd084cbe4140b2f, type: 3}
