@@ -12,14 +12,13 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
 	private CharStats charStats;
 	private Rigidbody2D rb;
-	private SpriteRenderer headSprite;
+	[SerializeField] private SpriteRenderer headSprite;
 	private Vector2 rawMovementVec;
 	private Vector2 movementVec;
 
 	public void SetUp()
 	{
 		MaxplayerSpeed = charStats.GetSpeed();
-		headSprite = head.GetComponent<SpriteRenderer>();
 	}
 
 	private void Awake()
