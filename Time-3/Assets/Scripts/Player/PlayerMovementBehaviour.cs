@@ -42,6 +42,9 @@ public class PlayerMovementBehaviour : MonoBehaviour
 		if(playerSpeed<0.01){
 			TurnPlayer();
 		}
+		else{
+			spriteRenderer.flipX = false;
+		}
 	}
 	private void Update() {
 		playerSpeed = movementVec.magnitude;
