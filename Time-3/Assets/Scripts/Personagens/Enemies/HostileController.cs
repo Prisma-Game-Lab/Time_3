@@ -7,12 +7,14 @@ public class HostileController : MonoBehaviour, IDamageable<int>
 	private HostileStats hostileStats;
 	private GameObject player;
 	private HostileMovementBehaviour movementBehaviour;
+	private HostileAI hostileAIBehaviour;
 
 	private void Awake()
 	{
 		hostileStats = GetComponent<HostileStats>();
 		player = GameObject.FindWithTag("Player");
 		movementBehaviour = GetComponent<HostileMovementBehaviour>();
+		hostileAIBehaviour = GetComponent<HostileAI>();
 	}
 
 	private void FixedUpdate()
@@ -33,6 +35,8 @@ public class HostileController : MonoBehaviour, IDamageable<int>
 	public bool ApplyDamage(int damage)
 	{
 		// TODO: Animacao de dano?
+
+		hostileAIBehaviour.Aggro();
 
 		hostileStats.IncCurrHp(-damage);
 		if (hostileStats.GetCurrHp() <= 0) {
