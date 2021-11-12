@@ -5,7 +5,7 @@ public class HostileAI : MonoBehaviour
 	// TODO: basear em status?
 	[SerializeField] private float maxSearchTime = 10.0f;
 
-	private HostileVision vision;
+	private HostileDetection detectionBehaviour;
 	private HostilePatrol patrolBehaviour;
 	private HostilePersuit persuitBehaviour;
 	private HostileSearch searchBehaviour;
@@ -35,9 +35,13 @@ public class HostileAI : MonoBehaviour
 
 	private float searchTime;
 
+	public void Aggro(){
+		CurrState = State.PERSUIT;
+	}
+
 	private void Awake()
 	{
-		vision = GetComponent<HostileVision>();
+		detectionBehaviour = GetComponent<HostileDetection>();
 		patrolBehaviour = GetComponent<HostilePatrol>();
 		persuitBehaviour = GetComponent<HostilePersuit>();
 		searchBehaviour = GetComponent<HostileSearch>();
@@ -48,7 +52,7 @@ public class HostileAI : MonoBehaviour
 	{
 		switch (CurrState) {
 			case State.PATROL:
-				if (vision.isPlayerVisible()) {
+				if (detectionBehaviour.isPlayerDetectable()) {
 					CurrState = State.PERSUIT;
 				} else {
 					patrolBehaviour.Patrol();
@@ -56,7 +60,7 @@ public class HostileAI : MonoBehaviour
 				break;
 
 			case State.PERSUIT:
-				if (vision.isPlayerVisible()) {
+				if (detectionBehaviour.isPlayerDetectable()) {
 					persuitBehaviour.Persuit();
 					// TODO: if player defeated, PATROL
 				} else {
@@ -65,7 +69,7 @@ public class HostileAI : MonoBehaviour
 				break;
 
 			case State.SEARCH:
-				if (vision.isPlayerVisible()) {
+				if (detectionBehaviour.isPlayerDetectable()) {
 					CurrState = State.PERSUIT;
 				} else {
 					searchBehaviour.Search();
@@ -80,3 +84,4 @@ public class HostileAI : MonoBehaviour
 		}
 	}
 }
+

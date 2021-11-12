@@ -1,13 +1,14 @@
 using UnityEngine;
 
-public class HostileVision : MonoBehaviour
+public class HostileDetection : MonoBehaviour
 {
 	private CharStats charStats;
 	[SerializeField] private GameObject player;
 
 	// TODO: base on stats
-	[SerializeField] private float fov = 90.0f;
-	[SerializeField] private float viewDistance = 3.0f;
+	[SerializeField] private float fov = 120.0f;
+	[SerializeField] private float viewDistance = 4.0f;
+	[SerializeField] private float hearingDistance = 2.0f;
 	[SerializeField] private LayerMask ignoreMask;
 
 	private LayerMask raycastLayers;
@@ -24,18 +25,22 @@ public class HostileVision : MonoBehaviour
 
 	}
 
-	public bool isPlayerVisible()
+	public bool isPlayerDetectable()
 	{
 		Vector3 pPosition = player.GetComponentInParent<Transform>().position;
 
 		// Player within distance?
 		float distance = Vector2.Distance(pPosition, transform.position);
-		if (distance < viewDistance) {
+
+		if (distance <= hearingDistance) {
+			return true;
+		}
+
+		if (distance <= viewDistance) {
 
 			// Player within fov?
 			float angle = Vector2.Angle(pPosition - transform.position, transform.right);
 			if (angle < fov/2) {
-				Debug.Log("fov");
 
 				// Player visible?
 				RaycastHit2D hit = Physics2D.Raycast(

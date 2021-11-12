@@ -141,6 +141,9 @@ MonoBehaviour:
   damage: 0
   skillDmg: 0
   current_sprite: {fileID: 0}
+  current_head: {fileID: 0}
+  headoffset: {x: 0, y: 0, z: 0}
+  AnimatorController: {fileID: 0}
   dropValue: 0
 --- !u!114 &-8039194156086180348
 MonoBehaviour:
@@ -168,7 +171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   fov: 90
-  viewDistance: 10
+  viewDistance: 15
+  hearingDistance: 5
   ignoreMask:
     serializedVersion: 2
     m_Bits: 0
@@ -251,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e015888812a0660d994703f294dbeb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   basicAttackDamage: 1
   basicAttackCooldownValue: 1
 --- !u!114 &5696558440926843565
