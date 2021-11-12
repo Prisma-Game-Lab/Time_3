@@ -21,8 +21,22 @@ public class HostileStats : CharStats
 	public float GetViewDistance() => viewDistance;
 	public float GetHearingDistance() => hearingDistance;
 
-	public void SetDropValue(float dropValue) =>  this.dropValue = dropValue < 0 ? 0 : dropValue;
-	public void SetFOV(float fov) => this.fov = fov;
-	public void SetViewDistance(float viewDistance) => this.viewDistance = viewDistance;
-	public void SetHearingDistance(float hearingDistance) => this.hearingDistance = hearingDistance;
+	public void SetDropValue(float dropValue) {
+		if (dropValue >= 0.0f)
+			this.dropValue = dropValue;
+	}
+
+	public void SetFOV(float fov) {
+		if (fov >= 0.0f && fov <= 360.0f)
+			this.fov = fov;
+	}
+	public void SetViewDistance(float viewDistance) {
+		if (viewDistance >= 0)
+			this.viewDistance = viewDistance;
+	}
+
+	public void SetHearingDistance(float hearingDistance) {
+		if (hearingDistance >= 0)
+			this.hearingDistance = hearingDistance;
+	}
 }
