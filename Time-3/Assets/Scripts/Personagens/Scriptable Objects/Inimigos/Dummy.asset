@@ -19,5 +19,11 @@ MonoBehaviour:
   baseSkillDmg: 0
   basicAttack: {fileID: 0}
   Skills: []
+  head: {fileID: 0}
+  headOffset: {x: 0, y: 0, z: 0}
   sprite: {fileID: 0}
+  animatorController: {fileID: 0}
   dropValue: 0
+  fov: 120
+  viewDistance: 10
+  hearingDistance: 5

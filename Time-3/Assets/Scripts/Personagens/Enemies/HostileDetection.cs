@@ -2,26 +2,30 @@ using UnityEngine;
 
 public class HostileDetection : MonoBehaviour
 {
-	private CharStats charStats;
+	private HostileStats hostileStats;
 	[SerializeField] private GameObject player;
 
 	// TODO: base on stats
-	[SerializeField] private float fov = 120.0f;
-	[SerializeField] private float viewDistance = 4.0f;
-	[SerializeField] private float hearingDistance = 2.0f;
 	[SerializeField] private LayerMask ignoreMask;
+
+	private float fov;
+	private float viewDistance;
+	private float hearingDistance;
 
 	private LayerMask raycastLayers;
 
 	void Awake()
 	{
-		charStats = GetComponent<CharStats>();
+		hostileStats = GetComponent<HostileStats>();
 		if (player == null) {
 			player = GameObject.FindGameObjectWithTag("Player");
 		}
 
 		// Ignore own mask
 		raycastLayers = ~(ignoreMask | (1 << gameObject.layer));
+		fov = hostileStats.GetFOV();
+		hearingDistance = hostileStats.GetHearingDistance();
+		viewDistance = hostileStats.GetViewDistance();
 
 	}
 
