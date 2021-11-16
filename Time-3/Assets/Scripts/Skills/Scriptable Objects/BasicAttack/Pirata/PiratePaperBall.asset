@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: 
   skillCD: 0.5
-  activeTime: 0
+  activeTime: 1
   state: ready
   paperBallPrefab: {fileID: 605911373998341531, guid: 17d74771948a8b0cab75026ee82aff2a, type: 3}
   min_speed: 500
   max_speed: 1000
   max_load_time: 2
+  SlowMultiplier: 0.1
