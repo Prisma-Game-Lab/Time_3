@@ -527,6 +527,8 @@ GameObject:
   - component: {fileID: 8145615898857042755}
   - component: {fileID: 8145615898857042754}
   - component: {fileID: 7537581464826153113}
+  - component: {fileID: 3261505775983376914}
+  - component: {fileID: 9188954622626964459}
   m_Layer: 5
   m_Name: HUD
   m_TagString: HUD
@@ -605,8 +607,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8925a211a6fccdfad8d66f3e9c811b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 8145615898178529680}
   specialBar: {fileID: 8145615898561182818}
+  healthBar: {fileID: 3261505775983376914}
+  charSelection: {fileID: 9188954622626964459}
+--- !u!114 &3261505775983376914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8145615898857042764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878fcc644314b196a997a8d79c7c8426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 8145615898178529680}
+--- !u!114 &9188954622626964459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8145615898857042764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd414fea14f9265f4ac4eccf6d929ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   circles:
   - {fileID: 2453459861991693070}
   - {fileID: 5379351465278478664}

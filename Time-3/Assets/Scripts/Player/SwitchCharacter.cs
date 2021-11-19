@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
-public class SwitchCharacter : MonoBehaviour
+public class SwitchCharacter : MonoBehaviour, IObservable<int>
 {
 	[SerializeField] private CharacterBase[] Heroes;
 	[SerializeField] private SpriteRenderer spriteRenderer;
@@ -10,11 +11,12 @@ public class SwitchCharacter : MonoBehaviour
 	private CharStats charStats;
 	private PlayerActions playerinput;
 	[SerializeField] private Animator animator;
-	private HUDManager hudManager;
+
+	private List<IObserver<int>> observers;
 
 	private void Awake() {
 		playerinput = new PlayerActions();
-		hudManager = GameObject.FindGameObjectWithTag("HUD").GetComponent<HUDManager>();
+		observers = new List<IObserver<int>>();
 	}
 
 	private void Start()
@@ -25,6 +27,10 @@ public class SwitchCharacter : MonoBehaviour
 		//Pode ser uma variável global para um personagem default/favorito
 		SwitchHero(0);
 	}
+
+	// Observable
+	public virtual void subscribe(IObserver<int> observer) => observers.Add(observer);
+	public virtual void unsubscribe(IObserver<int> observer) => observers.Remove(observer);
 
 	// Update is called once per frame
 
@@ -51,7 +57,7 @@ public class SwitchCharacter : MonoBehaviour
 		GetComponent<PlayerController>().UpdateStats();
 		headOffset.offsetUpdate(charStats.GetHeadOffset());
 		animator.runtimeAnimatorController = charStats.GetRuntimeAnimatorController();
-		if (hudManager != null)
-			hudManager.enableCircle(index);
+
+		observers.ForEach(o => o.update(index));
 	}
 }

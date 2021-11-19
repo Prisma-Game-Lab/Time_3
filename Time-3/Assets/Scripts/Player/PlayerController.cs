@@ -1,4 +1,4 @@
-using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -13,7 +13,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(BasicAttackBehaviour))]
 [RequireComponent(typeof(PlayerInventoryBehaviour))]
 [RequireComponent(typeof(PlayerInteraction))]
-public class PlayerController : MonoBehaviour, IDamageable<int>
+public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<float>
 {
 	private HUDManager hudManager;
 	private CharStats charStats;
@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	private PlayerSkillBehaviour pSkillBehaviour;
 	[SerializeField] private GameObject head;
 
+	private List<IObserver<float>> observers;
+
 	private void Awake()
 	{
 		charStats = GetComponent<CharStats>();
@@ -29,7 +31,11 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 		pMovementBehaviour = GetComponent<PlayerMovementBehaviour>();
 		pSkillBehaviour = GetComponent<PlayerSkillBehaviour>();
 		hudManager = GameObject.FindWithTag("HUD").GetComponent<HUDManager>();
+		observers = new List<IObserver<float>>();
 	}
+
+	public void subscribe(IObserver<float> observer) => observers.Add(observer);
+	public void unsubscribe(IObserver<float> observer) => observers.Remove(observer);
 
 	public void Die()
 	{
@@ -43,15 +49,14 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	public void Heal()
 	{
 		charStats.SetCurrHp(charStats.GetMaxHp());
-		if (hudManager != null)
-			hudManager.setHealthNormalised(1.0f);
+		observers.ForEach(o => o.update(1.0f));
 	}
 
 	public void ApplyHealing(int healing)
 	{
 		charStats.IncCurrHp(healing);
-		if (hudManager != null)
-			hudManager.setHealth(charStats.GetCurrHp(), charStats.GetMaxHp());
+		float normalisedHealth = (float)charStats.GetCurrHp() / charStats.GetMaxHp();
+		observers.ForEach(o => o.update( normalisedHealth ));
 	}
 
 	public bool ApplyDamage(int damage)
@@ -63,8 +68,9 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 			return true;
 		}
 
-		if (hudManager != null)
-			hudManager.setHealth(charStats.GetCurrHp(), charStats.GetMaxHp());
+		float normalisedHealth = (float)charStats.GetCurrHp() / charStats.GetMaxHp();
+		observers.ForEach(o => o.update( normalisedHealth ));
+
 		return false;
 	}
 
@@ -81,7 +87,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>
 	{
 		if (context.started) { // Press
 			pSkillBehaviour.ActivateSkill(charStats.GetBasicAttack());
-			
+
 		} else if (context.canceled && charStats.GetBasicAttack().state=="active") { // Release
 			pAttackBehaviour.BasicAttack(false);
 			pMovementBehaviour.ResetSpeed();
