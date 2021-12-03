@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HostileDetection : MonoBehaviour
+public class HostileDetection : MonoBehaviour, IHostileDetection
 {
 	private HostileStats hostileStats;
 	[SerializeField] private GameObject player;

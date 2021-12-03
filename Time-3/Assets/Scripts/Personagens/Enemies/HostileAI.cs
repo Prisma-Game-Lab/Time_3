@@ -5,10 +5,10 @@ public class HostileAI : MonoBehaviour
 	// TODO: basear em status?
 	[SerializeField] private float maxSearchTime = 10.0f;
 
-	private HostileDetection detectionBehaviour;
-	private HostilePatrol patrolBehaviour;
-	private HostilePersuit persuitBehaviour;
-	private HostileSearch searchBehaviour;
+	private IHostileDetection detectionBehaviour;
+	private IHostilePatrol patrolBehaviour;
+	private IHostilePersuit persuitBehaviour;
+	private IHostileSearch searchBehaviour;
 
 	private enum State {PATROL, PERSUIT, SEARCH};
 
@@ -35,16 +35,17 @@ public class HostileAI : MonoBehaviour
 
 	private float searchTime;
 
-	public void Aggro(){
+	public void Aggro()
+	{
 		CurrState = State.PERSUIT;
 	}
 
 	private void Awake()
 	{
-		detectionBehaviour = GetComponent<HostileDetection>();
-		patrolBehaviour = GetComponent<HostilePatrol>();
-		persuitBehaviour = GetComponent<HostilePersuit>();
-		searchBehaviour = GetComponent<HostileSearch>();
+		detectionBehaviour = GetComponent<IHostileDetection>();
+		patrolBehaviour = GetComponent<IHostilePatrol>();
+		persuitBehaviour = GetComponent<IHostilePersuit>();
+		searchBehaviour = GetComponent<IHostileSearch>();
 		searchTime = maxSearchTime;
 	}
 

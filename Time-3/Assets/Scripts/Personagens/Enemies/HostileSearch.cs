@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HostileSearch : MonoBehaviour
+public class HostileSearch : MonoBehaviour, IHostileSearch
 {
 	private HostileMovementBehaviour movBehaviour;
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HostilePatrol : MonoBehaviour
+public class HostilePatrol : MonoBehaviour, IHostilePatrol
 {
 	private HostileMovementBehaviour movBehaviour;
 
