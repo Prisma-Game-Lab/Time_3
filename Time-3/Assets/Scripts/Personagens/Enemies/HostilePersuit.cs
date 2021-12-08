@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HostilePersuit : MonoBehaviour
+public class HostilePersuit : MonoBehaviour, IHostilePersuit
 {
 	private HostileMovementBehaviour movBehaviour;
 	private BasicAttackBehaviour hAttackBehaviour;
