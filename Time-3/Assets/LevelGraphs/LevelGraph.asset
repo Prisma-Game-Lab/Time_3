@@ -19,7 +19,7 @@ MonoBehaviour:
   DefaultRoomTemplateSets: []
   Rooms: []
   EditorData:
-    PanOffset: {x: 0, y: 0}
-    Zoom: 1
+    PanOffset: {x: 2202.2693, y: 1126.116}
+    Zoom: 0.2242385
   RoomType: Edgar.Unity.Room
   ConnectionType: Edgar.Unity.Connection
