@@ -154,7 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {x: 480, y: 240}
   Name: Sala Start
-  IndividualRoomTemplates: []
+  IndividualRoomTemplates:
+  - {fileID: 5341333166214571886, guid: bca899a07becc41889542ffbebf1dd80, type: 3}
   RoomTemplateSets: []
 --- !u!114 &-2617516216523455132
 MonoBehaviour:
@@ -321,6 +322,7 @@ MonoBehaviour:
   - {fileID: 5694339801610502926}
   - {fileID: -3520471935539964902}
   - {fileID: -9102711612701064268}
+  - {fileID: 8160265573016830394}
   EditorData:
     PanOffset: {x: -330.97302, y: 157.75476}
     Zoom: 0.87722635
@@ -370,7 +372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {x: 1280, y: 80}
   Name: Sala End
-  IndividualRoomTemplates: []
+  IndividualRoomTemplates:
+  - {fileID: 5341333166214571886, guid: bca899a07becc41889542ffbebf1dd80, type: 3}
   RoomTemplateSets: []
 --- !u!114 &1408548071758971226
 MonoBehaviour:
@@ -620,6 +623,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   From: {fileID: 8336911993619699788}
   To: {fileID: 25685507731985580}
+--- !u!114 &8160265573016830394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8074dc491ddc34f4e83332d9eae76980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Position: {x: 912, y: 16}
+  Name: Room
+  IndividualRoomTemplates: []
+  RoomTemplateSets: []
 --- !u!114 &8321772419547300598
 MonoBehaviour:
   m_ObjectHideFlags: 0
