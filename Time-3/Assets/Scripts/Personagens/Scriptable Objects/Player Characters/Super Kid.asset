@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Super Kid
   m_EditorClassIdentifier: 
   baseHp: 100
-  baseDefense: 0.4
+  baseDefense: 0.6
   baseSpeed: 9
   baseDamage: 34
   baseSkillDmg: 0

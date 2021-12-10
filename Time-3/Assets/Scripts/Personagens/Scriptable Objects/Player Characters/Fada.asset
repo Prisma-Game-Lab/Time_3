@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Fada
   m_EditorClassIdentifier: 
   baseHp: 100
-  baseDefense: 0.2
-  baseSpeed: 10
+  baseDefense: 0.3
+  baseSpeed: 12
   baseDamage: 20
   baseSkillDmg: 10
   basicAttack: {fileID: 11400000, guid: da63badf53b68cc44aff00528df22dd0, type: 2}

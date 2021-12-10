@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseHp: 100
   baseDefense: 0
-  baseSpeed: 11
+  baseSpeed: 14
   baseDamage: 50
   baseSkillDmg: 0
   basicAttack: {fileID: 11400000, guid: 5a3a45eb06823a8969a3e1e8cf14b4a7, type: 2}
