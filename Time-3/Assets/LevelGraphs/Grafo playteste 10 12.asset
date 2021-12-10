@@ -338,8 +338,8 @@ MonoBehaviour:
   - {fileID: -3520471935539964902}
   - {fileID: -9102711612701064268}
   EditorData:
-    PanOffset: {x: -366.6325, y: -42.50047}
-    Zoom: 1.418707
+    PanOffset: {x: -848.0014, y: 38.366417}
+    Zoom: 1.3832726
   RoomType: Edgar.Unity.Room
   ConnectionType: Edgar.Unity.Connection
 --- !u!114 &25685507731985580
@@ -387,7 +387,7 @@ MonoBehaviour:
   Position: {x: 1280, y: 80}
   Name: Sala End
   IndividualRoomTemplates:
-  - {fileID: 5341333166214571886, guid: bca899a07becc41889542ffbebf1dd80, type: 3}
+  - {fileID: 5147841205327151508, guid: 14c57042436ee8f4a9793c98f9c31fe7, type: 3}
   RoomTemplateSets: []
 --- !u!114 &1408548071758971226
 MonoBehaviour:
