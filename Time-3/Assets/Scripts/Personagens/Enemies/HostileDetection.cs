@@ -17,9 +17,6 @@ public class HostileDetection : MonoBehaviour, IHostileDetection
 	void Awake()
 	{
 		hostileStats = GetComponent<HostileStats>();
-		if (player == null) {
-			player = GameObject.FindGameObjectWithTag("Player");
-		}
 
 		// Ignore own mask
 		raycastLayers = ~(ignoreMask | (1 << gameObject.layer));
@@ -27,6 +24,13 @@ public class HostileDetection : MonoBehaviour, IHostileDetection
 		hearingDistance = hostileStats.GetHearingDistance();
 		viewDistance = hostileStats.GetViewDistance();
 
+	}
+
+	private void Start() 
+	{
+		if (player == null) {
+			player = GameObject.FindGameObjectWithTag("Player");
+		}
 	}
 
 	public bool isPlayerDetectable()

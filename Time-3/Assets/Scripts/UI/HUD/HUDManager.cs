@@ -8,7 +8,7 @@ public class HUDManager : MonoBehaviour
 	[SerializeField] private HealthBar healthBar;
 	[SerializeField] private CharacterSelection charSelection;
 
-	private void Awake()
+	private void Start()
 	{
 		GameObject.FindGameObjectWithTag("Player")
 			.GetComponent<SwitchCharacter>()

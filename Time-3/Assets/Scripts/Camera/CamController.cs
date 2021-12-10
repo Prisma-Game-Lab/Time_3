@@ -4,44 +4,23 @@ using UnityEngine;
 
 public class CamController : MonoBehaviour
 {
+    public Transform target;
 
-    public static CamController instance;
-    public GameObject currentRoom;
-    public float moveSpeed;
+    public float smoothSpeed;
+    public Vector3 offset;
 
-    private void Awake() 
-    {
-        instance = this;
-    }
-    
-    // Update is called once per frame
-    void Update()
-    {
-        UpdatePosition();
-    }
-
-    private void UpdatePosition() 
-    {
-        if(currentRoom == null)
+    private void Start() {
+        if(target == null)
         {
-            return;
+            target = GameObject.FindGameObjectWithTag("Player").transform;
         }
-
-        Vector3 targetPos = GetCameraTargetPosition();
-
-        transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime * moveSpeed);
     }
 
-    Vector3 GetCameraTargetPosition()
-    {
-        if(currentRoom == null)
-        {
-            return Vector3.zero;
-        }   
+    private void LateUpdate() {
+        Vector3 desiredPos = target.position + offset;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPos, smoothSpeed);
+        transform.position = smoothedPosition;
 
-        Vector3 targetPos = currentRoom.transform.position;
-        targetPos.z = transform.position.z;
-
-        return targetPos;
+        transform.LookAt(target);
     }
 }
