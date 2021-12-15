@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 //Usar RequireComponent para adicionar componentes automaticamente ao jogador -Arthur
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(CharStats))]
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(PlayerMovementBehaviour))]
 [RequireComponent(typeof(SwitchCharacter))]
 [RequireComponent(typeof(PlayerSkillBehaviour))]
