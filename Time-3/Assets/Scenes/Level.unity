@@ -1014,7 +1014,7 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: Sino
+  - name: Inicio fase
     clip: {fileID: 8300000, guid: 1caa46011bc94724f937a5f1f4836cb7, type: 3}
     volume: 0
     volumeVariance: 0
