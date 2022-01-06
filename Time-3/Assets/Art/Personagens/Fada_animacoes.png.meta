@@ -1,0 +1,744 @@
+fileFormatVersion: 2
+guid: 1dec819a61a6c7f44998834dbb2f40f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5254410515122262708
+    second: Imagem do iOS (1)_0
+  - first:
+      213: 576408087321605631
+    second: Imagem do iOS (1)_1
+  - first:
+      213: -6505648908285636204
+    second: Imagem do iOS (1)_2
+  - first:
+      213: -7513136970424186758
+    second: Imagem do iOS (1)_3
+  - first:
+      213: 1395206216919810231
+    second: Imagem do iOS (1)_4
+  - first:
+      213: -1123937253651276336
+    second: Imagem do iOS (1)_5
+  - first:
+      213: -7049702422579968608
+    second: Imagem do iOS (1)_6
+  - first:
+      213: -5139484929500195983
+    second: Imagem do iOS (1)_7
+  - first:
+      213: 3798558924164186556
+    second: Imagem do iOS (1)_8
+  - first:
+      213: -2253488112008092952
+    second: Imagem do iOS (1)_9
+  - first:
+      213: 8847571203133346314
+    second: Imagem do iOS (1)_10
+  - first:
+      213: 5278558271227668690
+    second: Imagem do iOS (1)_11
+  - first:
+      213: -5005673051272661907
+    second: Imagem do iOS (1)_12
+  - first:
+      213: -89738206823198069
+    second: Imagem do iOS (1)_13
+  - first:
+      213: 386013160061792260
+    second: Imagem do iOS (1)_14
+  - first:
+      213: 545010729529913996
+    second: Imagem do iOS (1)_15
+  - first:
+      213: 5346977680285233957
+    second: Imagem do iOS (1)_16
+  - first:
+      213: 4300094517495833553
+    second: Imagem do iOS (1)_17
+  - first:
+      213: -5145345861138959570
+    second: Imagem do iOS (1)_18
+  - first:
+      213: -7619172293328953125
+    second: Imagem do iOS (1)_19
+  - first:
+      213: 4705183630099705783
+    second: Imagem do iOS (1)_20
+  - first:
+      213: -539632204551839992
+    second: Imagem do iOS (1)_21
+  - first:
+      213: 3478317491148520499
+    second: Imagem do iOS (1)_22
+  - first:
+      213: -5495830959469216551
+    second: Imagem do iOS (1)_23
+  - first:
+      213: 6276320457452285936
+    second: Imagem do iOS (1)_24
+  - first:
+      213: -8359207301421742596
+    second: Imagem do iOS (1)_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 679
+        width: 105
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b290f1468a6be840800000000000000
+      internalID: 5254410515122262708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 685
+        width: 121
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5777af910dff700800000000000000
+      internalID: 576408087321605631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 686
+        width: 121
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4911a3c49ca47b5a0800000000000000
+      internalID: -6505648908285636204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 578
+        width: 122
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7803015bb9fbb790800000000000000
+      internalID: -7513136970424186758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_4
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 586
+        width: 108
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b00ce389a4cc5310800000000000000
+      internalID: 1395206216919810231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_5
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 590
+        width: 107
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd994ec509f660f0800000000000000
+      internalID: -1123937253651276336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 533
+        width: 122
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a509e16ffc6a2e90800000000000000
+      internalID: -7049702422579968608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 529
+        width: 123
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173daa0dfa1eca8b0800000000000000
+      internalID: -5139484929500195983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 534
+        width: 123
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb14235473137b430800000000000000
+      internalID: 3798558924164186556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 361
+        width: 103
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2213a60800ab0e0800000000000000
+      internalID: -2253488112008092952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_10
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 357
+        width: 104
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a021dbff123e8ca70800000000000000
+      internalID: 8847571203133346314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_11
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 368
+        width: 105
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8a9bad7c4314940800000000000000
+      internalID: 5278558271227668690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_12
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 391
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64b52d81e6488ab0800000000000000
+      internalID: -5005673051272661907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_13
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 399
+        width: 125
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82d58b839f21cef0800000000000000
+      internalID: -89738206823198069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_14
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 180
+        width: 104
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400fb148ce46b5500800000000000000
+      internalID: 386013160061792260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 178
+        width: 104
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c823864fe54409700800000000000000
+      internalID: 545010729529913996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_16
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 181
+        width: 103
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523f757eed7443a40800000000000000
+      internalID: 5346977680285233957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_17
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 178
+        width: 103
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3a1f74e210dab30800000000000000
+      internalID: 4300094517495833553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_18
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 178
+        width: 104
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e233944533f0898b0800000000000000
+      internalID: -5145345861138959570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_19
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 185
+        width: 103
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd021a5da23434690800000000000000
+      internalID: -7619172293328953125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_20
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 187
+        width: 103
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf631b159b2c4140800000000000000
+      internalID: 4705183630099705783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_21
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 184
+        width: 104
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f935a7e57d288f0800000000000000
+      internalID: -539632204551839992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 24
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c7feb4457754030800000000000000
+      internalID: 3478317491148520499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_23
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 24
+        width: 112
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc3e3b4cd2eab3b0800000000000000
+      internalID: -5495830959469216551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_24
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 24
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffe5f2e338f91750800000000000000
+      internalID: 6276320457452285936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagem do iOS (1)_25
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 25
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5c7e29f312efb80800000000000000
+      internalID: -8359207301421742596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
