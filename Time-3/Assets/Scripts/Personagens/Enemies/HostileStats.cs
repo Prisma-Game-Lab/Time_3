@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class HostileStats : CharStats
 {
+	[SerializeField] private CharacterBase[] enemyBases;
 	[SerializeField] private float dropValue;
 	[SerializeField] private float fov;
 	[SerializeField] private float viewDistance;
@@ -9,11 +10,13 @@ public class HostileStats : CharStats
 
 	protected override void Awake()
 	{
+		charBase = enemyBases[Random.Range(0,3)];
 		base.Awake();
 		dropValue = ((HostileBase)charBase).dropValue;
 		fov = ((HostileBase)charBase).fov;
 		viewDistance = ((HostileBase)charBase).viewDistance;
 		hearingDistance = ((HostileBase)charBase).hearingDistance;
+		transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = ((HostileBase)charBase).sprite;
 	}
 
 	public float GetDropValue() => dropValue;

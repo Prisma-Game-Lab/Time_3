@@ -93,6 +93,10 @@ MonoBehaviour:
   current_head: {fileID: 0}
   headoffset: {x: 0, y: 0, z: 0}
   AnimatorController: {fileID: 0}
+  enemyBases:
+  - {fileID: 11400000, guid: f64c75f15ed41ea4ea2cc5499230850a, type: 2}
+  - {fileID: 11400000, guid: 4ae18b9a624676449b17f333933a4d8c, type: 2}
+  - {fileID: 11400000, guid: 50c4bb58306402146ba70155a3b219ed, type: 2}
   dropValue: 0
   fov: 0
   viewDistance: 0
@@ -312,7 +316,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 61943f58e15908a4789353dc740bb248, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 055f0ddc432b6544999789dbd480562b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
