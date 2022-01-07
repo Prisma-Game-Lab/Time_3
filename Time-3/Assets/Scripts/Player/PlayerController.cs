@@ -15,7 +15,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(PlayerInteraction))]
 public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<float>
 {
-	private HUDManager hudManager;
+	[SerializeField] private HUDManager hudManager;
 	private CharStats charStats;
 	private PlayerMovementBehaviour pMovementBehaviour;
 	private BasicAttackBehaviour pAttackBehaviour;
@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 		pAttackBehaviour = GetComponent<BasicAttackBehaviour>();
 		pMovementBehaviour = GetComponent<PlayerMovementBehaviour>();
 		pSkillBehaviour = GetComponent<PlayerSkillBehaviour>();
-		hudManager = GameObject.FindWithTag("HUD").GetComponent<HUDManager>();
 		observers = new List<IObserver<float>>();
 	}
 
