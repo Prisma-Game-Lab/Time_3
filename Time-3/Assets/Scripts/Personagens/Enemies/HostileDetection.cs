@@ -35,30 +35,33 @@ public class HostileDetection : MonoBehaviour, IHostileDetection
 
 	public bool isPlayerDetectable()
 	{
-		Vector3 pPosition = player.GetComponentInParent<Transform>().position;
+		if(player != null)
+		{
+			Vector3 pPosition = player.GetComponentInParent<Transform>().position;
 
-		// Player within distance?
-		float distance = Vector2.Distance(pPosition, transform.position);
+			// Player within distance?
+			float distance = Vector2.Distance(pPosition, transform.position);
 
-		if (distance <= hearingDistance) {
-			return true;
-		}
+			if (distance <= hearingDistance) {
+				return true;
+			}
 
-		if (distance <= viewDistance) {
+			if (distance <= viewDistance) {
 
-			// Player within fov?
-			float angle = Vector2.Angle(pPosition - transform.position, transform.right);
-			if (angle < fov/2) {
+				// Player within fov?
+				float angle = Vector2.Angle(pPosition - transform.position, transform.right);
+				if (angle < fov/2) {
 
-				// Player visible?
-				RaycastHit2D hit = Physics2D.Raycast(
-						transform.position,
-						(pPosition - transform.position).normalized,
-						distance, raycastLayers);
-				Debug.DrawRay(transform.position, (pPosition - transform.position).normalized * distance, Color.red, 1);
+					// Player visible?
+					RaycastHit2D hit = Physics2D.Raycast(
+							transform.position,
+							(pPosition - transform.position).normalized,
+							distance, raycastLayers);
+					Debug.DrawRay(transform.position, (pPosition - transform.position).normalized * distance, Color.red, 1);
 
-				if (hit.collider.tag == "Player") {
-					return true;
+					if (hit.collider.tag == "Player") {
+						return true;
+					}
 				}
 			}
 		}
