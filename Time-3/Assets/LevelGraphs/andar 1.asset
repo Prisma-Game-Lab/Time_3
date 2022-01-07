@@ -340,8 +340,10 @@ MonoBehaviour:
   CorridorRoomTemplateSets: []
   DefaultIndividualRoomTemplates:
   - {fileID: 9037631785484481138, guid: cabe5088cc16848c5af515a251ca75e0, type: 3}
+  - {fileID: 2774928698112185634, guid: 24e528047b0a047ebaf810e977320507, type: 3}
   - {fileID: 5341333166214571886, guid: bca899a07becc41889542ffbebf1dd80, type: 3}
   - {fileID: 5147841205327151508, guid: 572a3f5ee52924fafa1ec96e8cbc812f, type: 3}
+  - {fileID: 5527806729737378106, guid: 79589d67dc72244de903b9d7b19a7f8e, type: 3}
   DefaultRoomTemplateSets: []
   Rooms:
   - {fileID: 4352302659146456528}
