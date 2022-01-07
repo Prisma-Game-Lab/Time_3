@@ -971,7 +971,7 @@ MonoBehaviour:
   version: 3
   EnableDiagnostics: 0
   FixedLevelGraphConfig:
-    LevelGraph: {fileID: 11400000, guid: 65d2e509041916442b560343b8ef8b87, type: 2}
+    LevelGraph: {fileID: 11400000, guid: e87eeb6b47a4f7047b3239e973a54ab8, type: 2}
     UseCorridors: 1
   GeneratorConfig:
     RootGameObject: {fileID: 0}
