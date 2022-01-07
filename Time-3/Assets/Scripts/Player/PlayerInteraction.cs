@@ -11,9 +11,7 @@ public class PlayerInteraction : MonoBehaviour
 	public void onInteract(InputAction.CallbackContext context){
 		if (context.performed){ //O input sistem ativa essa função 3 vezes(Started, PERFORMED e ended) logo só estou ativando no performed
 			float dist = Vector2.Distance(NPCnearby.transform.position, transform.position);
-			Debug.Log(dist);
 			if((dist<=2)&&(isDialogueActive==false)){
-				Debug.Log("passa aqui?");
 				NPCnearby.GetComponent<NPCbase>().TriggerDialogue();
 				isDialogueActive = true;
 			}

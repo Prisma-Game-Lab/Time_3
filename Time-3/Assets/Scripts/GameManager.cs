@@ -62,5 +62,4 @@ public class GameManager : MonoBehaviour
 		if (!context.ReadValueAsButton() || context.performed) return;
 		TogglePause();
 	}
-
 }
