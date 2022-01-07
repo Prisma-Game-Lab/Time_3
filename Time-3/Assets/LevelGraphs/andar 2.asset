@@ -355,9 +355,14 @@ MonoBehaviour:
   - {fileID: -1009813840984222078}
   - {fileID: -8828918158230228256}
   - {fileID: 749302871762487208}
-  CorridorIndividualRoomTemplates: []
+  CorridorIndividualRoomTemplates:
+  - {fileID: 2319643444006430570, guid: 8e2a58756b1254312882a519ab7d23f2, type: 3}
+  - {fileID: 5994553051468714050, guid: 8680b713ff75d4ae7b1b2a4f2f9b4e11, type: 3}
   CorridorRoomTemplateSets: []
-  DefaultIndividualRoomTemplates: []
+  DefaultIndividualRoomTemplates:
+  - {fileID: 9037631785484481138, guid: cabe5088cc16848c5af515a251ca75e0, type: 3}
+  - {fileID: 5341333166214571886, guid: bca899a07becc41889542ffbebf1dd80, type: 3}
+  - {fileID: 5147841205327151508, guid: 572a3f5ee52924fafa1ec96e8cbc812f, type: 3}
   DefaultRoomTemplateSets: []
   Rooms:
   - {fileID: -7351098989237388972}
