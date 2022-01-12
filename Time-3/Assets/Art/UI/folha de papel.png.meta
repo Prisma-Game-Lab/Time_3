@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 150b7db221594416e9d0be24f146cfc0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2483674810788671228
+    second: folha de papel_0
+  - first:
+      213: 4765186935897300792
+    second: folha de papel_1
+  - first:
+      213: -579341499194643291
+    second: folha de papel_2
+  - first:
+      213: -7040456154767647341
+    second: folha de papel_3
+  - first:
+      213: -5228301881656336147
+    second: folha de papel_4
+  - first:
+      213: -3295312853713953675
+    second: folha de papel_5
+  - first:
+      213: -6771136410947217998
+    second: folha de papel_6
+  - first:
+      213: -3113874251839950923
+    second: folha de papel_7
+  - first:
+      213: 7131031757140689670
+    second: folha de papel_8
+  - first:
+      213: -1722031284822299095
+    second: folha de papel_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +119,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: folha de papel_0
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 120
+        width: 663
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4011b5d2be6388dd0800000000000000
+      internalID: -2483674810788671228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha de papel_1
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 885
+        width: 658
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f9d7a6548512240800000000000000
+      internalID: 4765186935897300792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha de papel_2
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 653
+        width: 664
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac6cd8d9f3c5f7f0800000000000000
+      internalID: -579341499194643291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha de papel_3
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 439
+        width: 633
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d9c5edd664b4e90800000000000000
+      internalID: -7040456154767647341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha de papel_4
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 282
+        width: 319
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de02e5da3275177b0800000000000000
+      internalID: -5228301881656336147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha de papel_5
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 481
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cd99a3b62b442d0800000000000000
+      internalID: -3295312853713953675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha de papel_6
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 438
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b517cb2f471802a0800000000000000
+      internalID: -6771136410947217998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha de papel_7
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 438
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf28dfaddb49c4d0800000000000000
+      internalID: -3113874251839950923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha de papel_8
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 256
+        width: 323
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603866ee99386f260800000000000000
+      internalID: 7131031757140689670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha de papel_9
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 15
+        width: 650
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92eae009bad1a18e0800000000000000
+      internalID: -1722031284822299095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
