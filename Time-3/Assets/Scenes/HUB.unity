@@ -358,9 +358,17 @@ PrefabInstance:
       value: Astronauta
       objectReference: {fileID: 0}
     - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: m_Size.x
+      value: 4.921201
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: m_Size.y
+      value: 9.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e6d5d72aa0a194f01b09c89b4585215a, type: 3}
+      objectReference: {fileID: 5457266681764177437, guid: af7e90c31d205419c938cc12ad7a57f1, type: 3}
     - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -463,9 +471,17 @@ PrefabInstance:
       value: Fantasma
       objectReference: {fileID: 0}
     - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: m_Size.x
+      value: 5.441328
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: m_Size.y
+      value: 8.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ab1ea538db5d14c8f806b6c268e3009e, type: 3}
+      objectReference: {fileID: 3262412965971147974, guid: af7e90c31d205419c938cc12ad7a57f1, type: 3}
     - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1516,9 +1532,17 @@ PrefabInstance:
       value: Cientista
       objectReference: {fileID: 0}
     - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: m_Size.x
+      value: 5.681387
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: m_Size.y
+      value: 8.2699995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ab5a3258fb0c942b68345dec267e64f6, type: 3}
+      objectReference: {fileID: -2642275806896423663, guid: af7e90c31d205419c938cc12ad7a57f1, type: 3}
     - target: {fileID: 7435860866855155148, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: m_Color.b
       value: 1
