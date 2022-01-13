@@ -3366,6 +3366,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 2501853527172680643}
+    - target: {fileID: 5620020714629437304, guid: 578b219a4d3e54321b181c542531c5f2, type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 2501853527172680643}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 578b219a4d3e54321b181c542531c5f2, type: 3}
 --- !u!4 &3247956046302491000 stripped
@@ -3553,6 +3557,10 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4896025847141132941, guid: 578b219a4d3e54321b181c542531c5f2, type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 8362396155001729887}
+    - target: {fileID: 5620020714629437304, guid: 578b219a4d3e54321b181c542531c5f2, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 8362396155001729887}

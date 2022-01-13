@@ -3253,6 +3253,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 4188736477805423006}
+    - target: {fileID: 5620020714629437304, guid: 578b219a4d3e54321b181c542531c5f2, type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 4188736477805423006}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 578b219a4d3e54321b181c542531c5f2, type: 3}
 --- !u!4 &4350154836880823838 stripped
