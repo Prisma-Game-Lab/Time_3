@@ -2567,6 +2567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 1509724637685081865, guid: b583065617fa83c4394046999f259e88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1509724637685081878, guid: b583065617fa83c4394046999f259e88, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2649,6 +2653,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1509724637685081878, guid: b583065617fa83c4394046999f259e88, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509724638692299643, guid: b583065617fa83c4394046999f259e88, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
