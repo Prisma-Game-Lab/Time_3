@@ -24,6 +24,6 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 055f0ddc432b6544999789dbd480562b, type: 3}
   animatorController: {fileID: 0}
   dropValue: 0
-  fov: 120
-  viewDistance: 8
+  fov: 70
+  viewDistance: 10
   hearingDistance: 5
