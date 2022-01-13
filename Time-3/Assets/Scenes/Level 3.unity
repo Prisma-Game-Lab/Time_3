@@ -774,7 +774,7 @@ PrefabInstance:
       objectReference: {fileID: 1002343482}
     - target: {fileID: 1574808137545011675, guid: f6b258b47c054c0488496943a34c4b77, type: 3}
       propertyPath: levelToGo
-      value: Menu
+      value: GoodEnding
       objectReference: {fileID: 0}
     - target: {fileID: 1574808137545011675, guid: f6b258b47c054c0488496943a34c4b77, type: 3}
       propertyPath: loadingScreen
