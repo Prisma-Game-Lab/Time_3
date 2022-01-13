@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
 	private void Awake() {
 		hud = GameObject.FindWithTag("HUD");
+		Time.timeScale = 1.0f;
 	}
 
 	public bool IsGamePaused() => Time.timeScale == 0;
