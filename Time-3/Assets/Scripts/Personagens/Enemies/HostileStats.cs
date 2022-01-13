@@ -7,6 +7,7 @@ public class HostileStats : CharStats
 	[SerializeField] private float fov;
 	[SerializeField] private float viewDistance;
 	[SerializeField] private float hearingDistance;
+	[SerializeField] private SpriteRenderer spriteRenderer;
 
 	protected override void Awake()
 	{
@@ -16,7 +17,7 @@ public class HostileStats : CharStats
 		fov = ((HostileBase)charBase).fov;
 		viewDistance = ((HostileBase)charBase).viewDistance;
 		hearingDistance = ((HostileBase)charBase).hearingDistance;
-		transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = ((HostileBase)charBase).sprite;
+		spriteRenderer.sprite = ((HostileBase)charBase).sprite;
 	}
 
 	public float GetDropValue() => dropValue;

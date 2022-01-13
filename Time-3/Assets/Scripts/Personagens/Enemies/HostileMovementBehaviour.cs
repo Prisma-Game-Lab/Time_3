@@ -3,9 +3,10 @@ using UnityEngine;
 public class HostileMovementBehaviour : MonoBehaviour
 {
 	[SerializeField] private float rotationSpeed = 5.0f;
+	[SerializeField] private SpriteRenderer spriteRenderer;
+	[SerializeField] private Rigidbody2D rb2D;
 
 	private CharStats charStats;
-	private Rigidbody2D rb2D;
 
 	private float speed;
 	private Quaternion targetDir;
@@ -14,7 +15,6 @@ public class HostileMovementBehaviour : MonoBehaviour
 	private void Awake()
 	{
 		charStats = GetComponent<CharStats>();
-		rb2D = GetComponent<Rigidbody2D>();
 	}
 
 	private void Start()
@@ -41,6 +41,21 @@ public class HostileMovementBehaviour : MonoBehaviour
 		speed = charStats.GetSpeed();
 		rb2D.MovePosition(Vector2.MoveTowards(transform.position, targetPos, speed * Time.fixedDeltaTime));
 		transform.rotation = Quaternion.Lerp(transform.rotation, targetDir, rotationSpeed * Time.fixedDeltaTime);
+
+		if (spriteRenderer != null) {
+			float angle = 0.0f;
+			Vector3 axis = Vector3.zero;
+			targetDir.ToAngleAxis(out angle, out axis);
+
+			if ((angle += 90.0f) < 0.0f )
+				angle += 360.0f;
+
+			if (angle >= 180.0f) {
+				spriteRenderer.flipX = true;
+			} else {
+				spriteRenderer.flipX = false;
+			}
+		}
 	}
 
 	public void MoveTo(Vector3 dest) => targetPos = dest;
