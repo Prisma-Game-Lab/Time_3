@@ -25,5 +25,5 @@ MonoBehaviour:
   animatorController: {fileID: 0}
   dropValue: 0
   fov: 120
-  viewDistance: 10
+  viewDistance: 8
   hearingDistance: 5

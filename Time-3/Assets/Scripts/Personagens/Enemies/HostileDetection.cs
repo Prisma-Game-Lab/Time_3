@@ -42,15 +42,11 @@ public class HostileDetection : MonoBehaviour, IHostileDetection
 			// Player within distance?
 			float distance = Vector2.Distance(pPosition, transform.position);
 
-			if (distance <= hearingDistance) {
-				return true;
-			}
-
-			if (distance <= viewDistance) {
+			if (distance <= viewDistance || distance <= hearingDistance) {
 
 				// Player within fov?
 				float angle = Vector2.Angle(pPosition - transform.position, transform.right);
-				if (angle < fov/2) {
+				if (angle < fov/2 || distance <= hearingDistance) {
 
 					// Player visible?
 					RaycastHit2D hit = Physics2D.Raycast(
