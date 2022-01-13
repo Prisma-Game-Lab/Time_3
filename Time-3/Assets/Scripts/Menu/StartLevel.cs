@@ -25,7 +25,7 @@ public class StartLevel : MonoBehaviour
 
     private IEnumerator LoadLevelAsync()
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(levelToGo);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 
         levelPopup.SetActive(true);
         loadingScreen.SetActive(true);

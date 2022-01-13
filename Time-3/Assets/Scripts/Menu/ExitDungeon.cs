@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ExitDungeon : MonoBehaviour
 {
+    [SerializeField] private GameObject levelPopup;
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+            levelPopup.SetActive(true);
         }
     }
 }
