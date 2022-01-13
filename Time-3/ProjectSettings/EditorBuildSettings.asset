@@ -9,11 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: ad41840121298eb4bb2314a9fa2ee135
   - enabled: 1
+    path: Assets/Scenes/HUB.unity
+    guid: e55beefdad981d04eb65b207c75adc10
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: a36d42e583762594bbf99c9b0174f30c
   - enabled: 1
-    path: Assets/Scenes/HUB.unity
-    guid: e55beefdad981d04eb65b207c75adc10
+    path: Assets/Scenes/Level 2.unity
+    guid: 261f4c9f58eb60749b74e8dc4b90c6fa
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 7bf8f5a7cf95bbd42b1c55e4df0e8c87
   - enabled: 0
     path: Assets/Scenes/Lucca Test Scene.unity
     guid: 3402fbbe68ba58c4bb6a1dae1a363c89
