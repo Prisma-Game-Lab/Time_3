@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 		pMovementBehaviour = GetComponent<PlayerMovementBehaviour>();
 		pSkillBehaviour = GetComponent<PlayerSkillBehaviour>();
 		observers = new List<IObserver<float>>();
+		hudManager = FindObjectOfType<HUDManager>();
 	}
 
 	public void subscribe(IObserver<float> observer) => observers.Add(observer);
@@ -41,8 +42,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 		// TODO: Animacao de morte
 		// TODO: Respawn/Restart
 		Debug.Log("Player morreu!");
-		Scene scene = SceneManager.GetActiveScene();
-		SceneManager.LoadScene(scene.name);
+		SceneManager.LoadScene("GameOver");
 	}
 
 	public void Heal()
