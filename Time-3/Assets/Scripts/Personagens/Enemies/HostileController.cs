@@ -53,6 +53,6 @@ public class HostileController : MonoBehaviour, IDamageable<int>
 
 		player.GetComponentInChildren<PlayerInventoryBehaviour>().IncCredits(hostileStats.GetDropValue());
 
-		Destroy(this.gameObject);
+		Destroy(this.transform.parent.gameObject);
 	}
 }
