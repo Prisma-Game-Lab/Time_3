@@ -255,9 +255,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &1354222712959996164
 MonoBehaviour:
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3262,6 +3262,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1574808137545011671, guid: f6b258b47c054c0488496943a34c4b77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1574808137545011675, guid: f6b258b47c054c0488496943a34c4b77, type: 3}
       propertyPath: slider
       value: 
@@ -3289,17 +3293,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7789941628670766987}
     m_Modifications:
+    - target: {fileID: 1509724637685081865, guid: b583065617fa83c4394046999f259e88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1509724637685081878, guid: b583065617fa83c4394046999f259e88, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1509724637685081878, guid: b583065617fa83c4394046999f259e88, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 92
+      value: 103.95
       objectReference: {fileID: 0}
     - target: {fileID: 1509724637685081878, guid: b583065617fa83c4394046999f259e88, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 51.71753
+      value: 58.438
       objectReference: {fileID: 0}
     - target: {fileID: 1509724637685081878, guid: b583065617fa83c4394046999f259e88, type: 3}
       propertyPath: m_LocalScale.x
@@ -3327,11 +3335,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1509724637685081878, guid: b583065617fa83c4394046999f259e88, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 1509724637685081878, guid: b583065617fa83c4394046999f259e88, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509724638692299643, guid: b583065617fa83c4394046999f259e88, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b583065617fa83c4394046999f259e88, type: 3}
