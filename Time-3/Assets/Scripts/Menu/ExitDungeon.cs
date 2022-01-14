@@ -11,6 +11,7 @@ public class ExitDungeon : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             levelPopup.SetActive(true);
+            Time.timeScale = 0.0f;
         }
     }
 }
