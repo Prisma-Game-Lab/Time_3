@@ -753,7 +753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -764,6 +764,14 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2030945985}
@@ -772,7 +780,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 898985700}
     - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1899441285}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1899441285}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
@@ -784,6 +808,14 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -792,11 +824,43 @@ PrefabInstance:
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: Botao
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
+      value: Menu de pausa
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 465722356582914113, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1457739377982693231, guid: 0fa8dda008911a34a8abc5d19f4e2514, type: 3}
@@ -1250,72 +1314,72 @@ MonoBehaviour:
   sounds:
   - name: Menu de pausa
     clip: {fileID: 8300000, guid: 7cb19bbbbf8e9c64a8d8aff9e628b770, type: 3}
-    volume: 0
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Botao
     clip: {fileID: 8300000, guid: 8d708ce9527db214ab733b459e6fd3cd, type: 3}
-    volume: 0
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Dano
     clip: {fileID: 8300000, guid: 2026df1c94c18034ebf7284e015cb8d8, type: 3}
-    volume: 0
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Ambientacao hub
     clip: {fileID: 8300000, guid: 666d6f6e6b80af2498a7cce35af6aa34, type: 3}
-    volume: 0
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Morte
     clip: {fileID: 8300000, guid: 5c8af9e4292f0d741898baf3e791d911, type: 3}
-    volume: 0
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Dia
     clip: {fileID: 8300000, guid: bf34a2fd2225db2478938eb2dada2a2f, type: 3}
-    volume: 0
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Passos
     clip: {fileID: 8300000, guid: b41e32e41ad36f8408392ee3640623e3, type: 3}
-    volume: 0
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Inicio fase
     clip: {fileID: 8300000, guid: 1caa46011bc94724f937a5f1f4836cb7, type: 3}
-    volume: 0
+    volume: 1
     volumeVariance: 0
-    pitch: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}

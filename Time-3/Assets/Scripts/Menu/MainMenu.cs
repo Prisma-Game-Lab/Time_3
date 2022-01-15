@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame(){
+        FindObjectOfType<AudioManager>().StopAllSounds();
         SceneManager.LoadScene("HUB", LoadSceneMode.Single);
     }
     public void QuitGame(){

@@ -25,6 +25,7 @@ public class StartLevel : MonoBehaviour
 
     private IEnumerator LoadLevelAsync()
     {
+        FindObjectOfType<AudioManager>().StopAllSounds();
         AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 
         levelPopup.SetActive(true);

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine.Audio;
 using System;
 using UnityEngine;
@@ -48,4 +49,45 @@ public class AudioManager : MonoBehaviour
 		s.source.Play();
 	}
 
+	public void StopSound(string sound)
+	{
+		Sound s = Array.Find(sounds, item => item.name == sound);
+		if (s == null)
+		{
+			Debug.LogWarning("Sound: " + name + " not found!");
+			return;
+		}
+
+		s.source.Stop();
+	}
+
+	public void StopAllSounds()
+	{
+		foreach (Sound s in sounds)
+		{
+			s.source.Stop();
+		}
+	}
+
+	public IEnumerator PlayLevelSounds()
+	{
+		string[] clips = new string[3] {"Inicio fase", "Tema Fase p1", "Tema Fase p2" }; 
+
+		yield return null; 
+
+		for(int i = 0; i < clips.Length; i++)
+		{
+			Sound s = Array.Find(sounds, item => item.name == clips[i]);
+
+			s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));
+			s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
+
+			s.source.Play();	
+
+			while(s.source.isPlaying)
+			{
+				yield return null;
+			}		
+		}
+	}
 }

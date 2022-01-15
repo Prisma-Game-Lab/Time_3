@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 	private PlayerMovementBehaviour pMovementBehaviour;
 	private BasicAttackBehaviour pAttackBehaviour;
 	private PlayerSkillBehaviour pSkillBehaviour;
+
+	private AudioManager _am;
 	[SerializeField] private GameObject head;
 
 	private List<IObserver<float>> observers;
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 		pSkillBehaviour = GetComponent<PlayerSkillBehaviour>();
 		observers = new List<IObserver<float>>();
 		hudManager = FindObjectOfType<HUDManager>();
+		_am = FindObjectOfType<AudioManager>();
 	}
 
 	public void subscribe(IObserver<float> observer) => observers.Add(observer);
@@ -43,6 +46,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 		// TODO: Respawn/Restart
 		Debug.Log("Player morreu!");
 		SceneManager.LoadScene("GameOver");
+		_am.StopAllSounds();
 	}
 
 	public void Heal()
@@ -63,12 +67,15 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 		damage = (int)(damage * (1.0f - charStats.GetDefense()));
 		charStats.IncCurrHp(-damage);
 		if (charStats.GetCurrHp() <= 0) {
+    		_am.Play("Morte");
 			Die();
 			return true;
 		}
 
 		float normalisedHealth = (float)charStats.GetCurrHp() / charStats.GetMaxHp();
 		observers.ForEach(o => o.update( normalisedHealth ));
+
+    	_am.Play("Dano");
 
 		return false;
 	}
@@ -79,6 +86,14 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 		// Le o vetor de movimento bruto passado pelo InputSystem
 		Vector2 rawMovementVector = context.ReadValue<Vector2>();
 		pMovementBehaviour.UpdateMovementVec(rawMovementVector);
+		if(context.started)
+		{
+    	    _am.Play("Passos");
+		}
+		else if(context.canceled)
+		{
+    	    _am.StopSound("Passos");
+		}
 	}
 
 	/// Evento ativado pelo InputSystem para ataques basicos

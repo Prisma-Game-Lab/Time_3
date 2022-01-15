@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -15,9 +17,34 @@ public class GameManager : MonoBehaviour
 		Time.timeScale = 1.0f;
 	}
 
+	private void Start() 
+	{
+		AudioManager _am = FindObjectOfType<AudioManager>();
+
+		int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+		switch(currentSceneIndex)
+		{
+			case 0: // musica menu
+				break;
+			case 1:
+				_am.Play("Ambientacao hub");
+				break;
+			case 2: //musica jogo
+			case 3:
+			case 4:
+				StartCoroutine(_am.PlayLevelSounds());
+				break;
+			case 6:
+				_am.StopSound("Tema Fase p2");
+				break;
+		}
+	}
+
 	public bool IsGamePaused() => Time.timeScale == 0;
 
 	public void Pause() {
+		FindObjectOfType<AudioManager>().Play("Menu de pausa");
 		Time.timeScale = 0.0f;
 
 		if (player != null)
@@ -31,6 +58,7 @@ public class GameManager : MonoBehaviour
 	}
 
 	public void Unpause() {
+		FindObjectOfType<AudioManager>().Play("Menu de pausa");
 		Time.timeScale = 1.0f;
 
 		if (player != null)
