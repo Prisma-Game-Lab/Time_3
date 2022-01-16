@@ -1618,7 +1618,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Botao
     clip: {fileID: 8300000, guid: 8d708ce9527db214ab733b459e6fd3cd, type: 3}
-    volume: 1
+    volume: 0.85
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -1717,7 +1717,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: pirata estilingue
     clip: {fileID: 8300000, guid: 1ac36d6fe31cb054bb131019c71928ff, type: 3}
-    volume: 0.25
+    volume: 0.45
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -1726,7 +1726,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: pirata coloca ovo
     clip: {fileID: 8300000, guid: f772ecc8ce50cab41a183b4ce24acd96, type: 3}
-    volume: 0.25
+    volume: 0.4
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -1744,7 +1744,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: heroina soco
     clip: {fileID: 8300000, guid: 650cea501b39e1844b9bbb6045b18967, type: 3}
-    volume: 0.25
+    volume: 0.4
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -1753,7 +1753,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: heroina giro
     clip: {fileID: 8300000, guid: 597a4e78204e39242b5f93ffce5f71e7, type: 3}
-    volume: 0.25
+    volume: 0.7
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -1762,7 +1762,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: menu principal
     clip: {fileID: 8300000, guid: 596440f3de052f74b9f25f6f19ea906c, type: 3}
-    volume: 0.5
+    volume: 0.45
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
