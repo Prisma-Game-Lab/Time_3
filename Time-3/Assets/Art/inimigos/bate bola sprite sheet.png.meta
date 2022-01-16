@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 983b023bc84407541aa9e9de301f3f42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7335894054189457532
+    second: bate bola sprite sheet_0
+  - first:
+      213: -8285905627084105805
+    second: bate bola sprite sheet_1
+  - first:
+      213: -6681371938042530895
+    second: bate bola sprite sheet_2
+  - first:
+      213: 3417998612107311614
+    second: bate bola sprite sheet_3
+  - first:
+      213: 2555160464394470484
+    second: bate bola sprite sheet_4
+  - first:
+      213: 2930885814990770952
+    second: bate bola sprite sheet_5
+  - first:
+      213: -975939737264586227
+    second: bate bola sprite sheet_6
+  - first:
+      213: -2634609058698907020
+    second: bate bola sprite sheet_7
+  - first:
+      213: -6089631301521354092
+    second: bate bola sprite sheet_8
+  - first:
+      213: 3483663308907645956
+    second: bate bola sprite sheet_9
+  - first:
+      213: -6195890725051332677
+    second: bate bola sprite sheet_10
+  - first:
+      213: 4938137021823006093
+    second: bate bola sprite sheet_11
+  - first:
+      213: -4901283808789915611
+    second: bate bola sprite sheet_12
+  - first:
+      213: 6716630856508725092
+    second: bate bola sprite sheet_13
+  - first:
+      213: 616870982413265263
+    second: bate bola sprite sheet_14
+  - first:
+      213: 3685010968401796526
+    second: bate bola sprite sheet_15
+  - first:
+      213: -2692318735462595078
+    second: bate bola sprite sheet_16
+  - first:
+      213: 5443131712801472888
+    second: bate bola sprite sheet_17
+  - first:
+      213: 7367414891533525955
+    second: bate bola sprite sheet_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bate bola sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 816
+        width: 160
+        height: 156
+      alignment: 9
+      pivot: {x: 0.6470343, y: 0.85961056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f1326993ba13a90800000000000000
+      internalID: -7335894054189457532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 767
+        width: 163
+        height: 205
+      alignment: 9
+      pivot: {x: 0.83306473, y: 0.853103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7dd379bbc820d80800000000000000
+      internalID: -8285905627084105805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 840
+        width: 240
+        height: 132
+      alignment: 9
+      pivot: {x: 0.8166891, y: 0.7056427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b336bc2f9ff643a0800000000000000
+      internalID: -6681371938042530895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 695
+        width: 342
+        height: 277
+      alignment: 9
+      pivot: {x: 0.32538468, y: 0.12108406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef93f6dd0ab2f6f20800000000000000
+      internalID: 3417998612107311614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 452
+        width: 675
+        height: 577
+      alignment: 9
+      pivot: {x: 0.45978552, y: 0.20518698}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454ca5097e0c57320800000000000000
+      internalID: 2555160464394470484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 535
+        width: 173
+        height: 219
+      alignment: 9
+      pivot: {x: 0.17572744, y: 0.8635831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80391c7ce199ca820800000000000000
+      internalID: 2930885814990770952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 749
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02082ecaf3c472f0800000000000000
+      internalID: -975939737264586227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 556
+        width: 137
+        height: 218
+      alignment: 9
+      pivot: {x: 0.3546998, y: 0.87355196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472b936150dff6bd0800000000000000
+      internalID: -2634609058698907020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 540
+        width: 135
+        height: 174
+      alignment: 9
+      pivot: {x: 0.2184988, y: 0.7288068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49258b378984d7ba0800000000000000
+      internalID: -6089631301521354092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 454
+        width: 330
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c808c7255785030800000000000000
+      internalID: 3483663308907645956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 293
+        width: 168
+        height: 159
+      alignment: 9
+      pivot: {x: 0.1660763, y: 0.8414439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb78d2a7636c30aa0800000000000000
+      internalID: -6195890725051332677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 293
+        width: 145
+        height: 178
+      alignment: 9
+      pivot: {x: 0.78704834, y: 0.88633025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8537fd3579c78440800000000000000
+      internalID: 4938137021823006093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 293
+        width: 123
+        height: 117
+      alignment: 9
+      pivot: {x: 0.23517342, y: 0.8712109}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52814b118542bfbb0800000000000000
+      internalID: -4901283808789915611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 265
+        width: 128
+        height: 108
+      alignment: 9
+      pivot: {x: 0.2031045, y: 0.28217232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46751a18d24463d50800000000000000
+      internalID: 6716630856508725092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 117
+        width: 707
+        height: 183
+      alignment: 9
+      pivot: {x: 0.021351427, y: 0.47033367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f692df2e3e09f8800800000000000000
+      internalID: 616870982413265263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 106
+        width: 168
+        height: 159
+      alignment: 9
+      pivot: {x: 0.1553046, y: 0.8186809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadd105a3f9c32330800000000000000
+      internalID: 3685010968401796526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 62
+        width: 87
+        height: 184
+      alignment: 9
+      pivot: {x: 0.6040032, y: 0.9130726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af58f96ef56f2aad0800000000000000
+      internalID: -2692318735462595078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 71
+        width: 123
+        height: 117
+      alignment: 9
+      pivot: {x: 0.23517317, y: 0.82480943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871023f2473e98b40800000000000000
+      internalID: 5443131712801472888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bate bola sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 71
+        width: 127
+        height: 108
+      alignment: 9
+      pivot: {x: 0.2150158, y: 0.2654159}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c367c24fc05e3660800000000000000
+      internalID: 7367414891533525955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
