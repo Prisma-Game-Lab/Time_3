@@ -1640,6 +1640,69 @@ MonoBehaviour:
     loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: fada bolha
+    clip: {fileID: 8300000, guid: b76e90697b2c19443a67695226e53d7b, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: fada escudo bolha
+    clip: {fileID: 8300000, guid: e431dc7849bd2d741a15a07d0dc9fc0e, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: pirata estilingue
+    clip: {fileID: 8300000, guid: 1ac36d6fe31cb054bb131019c71928ff, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: pirata coloca ovo
+    clip: {fileID: 8300000, guid: f772ecc8ce50cab41a183b4ce24acd96, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: pirata ovo explode
+    clip: {fileID: 8300000, guid: 70f18dee7d7cc6e418dd0f89ad6292ed, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: heroina soco
+    clip: {fileID: 8300000, guid: 650cea501b39e1844b9bbb6045b18967, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: heroina giro
+    clip: {fileID: 8300000, guid: 597a4e78204e39242b5f93ffce5f71e7, type: 3}
+    volume: 0.25
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
 --- !u!4 &1292415863
 Transform:
   m_ObjectHideFlags: 0
