@@ -25,12 +25,13 @@ public class GameManager : MonoBehaviour
 
 		switch(currentSceneIndex)
 		{
-			case 0: // musica menu
+			case 0:	
+				_am.Play("menu principal"); 
 				break;
 			case 1:
 				_am.Play("Ambientacao hub");
 				break;
-			case 2: //musica jogo
+			case 2:
 			case 3:
 			case 4:
 				StartCoroutine(_am.PlayLevelSounds());

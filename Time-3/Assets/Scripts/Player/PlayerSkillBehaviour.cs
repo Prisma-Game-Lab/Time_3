@@ -70,10 +70,11 @@ public class PlayerSkillBehaviour : MonoBehaviour
         }
     }
 
-    public void ActivateSkill(SkillBase skill)
+    public void ActivateSkill(SkillBase skill, string sound)
     {
         if(skill.state == "ready")
         {
+            FindObjectOfType<AudioManager>().Play(sound);
             skill.TriggerSkill();
             skill.state = "active";
             activeTimes[System.Array.IndexOf(skills, skill)] = skill.activeTime;

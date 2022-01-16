@@ -25,3 +25,5 @@ MonoBehaviour:
   headOffset: {x: -0.02, y: -0.03, z: 0}
   sprite: {fileID: -5625952063789846268, guid: 608ffa988328bde42bbbfab0a2dc7d12, type: 3}
   animatorController: {fileID: 9100000, guid: aeda4fdffdb9a48469a0c2f3a19076a9, type: 2}
+  attackSound: fada bolha
+  combatSkillSound: fada escudo bolha

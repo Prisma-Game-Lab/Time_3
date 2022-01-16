@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 	public void onAttack(InputAction.CallbackContext context)
 	{
 		if (context.started) { // Press
-			pSkillBehaviour.ActivateSkill(charStats.GetBasicAttack());
+			pSkillBehaviour.ActivateSkill(charStats.GetBasicAttack(), charStats.GetAttackSound());
 
 		} else if (context.canceled && charStats.GetBasicAttack().state=="active") { // Release
 			pAttackBehaviour.BasicAttack(false);
@@ -110,14 +110,14 @@ public class PlayerController : MonoBehaviour, IDamageable<int>, IObservable<flo
 	public void onCombatSkillActivation(InputAction.CallbackContext context)
 	{
 		if (context.started){
-			pSkillBehaviour.ActivateSkill(charStats.GetCombatSkill());
+			pSkillBehaviour.ActivateSkill(charStats.GetCombatSkill(), charStats.GetCombatSkillSound());
 		}
 	}
 
 	public void onExplorationSkillActivation(InputAction.CallbackContext context)
 	{
 		if (context.started)
-			pSkillBehaviour.ActivateSkill(charStats.GetExplorationSkill());
+			pSkillBehaviour.ActivateSkill(charStats.GetExplorationSkill(), charStats.GetCombatSkillSound());
 	}
 
 	public void UpdateStats()

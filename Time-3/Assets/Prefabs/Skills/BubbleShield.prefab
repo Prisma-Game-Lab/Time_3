@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
-  activeTime: 5
+  activeTime: 6
 --- !u!1 &8488652879358296385
 GameObject:
   m_ObjectHideFlags: 0

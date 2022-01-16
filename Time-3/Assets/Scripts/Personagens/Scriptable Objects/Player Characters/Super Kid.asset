@@ -25,3 +25,5 @@ MonoBehaviour:
   headOffset: {x: -0.05, y: 0.09, z: 0}
   sprite: {fileID: -8555741084490302974, guid: 32408ec4b6833fa40ad906bbbc10fbb5, type: 3}
   animatorController: {fileID: 9100000, guid: 72c3ee7501fdf5d4a892712c244ec7dd, type: 2}
+  attackSound: heroina soco
+  combatSkillSound: heroina giro

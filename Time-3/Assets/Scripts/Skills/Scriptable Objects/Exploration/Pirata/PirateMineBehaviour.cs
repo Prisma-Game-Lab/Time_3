@@ -13,6 +13,8 @@ public class PirateMineBehaviour : MonoBehaviour
 		if (other.tag == "Player" || other.tag == "Ignore")
 			return;
 
+		FindObjectOfType<AudioManager>().Play("pirata ovo explode");
+		
 		foreach (var entity in damageables) {
 			if (entity.tag == "Player" || entity.tag == "Ignore") continue;
 			IDamageable<int> damageable = entity.GetComponent<IDamageable<int>>();

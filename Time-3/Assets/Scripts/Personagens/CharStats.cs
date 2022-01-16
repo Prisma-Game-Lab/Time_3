@@ -15,6 +15,9 @@ public class CharStats : MonoBehaviour
 	[SerializeField] private Sprite current_head;
 	[SerializeField] private Vector3 headoffset;
 	[SerializeField] private RuntimeAnimatorController AnimatorController;
+	[SerializeField] private string attackSound;
+	[SerializeField] private string combatSkillSound;
+
 
 	private int currHp;
 
@@ -51,6 +54,8 @@ public class CharStats : MonoBehaviour
 		currHp = maxHp; //Vida atual deve ser inicializada como a vida maxima. -Arthur
 		headoffset = charBase.headOffset;
 		AnimatorController = charBase.animatorController;
+		attackSound = charBase.attackSound;
+		combatSkillSound = charBase.combatSkillSound;
 		SetMaxHp(charBase.baseHp);
 		SetDefense(charBase.baseDefense);
 		SetSpeed(charBase.baseSpeed);
@@ -75,6 +80,10 @@ public class CharStats : MonoBehaviour
 	public SkillBase GetBasicAttack() => basicAttack;
 	public Vector3 GetHeadOffset() => headoffset;
 	public RuntimeAnimatorController GetRuntimeAnimatorController() => AnimatorController;
+	public string GetAttackSound() => attackSound;
+	public string GetCombatSkillSound() => combatSkillSound;
+
+
 
 
 	//Funcoes para redefinir os valores das variaveis

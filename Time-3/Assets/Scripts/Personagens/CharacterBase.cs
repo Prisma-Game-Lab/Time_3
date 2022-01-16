@@ -27,5 +27,8 @@ public class CharacterBase : ScriptableObject
     public Sprite sprite;
     public RuntimeAnimatorController animatorController;
 
+    public string attackSound;
+    public string combatSkillSound;
+
 }
 
