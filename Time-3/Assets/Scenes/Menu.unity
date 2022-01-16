@@ -1703,6 +1703,15 @@ MonoBehaviour:
     loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: menu principal
+    clip: {fileID: 8300000, guid: 596440f3de052f74b9f25f6f19ea906c, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
 --- !u!4 &1292415863
 Transform:
   m_ObjectHideFlags: 0
