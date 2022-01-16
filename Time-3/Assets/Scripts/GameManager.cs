@@ -82,6 +82,7 @@ public class GameManager : MonoBehaviour
 	public void MainMenu(int sceneID)
 	{
 		if (IsGamePaused()) Unpause();
+		FindObjectOfType<AudioManager>().StopAllSounds();
 		SceneManager.LoadScene(sceneID);
 	}
 	public void ExitGame() => Application.Quit();
