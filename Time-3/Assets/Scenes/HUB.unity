@@ -458,12 +458,80 @@ PrefabInstance:
       value: Astronauta
       objectReference: {fileID: 0}
     - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].name
+      value: Astronauta
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].name
+      value: Astronauta
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].name
+      value: Astronauta
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].name
+      value: Astronauta
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: Quero ser astrounauta quando crescer.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
+      value: Ele roubou o meu foguete preferido.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
+      value: Preciso arranjar um jeito de pegar ele de volta.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[0]
+      value: O diretor pegou o meu foguete porque eu tava "jogando ele nos coleguinhas".
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[1]
+      value: "Pelo visto isso \xE9 \"perigoso\"."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[2]
+      value: "Adultos s\xE3o t\xE3o sem gra\xE7a!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[0]
+      value: "Voc\xEA pode ajudar a pegar os nossos brinquedos?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.data[0]
+      value: Eu tava pronta para me divertir na festa de carnaval da escola.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.data[1]
+      value: "Mas agora sem meu brinquedo n\xE3o consigo me divertir."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
@@ -623,12 +691,98 @@ PrefabInstance:
       value: Fantasma
       objectReference: {fileID: 0}
     - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].name
+      value: Fantasma
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].name
+      value: Fantasma
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].name
+      value: Fantasma
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].name
+      value: Fantasma
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[4].name
+      value: bu4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[5].name
+      value: bu5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: Buuu!!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Buuu!!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
+      value: "Ah cara, n\xE3o acredito que perdi outro pacote de estalinhos por causa
+        do diretor!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
+      value: "Ele adora acabar com a nossa divers\xE3o!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[0]
+      value: "E agora? Como que eu vou assustar as pessoas sem os meus estalinhos?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[0]
+      value: "N\xE3o acredito que o diretor foi pegar meus estalinhos logo hoje!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[1]
+      value: "Eu tava planejando juntar todos eles em um papel s\xF3 para fazer um
+        estal\xE3o gigante!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.data[0]
+      value: "J\xE1 sei!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.data[1]
+      value: "Vou dar um susto t\xE3o grande no diretor que ele vai desmaiar!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.data[2]
+      value: "A\xED posso pegar todos os brinquedos que ele escondeu!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.data[3]
+      value: "Mas...onde ser\xE1 que ele os botou?"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
@@ -1796,19 +1950,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3973434368081399416, guid: ef9a113fc1ec9cd4eab490a79781f017, type: 3}
       propertyPath: m_FontData.m_MinSize
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3973434368081399416, guid: ef9a113fc1ec9cd4eab490a79781f017, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3973434368081399417, guid: ef9a113fc1ec9cd4eab490a79781f017, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 48.113
+      value: 14.1
       objectReference: {fileID: 0}
     - target: {fileID: 3973434368081399417, guid: ef9a113fc1ec9cd4eab490a79781f017, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -31
+      value: -18.497
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9a113fc1ec9cd4eab490a79781f017, type: 3}
@@ -2544,12 +2698,97 @@ PrefabInstance:
       value: Cientista
       objectReference: {fileID: 0}
     - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].name
+      value: Cientista
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].name
+      value: Cientista
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].name
+      value: Cientista
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].name
+      value: Cientista
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: Eureka!!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.data[0]
+      value: "O diretor roubou meu assistente de laborat\xF3rio!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.data[1]
+      value: "N\xE3o sei o que fazer sem ele."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[0].sentences.Array.data[2]
+      value: "Voc\xEA pode trazer ele de volta?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[0]
+      value: O Albertinho foi sequestrado!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[1]
+      value: "Ele deve estar morrendo de medo longe de mim\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[1].sentences.Array.data[2]
+      value: "Ah, o Albertinho \xE9 o meu gato de pel\xFAcia."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[0]
+      value: "Se as minhas m\xE3es descobrirem que o diretor pegou meu brinquedo
+        de novo elas v\xE3o me deixar de castigo!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[1]
+      value: "Ele deve estar morrendo de medo longe de mim\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[2].sentences.Array.data[2]
+      value: "Ah, o Albertinho \xE9 o meu gato de pel\xFAcia."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.data[0]
+      value: "Minha irm\xE3 disse que ia tentar pegar os nossos brinquedos de volta."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.data[1]
+      value: "Ela \xE9 bem corajosa!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435860866855155151, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
+      propertyPath: dialogues.Array.data[3].sentences.Array.data[2]
+      value: "S\xF3 espero que n\xE3o se machuque."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b7614e00fa677140994192fafe5ec28, type: 3}
