@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 	[SerializeField] private GameObject pauseMenu;
+	
 	[SerializeField] private GameObject player;
 
-	private GameObject hud;
+	[SerializeField] private GameObject hud;
 	private bool paused;
 
 	private void Awake() {
-		hud = GameObject.FindWithTag("HUD");
 		Time.timeScale = 1.0f;
 	}
 
@@ -25,18 +25,18 @@ public class GameManager : MonoBehaviour
 
 		switch(currentSceneIndex)
 		{
-			case 0:	
+			case 1:	
 				_am.Play("menu principal"); 
 				break;
-			case 1:
+			case 2:
 				_am.Play("Ambientacao hub");
 				break;
-			case 2:
 			case 3:
 			case 4:
+			case 5:
 				StartCoroutine(_am.PlayLevelSounds());
 				break;
-			case 6:
+			case 7:
 				_am.StopSound("Tema Fase p2");
 				break;
 		}
