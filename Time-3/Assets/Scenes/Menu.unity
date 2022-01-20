@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6068378346321342762, guid: b413f8ef17a72c4aa9344183912cb2f5, type: 3}
+      propertyPath: settingsMenu
+      value: 
+      objectReference: {fileID: 1403550835}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b413f8ef17a72c4aa9344183912cb2f5, type: 3}
 --- !u!1 &77843213
@@ -873,7 +877,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1292415865}
+        m_TargetAssemblyTypeName: AudioConfig, Assembly-CSharp
+        m_MethodName: UpdateSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &875647548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,6 +1602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1292415863}
   - component: {fileID: 1292415862}
+  - component: {fileID: 1292415865}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -1783,6 +1800,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292415865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292415861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d81fcc0f6005ed4b97206e56a9c3809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 825988514}
 --- !u!1 &1347143596
 GameObject:
   m_ObjectHideFlags: 0
