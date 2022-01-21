@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PirateMine
   m_EditorClassIdentifier: 
   skillName: 
-  skillCD: 0
+  skillCD: 10
   activeTime: 0
   state: ready
   pirateMinePrefab: {fileID: 4337686773523078985, guid: 5189089001eb1d597bdca4a901d54401, type: 3}
