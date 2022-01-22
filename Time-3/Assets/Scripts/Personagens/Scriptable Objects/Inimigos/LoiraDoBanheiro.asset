@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseHp: 100
   baseDefense: 0
-  baseSpeed: 5
+  baseSpeed: 3
   baseDamage: 34
   baseSkillDmg: 0
   basicAttack: {fileID: 0}
@@ -23,6 +23,8 @@ MonoBehaviour:
   headOffset: {x: 0, y: 0, z: 0}
   sprite: {fileID: 21300000, guid: 61943f58e15908a4789353dc740bb248, type: 3}
   animatorController: {fileID: 0}
+  attackSound: 
+  combatSkillSound: 
   dropValue: 0
   fov: 70
   viewDistance: 10

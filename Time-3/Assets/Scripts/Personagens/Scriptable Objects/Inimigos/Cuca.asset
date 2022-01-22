@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Cuca
   m_EditorClassIdentifier: 
   baseHp: 100
-  baseDefense: 0
-  baseSpeed: 5
-  baseDamage: 34
+  baseDefense: 0.4
+  baseSpeed: 4
+  baseDamage: 28
   baseSkillDmg: 0
   basicAttack: {fileID: 0}
   Skills: []
